@@ -1,0 +1,16 @@
+{
+ "_updated": "2026-09-30T02:51:20+00:00",
+ "litellm": {
+  "events": 0,
+  "last_success": "2026-09-30",
+  "models": 406,
+  "ok": true
+ },
+ "skypilot": {
+  "catalog_errors": {},
+  "cpu_rows": 8,
+  "gpu_rows": 133,
+  "last_success": "2026-09-30",
+  "ok": true
+ }
+}

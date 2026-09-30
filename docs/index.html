@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 成本追踪</title>
+<meta name="description" content="全球 Token 用量、大模型 API 价格、GPU / 云服务器租金走势，数据每日自动累积在 GitHub。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="wrap">
+  <h1>AI 成本追踪</h1>
+  <p class="sub">Token 用量 · 大模型 API 价格 · GPU 租金 · 云服务器价格 —— 由 GitHub Actions 每日抓取，数据以 CSV 形式累积在仓库 <code>docs/data/</code> 下。</p>
+  <nav>
+    <a href="#usage">Token 用量</a><a href="#llm">模型价格</a><a href="#gpu">GPU 租金</a><a href="#cpu">云服务器</a><a href="#status">数据源状态</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section id="usage" class="card">
+    <h2>全球 Token 用量</h2>
+    <p class="hint">各机构公开披露的调用量，统一换算为<strong>日均 tokens</strong>（周 ÷ 7，月 ÷ 30.4），对数坐标。数据来自新闻稿/财报，手工维护于 <code>docs/data/token_usage/milestones.csv</code>。</p>
+    <div class="chart"><canvas id="usageChart"></canvas></div>
+    <details><summary>数据表与来源</summary><div class="tablewrap"><table id="usageTable"></table></div></details>
+  </section>
+
+  <section id="llm" class="card">
+    <h2>大模型 API 价格走势</h2>
+    <div class="controls">
+      <label>数据源 <select id="llmSource"></select></label>
+      <label>价格 <select id="llmKind"><option value="output">输出 (output)</option><option value="input">输入 (input)</option></select></label>
+      <label class="grow">添加模型 <input id="llmSearch" list="llmModels" placeholder="输入模型名，如 gpt-5 / claude / deepseek"></label>
+      <datalist id="llmModels"></datalist>
+    </div>
+    <div id="llmChips" class="chips"></div>
+    <p class="hint">单位：美元 / 百万 tokens，对数坐标，阶梯线表示价格在该日期变更。最多同时显示 8 个模型。</p>
+    <div class="chart"><canvas id="llmChart"></canvas></div>
+    <div>
+      <details open><summary>最近 90 天价格变动</summary><div class="tablewrap"><table id="llmChanges"></table></div></details>
+      <details><summary>当前价格表</summary>
+        <input id="llmFilter" class="filter" placeholder="筛选模型或厂商">
+        <div class="tablewrap"><table id="llmLatest"></table></div></details>
+    </div>
+  </section>
+
+  <section id="gpu" class="card">
+    <h2>GPU 租金走势</h2>
+    <div class="controls">
+      <label>GPU <select id="gpuType"></select></label>
+      <label>指标 <select id="gpuMetric">
+        <option value="min_usd_per_gpu_hr">按需最低价</option>
+        <option value="median_usd_per_gpu_hr">按需中位价</option>
+        <option value="spot_min_usd_per_gpu_hr">Spot / 竞价最低价</option>
+      </select></label>
+    </div>
+    <p class="hint">单位：美元 / GPU·小时（实例价 ÷ GPU 数）。黑色「全市场」线：选「最低价」时为所有厂商中的最低价，选「中位价」时为<strong>各厂商最低价的中位数</strong>（即市场指数）。点击图例可显示/隐藏厂商。</p>
+    <div class="chart"><canvas id="gpuChart"></canvas></div>
+    <details><summary>最新快照：各云厂商按需最低价（*市场指数 = 各厂商最低价的中位数）</summary><div class="tablewrap"><table id="gpuTable"></table></div></details>
+  </section>
+
+  <section id="cpu" class="card">
+    <h2>云服务器 (CPU) 价格走势</h2>
+    <p class="hint">通用型 x86 实例（约 4 GiB 内存 / vCPU）按需价的中位数，单位：美元 / vCPU·小时。</p>
+    <div class="chart short"><canvas id="cpuChart"></canvas></div>
+    <div class="controls">
+      <label>参考机型价格（4 vCPU / 16 GiB，美国东部/中部区域，美元 / 小时）<select id="refKind">
+        <option value="spot_usd_per_hr">Spot / 竞价价</option><option value="usd_per_hr">按需价</option></select></label>
+    </div>
+    <div class="chart short"><canvas id="refChart"></canvas></div>
+  </section>
+
+  <section id="status" class="card">
+    <h2>数据源状态</h2>
+    <div class="tablewrap"><table id="statusTable"></table></div>
+    <p class="hint">数据来源：<a href="https://github.com/BerriAI/litellm">LiteLLM 价格表</a> ·
+      <a href="https://openrouter.ai/docs/api-reference/list-available-models">OpenRouter Models API</a> ·
+      <a href="https://github.com/skypilot-org/skypilot-catalog">SkyPilot 云价格目录</a> ·
+      <a href="https://vast.ai">Vast.ai 市场</a>。价格为公开标价，不含折扣/合约价。</p>
+  </section>
+</main>
+
+<script src="vendor/chart.umd.min.js"></script>
+<script src="vendor/chartjs-adapter-date-fns.bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
