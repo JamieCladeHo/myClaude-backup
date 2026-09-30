@@ -76,8 +76,39 @@ def fetch_yahoo(symbol: str) -> tuple[dict, dict]:
         "high_52w": round(float(closes.max()), 4),
         "low_52w": round(float(closes.min()), 4),
         "source": "yfinance",
+        **range_3m(hist, float(price)),
     }
     return quote, history
+
+
+def range_3m(hist, price: float) -> dict:
+    """Intraday high/low over the last 3 calendar months (including the live price)."""
+    import pandas as pd
+
+    win = hist[hist.index >= hist.index[-1] - pd.DateOffset(months=3)]
+    hi_d, lo_d = win["High"].idxmax(), win["Low"].idxmin()
+    hi, lo = float(win["High"].max()), float(win["Low"].min())
+    out = {"high_3m": round(hi, 4), "high_3m_date": hi_d.strftime("%Y-%m-%d"),
+           "low_3m": round(lo, 4), "low_3m_date": lo_d.strftime("%Y-%m-%d")}
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    if price > hi:
+        out.update(high_3m=round(price, 4), high_3m_date=today)
+    if price < lo:
+        out.update(low_3m=round(price, 4), low_3m_date=today)
+    return out
+
+
+def carry_range(quote: dict, prev: dict | None) -> None:
+    """Stooq has no history: keep the last known 3-month range, widened by the new price."""
+    if not prev or "high_3m" not in prev:
+        return
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    for k in ("high_3m", "high_3m_date", "low_3m", "low_3m_date"):
+        quote[k] = prev[k]
+    if quote["price"] > prev["high_3m"]:
+        quote.update(high_3m=quote["price"], high_3m_date=today)
+    if quote["price"] < prev["low_3m"]:
+        quote.update(low_3m=quote["price"], low_3m_date=today)
 
 
 def fetch_stooq(symbol: str) -> dict:
@@ -112,6 +143,7 @@ def main() -> int:
             print(f"yahoo {sym}: {e}", file=sys.stderr)
             try:
                 quote = fetch_stooq(sym)
+                carry_range(quote, old.get("quotes", {}).get(c["ticker"]))
             except Exception as e2:  # noqa: BLE001
                 print(f"stooq {sym}: {e2}", file=sys.stderr)
                 prev = old.get("quotes", {}).get(c["ticker"])

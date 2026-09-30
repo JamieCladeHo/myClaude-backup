@@ -1,0 +1,55 @@
+{
+  "ticker": "MRVL",
+  "yf_symbol": "MRVL",
+  "name": "Marvell",
+  "full_name": "Marvell Technology",
+  "sector": "半导体 · 定制 AI 芯片（XPU / attach）· 光电互连",
+  "currency": "USD",
+  "report_date": "2026-09-30",
+  "price_at_report": 263.27,
+  "price_date": "2026-09-29",
+  "horizon": "2027-09",
+  "method": "P/E × FY29 EPS，倍数用扣 SBC 的衰减 DCF 校准（股权成本 11%）；退出倍数交叉检查",
+  "stance": "偏贵，不追：现价已计入 2030 目标和高倍数",
+  "summary": [
+    "对 FY28/FY29 盈利没有大异议（Base FY29 EPS $10.58）。分歧不在盈利，在倍数：用扣 SBC 的衰减 DCF（11% 股权成本，与 AVGO、AMD 同一把尺）校准，Base 只值 18.4x FY29 EPS。",
+    "Base 12 个月价值 $195、今日 $176；概率加权 12 个月 $199、今日 $179，比报告日股价 $263 低约 24% / 32%。",
+    "现价要成立，需要两件事同时发生：FY31（≈2030）EPS 真的做到约 $17，而且 2031 年初市场仍愿意给 20 倍。等价于 FY30–33 EPS 每年增长约 33%。",
+    "基本面是好的（指引连升五次、采购承诺三倍到 $8.52B、光电供不应求），但价格已把 2030 目标和高倍数一并提前计入。10/6 Investor Day 有「利好兑现即下跌」的风险。",
+    "Bear 很深（$82）：EPS 和倍数同时下调，倍数回到今天 AVGO/NVDA 约 12x 的水平。MRVL 年化波动率 78%，52 周低点 $70.7，这个幅度并不离谱。"
+  ],
+  "scenarios": {
+    "bear": {
+      "target": 82, "today": 74, "prob": 0.25,
+      "narrative": "FY28 指引落空（$16.7B）；Maia 大部分流向 Broadcom/GUC，Amazon 继续下滑；1.6T 份额明显流失；AI 资本开支 2028 年进入消化期；倍数回到 AVGO/NVDA 水平。"
+    },
+    "base": {
+      "target": 195, "today": 176, "prob": 0.5,
+      "narrative": "指引兑现、略超；Amazon、Microsoft 的下行与 Google 的上行互相抵消，定制芯片约等于 $10B 目标；2030 目标基本达成。"
+    },
+    "bull": {
+      "target": 323, "today": 291, "prob": 0.25,
+      "narrative": "Google 推理加速器第一代就放量；Maia 顺利爬坡；光电份额守住；2030 EPS 超过 $20。"
+    }
+  },
+  "weighted": { "target": 199, "today": 179 },
+  "assumptions": [
+    { "name": "FY29 定制芯片收入", "bear": "$6.5B", "base": "$10.5B", "bull": "$15.0B",
+      "note": "按客户拆 Amazon / MSFT / Google / 其他 attach；管理层「$10B 以上」" },
+    { "name": "FY29 互连 / 光电收入", "bear": "$9.5B", "base": "$11.5B", "bull": "$13.5B",
+      "note": "1.6T DSP 份额在流失；CPO 要到 2028 年底后才大规模量产" },
+    { "name": "FY29 毛利率（XPU / attach / 非定制）", "bear": "38 / 52 / 60%", "base": "40 / 55 / 62%", "bull": "41 / 57 / 63%",
+      "note": "按 FY27 实际结构倒推校准；定制占比升到 38%" },
+    { "name": "FY30–35 EPS 增速 → 永续", "bear": "12/10/8/6/5/4% → 3%", "base": "30/22/15/10/7/5% → 3.5%", "bull": "36/26/18/12/8/6% → 4%",
+      "note": "决定倍数的核心变量；现价要求 FY30–33 每年约 +33%" },
+    { "name": "FY28 收入", "bear": "$16.7B", "base": "$18.6B", "bull": "$20.4B",
+      "note": "管理层约 $18B，已五次上调" }
+  ],
+  "outputs": [
+    { "name": "FY29 收入", "bear": "$20.8B", "base": "$27.3B", "bull": "$34.2B" },
+    { "name": "FY29 EPS", "bear": "$7.31", "base": "$10.58", "bull": "$14.04" },
+    { "name": "FY31（≈2030）EPS", "bear": "$9.0", "base": "$16.8", "bull": "$24.1" },
+    { "name": "隐含 FY29 P/E", "bear": "11.2x", "base": "18.4x", "bull": "23.0x" }
+  ],
+  "notes": "财年约 1 月底结束：FY28 ＝ 2027-02 至 2028-01，FY29 ＝ 2028-02 至 2029-01。EPS 为公司口径 non-GAAP（不扣 SBC）；估值时扣税后 SBC。今日价值 ＝（12 个月价值 ＋ 一年股息 $0.24）÷ 1.11。"
+}

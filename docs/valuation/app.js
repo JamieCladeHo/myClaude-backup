@@ -74,6 +74,16 @@ function zoneWords(c, p) {
   return "高于 Bull";
 }
 
+// ------------------------------------------------------------------ 3-month range
+function range3m(c, q = quote(c)) {
+  if (!q.live || q.high_3m == null || q.low_3m == null) return "";
+  const cur = c.currency, md = (d) => (d ? d.slice(5).replace("-", "/") : "");
+  const line = (lbl, v, d) => `<span class="l">${lbl}</span><b class="num">${money(v, cur)}</b><i>${md(d)}</i>
+    <span class="d num">距${lbl} ${pct(q.price / v - 1)}</span>`;
+  return `<div class="r3m"><span class="k">近 3 个月</span>
+    ${line("最高", q.high_3m, q.high_3m_date)}${line("最低", q.low_3m, q.low_3m_date)}</div>`;
+}
+
 // ------------------------------------------------------------------ range bar
 function rangeBar(c) {
   const cur = c.currency;
@@ -129,6 +139,7 @@ function renderOverview() {
         <span class="co-date">研究于 ${esc(c.report_date)}</span></div>
       <div class="co-px"><span class="px num">${money(q.price, cur)}</span>
         <span class="chg num">${q.live ? `${arrow(q.change_pct)} ${pct(q.change_pct, 2)} 今日` : "报告日价格"}</span></div>
+      ${range3m(c, q)}
       <div class="gap"><span class="v num">${arrow(g)} ${pct(g)}</span>
         <span class="k">${gapWords(g)} · Base ${moneyShort(scnValue(c, "base"), cur)}（${refLabel(c)}）</span></div>
       ${rangeBar(c)}
@@ -178,6 +189,7 @@ function pricePanel(c) {
     <div class="co-px"><span class="big-px num">${money(q.price, cur)}</span>
       ${q.live ? `<span class="chg num">${arrow(q.change_pct)} ${pct(q.change_pct, 2)} 今日</span>` : ""}
       ${since != null ? `<span class="chg num">研究以来 ${pct(since)}</span>` : ""}</div>
+    ${range3m(c, q)}
     <div class="gap"><span class="v num">${arrow(g)} ${pct(g)}</span>
       <span class="k">${gapWords(g)} · Base ${moneyShort(scnValue(c, "base"), cur)}（${refLabel(c)}）· 现价${zoneWords(c, q.price)}</span></div>
     ${rangeBar(c)}

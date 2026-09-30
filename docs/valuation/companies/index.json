@@ -15,6 +15,14 @@
   {
    "dir": "INTC",
    "ticker": "INTC"
+  },
+  {
+   "dir": "MRVL",
+   "ticker": "MRVL"
+  },
+  {
+   "dir": "NFLX",
+   "ticker": "NFLX"
   }
  ]
 }
