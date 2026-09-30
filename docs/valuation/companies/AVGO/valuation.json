@@ -1,0 +1,55 @@
+{
+  "ticker": "AVGO",
+  "yf_symbol": "AVGO",
+  "name": "Broadcom",
+  "full_name": "Broadcom Inc.",
+  "sector": "半导体 · 定制 AI 加速器（XPU）/ AI 网络 / VMware",
+  "currency": "USD",
+  "report_date": "2026-09-29",
+  "price_at_report": 349.57,
+  "price_date": "2026-09-28",
+  "horizon": "2027-10",
+  "method": "FY28 EPS × P/E，倍数由衰减 DCF 校准（分部 EV/FCF 交叉检查）",
+  "stance": "偏正面、不急",
+  "summary": [
+    "Base FY28 EPS $26.78，低于管理层「>$30」约 11–13%：FY28 AI 收入按指引 $230B 打约 11% 折扣到 $205B（Anthropic 交付可能推迟，Hock Tan 自己也说两年约 30GW 不会全部落地），XPU 毛利率也取得更保守。",
+    "估值的关键不在 FY28 盈利，而在「FY28 之后还能不能增长」。现价只隐含 FY29–32 每年增长约 9%（按 Base EPS；按管理层约 $30.6 的口径只要 4.6%）——市场已接近把 FY28 当盈利高峰定价。",
+    "我认为 FY29 之后仍能保持中双位数到个位数的增长：Google 长协锁定 TPU v8–v11 至 2031、OpenAI 2029 年前 10GW、Apple 协议至 2031、Broadcom 是唯一出货 100T 交换芯片的第三方。这是递延，不是丢失。",
+    "衰减 DCF 校准出 Base 隐含 FY28 P/E 16.3x → 12 个月价值 $437、今日价值 $396，比报告日股价高约 13%；概率加权今日 $387（+11%）。",
+    "Bear 下行较深（约 −44%）：EPS 与倍数同时下调，再扣 XPV 残值担保损失。VMware 软件约每股 $65 是价值地板之一。整体「偏正面、不急」。"
+  ],
+  "scenarios": {
+    "bear": {
+      "target": 214, "today": 195, "prob": 0.25,
+      "narrative": "Anthropic 融资或电力卡住，FY28 只落地约 13GW；MediaTek 拿走更多 Google 份额；2029 年 AI 资本开支消化。"
+    },
+    "base": {
+      "target": 437, "today": 396, "prob": 0.5,
+      "narrative": "指引方向正确，但约 10% 的 FY28 交付递延到 FY29。"
+    },
+    "bull": {
+      "target": 620, "today": 560, "prob": 0.25,
+      "narrative": "30GW 基本如期落地，网络份额扩大，VMware 续约强。"
+    }
+  },
+  "weighted": { "target": 427, "today": 387 },
+  "assumptions": [
+    { "name": "AI 收入（FY27 / FY28）", "bear": "$104B / $153B", "base": "$116B / $205B", "bull": "$132B / $246B",
+      "note": "管理层指引 FY27 ≈$115B、FY28 ≈$230B（≈20GW × $11–12B/GW）" },
+    { "name": "FY28 Anthropic XPU 收入", "bear": "$40B", "base": "$58B", "bull": "$75B",
+      "note": "取决于 XPV 二期融资、电力并网、客户意愿" },
+    { "name": "FY28 XPU / 网络毛利率", "bear": "53% / 75%", "base": "57.5% / 77%", "bull": "59% / 78%",
+      "note": "Google 引入 MediaTek 压毛利、HBM 含量上升" },
+    { "name": "FY29–32 EPS 增速 → 永续", "bear": "0/3/3/3% → 2.5%", "base": "20/12/8/5% → 3.5%", "bull": "25/15/10/7% → 4%",
+      "note": "决定倍数的核心变量；股权成本 11%" },
+    { "name": "或有负债（XPV 担保损失）", "bear": "−$15B（≈$3/股）", "base": "0", "bull": "0",
+      "note": "Broadcom 为 Anthropic 融资平台提供残值担保" }
+  ],
+  "outputs": [
+    { "name": "FY28 总收入", "bear": "$204B", "base": "$258B", "bull": "$302B" },
+    { "name": "FY28 毛利率", "bear": "66.1%", "base": "67.8%", "bull": "68.5%" },
+    { "name": "FY28 EPS", "bear": "$19.97", "base": "$26.78", "bull": "$32.44" },
+    { "name": "隐含 FY28 P/E", "bear": "10.7x", "base": "16.3x", "bull": "19.1x" }
+  ],
+  "notes": "AVGO 财年约 11 月初结束：FY28 ≈ 2027-11 至 2028-10。12 个月价值 ＝ 衰减 DCF 在 2027-10 的每股值；今日价值 ＝（12 个月价值 ＋ 一年股息 $2.60）÷ 1.11。"
+}

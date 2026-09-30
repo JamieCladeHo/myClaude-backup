@@ -1,0 +1,79 @@
+{
+  "ticker": "TICKER",
+  "yf_symbol": "TICKER",
+  "name": "简称",
+  "full_name": "公司全称",
+  "sector": "行业 · 业务",
+  "currency": "USD",
+  "report_date": "2026-10-15",
+  "price_at_report": 100.0,
+  "price_date": "2026-10-14",
+  "horizon": "2027-10",
+  "method": "估值方法一句话，如：FY28 EPS × P/E（DCF 交叉检验）",
+  "stance": "一句话态度，如：偏正面、不急",
+  "summary": [
+    "核心结论 1（3–5 条）",
+    "核心结论 2",
+    "核心结论 3"
+  ],
+  "scenarios": {
+    "bear": {
+      "target": 70,
+      "today": 63,
+      "prob": 0.25,
+      "narrative": "Bear 情景一句话"
+    },
+    "base": {
+      "target": 120,
+      "today": 108,
+      "prob": 0.5,
+      "narrative": "Base 情景一句话"
+    },
+    "bull": {
+      "target": 160,
+      "today": 144,
+      "prob": 0.25,
+      "narrative": "Bull 情景一句话"
+    }
+  },
+  "weighted": {
+    "target": 117.5,
+    "today": 105.75
+  },
+  "assumptions": [
+    {
+      "name": "核心假设 1",
+      "bear": "…",
+      "base": "…",
+      "bull": "…",
+      "note": "依据（可省略）"
+    },
+    {
+      "name": "核心假设 2",
+      "bear": "…",
+      "base": "…",
+      "bull": "…"
+    },
+    {
+      "name": "核心假设 3",
+      "bear": "…",
+      "base": "…",
+      "bull": "…"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "FY28 EPS",
+      "bear": "$…",
+      "base": "$…",
+      "bull": "$…"
+    },
+    {
+      "name": "目标 P/E",
+      "bear": "…x",
+      "base": "…x",
+      "bull": "…x"
+    }
+  ],
+  "notes": "口径说明（可省略）"
+}

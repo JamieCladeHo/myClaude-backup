@@ -1,5 +1,7 @@
 # AI 成本追踪（Token 用量 / Token 价格 / GPU 与云服务器租金）
 
+> 同一站点还有 **个股估值看板**（`docs/valuation/`），说明见 [`valuation/README.md`](valuation/README.md)。
+
 一个零服务器、零费用的追踪站：
 
 - **GitHub Actions** 每天定时运行 `scripts/collect.py`，从公开数据源抓取数据；
