@@ -34,7 +34,7 @@ Yahoo 抓取失败时改用 Stooq 报价；两者都失败则沿用上次价格�
 
 1. 复制 `valuation/template/` 到 `docs/valuation/companies/<TICKER>/`。
 2. 填 `valuation.json`：
-   - `scenarios.{bear,base,bull}`：`target` ＝ 12 个月目标价，`today` ＝ 折现到今天的合理价，`prob` ＝ 概率，`narrative` ＝ 一句话情景。
+   - `scenarios.{bear,base,bull}`：`target` ＝ 12 个月目标价，`today` ＝ 折现到今天的合理价（没有就省略，网页会改用 12 个月目标价），`prob` ＝ 概率，`narrative` ＝ 一句话情景。
    - `assumptions`：3–5 个核心假设，每档填字符串（如 `"4.5GW"`、`"+38%"`），`note` 写依据。
    - `outputs`：由假设推出的结果（EPS、倍数等），可选。
    - `weighted`：概率加权值；省略时网页自动按概率计算。

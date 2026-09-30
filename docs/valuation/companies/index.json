@@ -5,8 +5,16 @@
    "ticker": "AMD"
   },
   {
+   "dir": "AMZN",
+   "ticker": "AMZN"
+  },
+  {
    "dir": "AVGO",
    "ticker": "AVGO"
+  },
+  {
+   "dir": "INTC",
+   "ticker": "INTC"
   }
  ]
 }

@@ -50,9 +50,12 @@ function quote(c) {
   if (q && q.price) return { ...q, live: true };
   return { price: c.price_at_report, time: c.price_date, source: "report", live: false };
 }
-const scnValue = (c, k, r = ref()) => c.scenarios?.[k]?.[r];
+// Companies without a discounted "today" value fall back to the 12-month target.
+const refFor = (c) => (ref() === "today" && SCN.every((k) => c.scenarios?.[k]?.today != null) ? "today" : "target");
+const refLabel = (c) => REF_LABEL[refFor(c)] + (refFor(c) !== ref() ? "，该公司无折现值" : "");
+const scnValue = (c, k, r = refFor(c)) => c.scenarios?.[k]?.[r];
 const gapOf = (c) => { const b = scnValue(c, "base"); const p = quote(c).price; return b && p ? b / p - 1 : null; };
-function weighted(c, r = ref()) {
+function weighted(c, r = refFor(c)) {
   if (c.weighted?.[r] != null) return c.weighted[r];
   let s = 0;
   for (const k of SCN) { const sc = c.scenarios[k]; if (sc?.[r] == null || sc.prob == null) return null; s += sc[r] * sc.prob; }
@@ -127,7 +130,7 @@ function renderOverview() {
       <div class="co-px"><span class="px num">${money(q.price, cur)}</span>
         <span class="chg num">${q.live ? `${arrow(q.change_pct)} ${pct(q.change_pct, 2)} 今日` : "报告日价格"}</span></div>
       <div class="gap"><span class="v num">${arrow(g)} ${pct(g)}</span>
-        <span class="k">${gapWords(g)} · Base ${moneyShort(scnValue(c, "base"), cur)}（${REF_LABEL[ref()]}）</span></div>
+        <span class="k">${gapWords(g)} · Base ${moneyShort(scnValue(c, "base"), cur)}（${refLabel(c)}）</span></div>
       ${rangeBar(c)}
       <div class="scn">${cells}</div>
       ${c.stance ? `<div class="stance">${esc(c.stance)}</div>` : ""}
@@ -138,14 +141,14 @@ function renderOverview() {
 
 // ------------------------------------------------------------------ detail
 function scenarioTable(c) {
-  const cur = c.currency, p = quote(c).price, r = ref();
+  const cur = c.currency, p = quote(c).price, r = refFor(c);
   const head = `<tr><th></th>${SCN.map((k) => `<th class="c ${k}">${SCN_LABEL[k]}</th>`).join("")}</tr>`;
   const row = (name, f, cls = "") => `<tr class="${cls}"><td>${name}</td>${SCN.map((k) => `<td class="c ${k}">${f(k)}</td>`).join("")}</tr>`;
   const sc = (k) => c.scenarios[k];
   let body = "";
   body += row(`12 个月目标价${c.horizon ? `<span class="note">${esc(c.horizon)}</span>` : ""}`, (k) => moneyShort(sc(k).target, cur), r === "target" ? "hl" : "");
-  body += row("今日合理价<span class=\"note\">目标价折现</span>", (k) => moneyShort(sc(k).today, cur), r === "today" ? "hl" : "");
-  body += row(`vs 现价<span class="note">按${REF_LABEL[r]}</span>`, (k) => `${arrow(sc(k)[r] / p - 1)} ${pct(sc(k)[r] / p - 1, 0)}`);
+  if (SCN.some((k) => sc(k).today != null)) body += row("今日合理价<span class=\"note\">目标价折现</span>", (k) => moneyShort(sc(k).today, cur), r === "today" ? "hl" : "");
+  body += row(`vs 现价<span class="note">按${refLabel(c)}</span>`, (k) => `${arrow(sc(k)[r] / p - 1)} ${pct(sc(k)[r] / p - 1, 0)}`);
   body += row("概率", (k) => `${Math.round((sc(k).prob ?? 0) * 100)}%`);
   body += `<tr class="narr"><td>情景</td>${SCN.map((k) => `<td class="${k}">${esc(sc(k).narrative || "")}</td>`).join("")}</tr>`;
   if (c.assumptions?.length) {
@@ -162,7 +165,7 @@ function scenarioTable(c) {
   const w = weighted(c, r);
   return `<h2>情景与核心假设</h2>
     <div class="scroll-x"><table class="st"><thead>${head}</thead><tbody>${body}</tbody></table></div>
-    ${w != null ? `<p class="hint">概率加权（${REF_LABEL[r]}）：<b>${moneyShort(w, cur)}</b>，${pct(w / p - 1)} vs 现价。</p>` : ""}
+    ${w != null ? `<p class="hint">概率加权（${refLabel(c)}）：<b>${moneyShort(w, cur)}</b>，${pct(w / p - 1)} vs 现价。</p>` : ""}
     ${c.notes ? `<p class="hint">${esc(c.notes)}</p>` : ""}`;
 }
 
@@ -176,7 +179,7 @@ function pricePanel(c) {
       ${q.live ? `<span class="chg num">${arrow(q.change_pct)} ${pct(q.change_pct, 2)} 今日</span>` : ""}
       ${since != null ? `<span class="chg num">研究以来 ${pct(since)}</span>` : ""}</div>
     <div class="gap"><span class="v num">${arrow(g)} ${pct(g)}</span>
-      <span class="k">${gapWords(g)} · Base ${moneyShort(scnValue(c, "base"), cur)}（${REF_LABEL[ref()]}）· 现价${zoneWords(c, q.price)}</span></div>
+      <span class="k">${gapWords(g)} · Base ${moneyShort(scnValue(c, "base"), cur)}（${refLabel(c)}）· 现价${zoneWords(c, q.price)}</span></div>
     ${rangeBar(c)}
     <div class="chart price" id="pxChartBox"><canvas id="pxChart"></canvas></div>
     <p class="hint">${src}</p>`;
