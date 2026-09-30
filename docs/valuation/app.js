@@ -158,7 +158,7 @@ function scenarioTable(c) {
   const sc = (k) => c.scenarios[k];
   let body = "";
   body += row(`12 个月目标价${c.horizon ? `<span class="note">${esc(c.horizon)}</span>` : ""}`, (k) => moneyShort(sc(k).target, cur), r === "target" ? "hl" : "");
-  if (SCN.some((k) => sc(k).today != null)) body += row("今日合理价<span class=\"note\">目标价折现</span>", (k) => moneyShort(sc(k).today, cur), r === "today" ? "hl" : "");
+  if (SCN.some((k) => sc(k).today != null)) body += row(`今日合理价<span class="note">${esc(c.today_label || "目标价折现")}</span>`, (k) => moneyShort(sc(k).today, cur), r === "today" ? "hl" : "");
   body += row(`vs 现价<span class="note">按${refLabel(c)}</span>`, (k) => `${arrow(sc(k)[r] / p - 1)} ${pct(sc(k)[r] / p - 1, 0)}`);
   body += row("概率", (k) => `${Math.round((sc(k).prob ?? 0) * 100)}%`);
   body += `<tr class="narr"><td>情景</td>${SCN.map((k) => `<td class="${k}">${esc(sc(k).narrative || "")}</td>`).join("")}</tr>`;
