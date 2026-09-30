@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>个股估值看板</title>
+<meta name="description" content="自建估值：现价距离 Base 价值多远，以及 Bull / Base / Bear 情景和核心假设。价格由 GitHub Actions 通过 yfinance 定时更新。">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="valuation.css">
+</head>
+<body>
+<header class="wrap">
+  <h1><a href="#/" class="home">个股估值看板</a></h1>
+  <p class="sub">现价距离 Base 价值多远 · Bull / Base / Bear 情景与核心假设 · 估值逻辑。价格由 GitHub Actions 通过 yfinance 在美股交易时段每小时更新。</p>
+  <div class="controls toolbar">
+    <label>对比口径
+      <select id="refMode">
+        <option value="target">12 个月目标价</option>
+        <option value="today">今日合理价（折现）</option>
+      </select>
+    </label>
+    <label id="sortWrap">排序
+      <select id="sortBy">
+        <option value="gap">按距 Base 空间</option>
+        <option value="date">按研究日期（新→旧）</option>
+        <option value="ticker">按代码</option>
+      </select>
+    </label>
+    <span class="grow"></span>
+    <span id="priceStamp" class="hint"></span>
+  </div>
+</header>
+
+<main id="app" class="wrap"><p class="hint">加载中…</p></main>
+
+<footer class="wrap hint foot">
+  估值与假设为个人研究判断，不构成投资建议。行情来自 Yahoo Finance（yfinance），可能有延迟。
+  · <a href="../">AI 成本追踪</a>
+</footer>
+
+<script src="../vendor/chart.umd.min.js"></script>
+<script src="../vendor/chartjs-adapter-date-fns.bundle.min.js"></script>
+<script src="../vendor/marked.umd.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

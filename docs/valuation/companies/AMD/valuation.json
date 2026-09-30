@@ -1,0 +1,55 @@
+{
+  "ticker": "AMD",
+  "yf_symbol": "AMD",
+  "name": "AMD",
+  "full_name": "Advanced Micro Devices",
+  "sector": "半导体 · AI GPU / 服务器 CPU",
+  "currency": "USD",
+  "report_date": "2026-09-28",
+  "price_at_report": 630.63,
+  "price_date": "2026-09-25",
+  "horizon": "2027-09",
+  "method": "CY28 全面摊薄非 GAAP EPS × 前瞻 P/E（SOTP、DCF 交叉检验）",
+  "stance": "偏空：现价已跑在基本面前面",
+  "summary": [
+    "Base 档 CY28 全面摊薄 EPS $22.84（不含权证 $24.30）× 25x ＝ 12 个月目标价 $571，比报告日股价低 9.5%；三档概率加权 $577（−8.5%）。",
+    "现价已跑在基本面前面：按 25x 折回今天，$631 要求 CY28 全面摊薄 EPS 达到 $28，只有乐观路径才到得了。报告前两周股价涨 22%，盈利预期几乎没动，这段上涨是叙事和资金推的。",
+    "风险收益偏向下行：Bull $948（+50%），Bear $218（−65%）。只杀估值（EPS 不变、16x）是 $365（−42%）；只下修盈利（倍数不变）是 $340（−46%）。",
+    "最容易被忽略的是权证稀释：OpenAI、Meta 各最多 1.6 亿股，最后一批股价门槛 $600 已被越过，只要交付 GW 就归属。CY28 稀释约 6%，CY30 约 14%。按现价每交付 1GW 送出约 $168 亿股票，而这 1GW 税后只赚约 $45 亿。",
+    "两种交叉检验都低于主方法：SOTP $528、DCF $401（隐含 CY28 合理 P/E 仅 19.5x），所以 25x 是 Base 可给的上限，不是保守取值。"
+  ],
+  "scenarios": {
+    "bear": {
+      "target": 218, "today": 195, "prob": 0.25,
+      "narrative": "Helios 量产延迟 1–2 季，GPU 对 Rubin 让价，CPU 产能卡住；AMD 失去估值溢价，向 NVDA 的倍数靠拢。"
+    },
+    "base": {
+      "target": 571, "today": 514, "prob": 0.5,
+      "narrative": "CY28 交付 4.5GW，CPU 提价延续；管理层「3–5 年 EPS 超过 $20」在 2028 年达成。"
+    },
+    "bull": {
+      "target": 948, "today": 858, "prob": 0.25,
+      "narrative": "市场把 AMD 当成「第二个 AI 平台＋CPU 定价权」，MI500 提价，交付超预期。"
+    }
+  },
+  "weighted": { "target": 577, "today": 520 },
+  "assumptions": [
+    { "name": "交付 GW（CY27 / CY28）", "bear": "2.0 / 3.0", "base": "3.0 / 4.5", "bull": "3.6 / 5.5",
+      "note": "已宣布承诺 14GW（OpenAI 6、Meta 6、Anthropic 2），但 Helios 量产吃力、Rubin 先上量" },
+    { "name": "每 GW GPU 收入（CY28）", "bear": "$12.5B", "base": "$13.5B", "bull": "$14.5B",
+      "note": "Bear 对 Rubin 让价；Bull 为 MI500 提价" },
+    { "name": "GPU 毛利率（CY28）", "bear": "44%", "base": "48%", "bull": "52%",
+      "note": "HBM 涨价难以全部转嫁；Instinct 毛利率低于公司平均" },
+    { "name": "服务器 CPU 增速（CY27 / CY28）", "bear": "+55% / +25%", "base": "+72% / +38%", "bull": "+80% / +55%",
+      "note": "x86 双寡头＋Venice 提价；Bear 为 N2/N3 产能卡住" },
+    { "name": "CY28 前瞻 P/E", "bear": "16x", "base": "25x", "bull": "30x",
+      "note": "Bear 向 NVDA 16.5x 靠拢；Base 为 2023–26 前瞻 P/E 上沿" }
+  ],
+  "outputs": [
+    { "name": "CY28 收入", "bear": "$91.6B", "base": "$126.0B", "bull": "$153.5B" },
+    { "name": "CY28 毛利率 / 营业利润率", "bear": "53.1% / 29.9%", "base": "55.4% / 37.4%", "bull": "58.0% / 42.7%" },
+    { "name": "CY28 EPS（全面摊薄）", "bear": "$13.62", "base": "$22.84", "bull": "$31.61" },
+    { "name": "DCF 交叉检验（今日）", "bear": "$137", "base": "$401", "bull": "$905" }
+  ],
+  "notes": "12 个月目标价 ＝ CY28 全面摊薄 EPS × 倍数；今日合理价 ＝ 目标价 ÷ 1.11（股权成本 11%）。"
+}

@@ -1,0 +1,49 @@
+name: valuation-prices
+
+on:
+  schedule:
+    # Hourly during US trading hours (covers both EDT and EST), plus once after the close.
+    - cron: "5 14-21 * * 1-5"
+  push:
+    # Adding/editing a company rebuilds the index and pulls its price right away.
+    paths:
+      - "docs/valuation/companies/**"
+      - "valuation/**"
+      - ".github/workflows/valuation-prices.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: valuation-prices
+  cancel-in-progress: false
+
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install yfinance
+        run: pip install --quiet yfinance
+
+      - name: Fetch prices
+        run: python valuation/fetch_prices.py
+
+      - name: Commit data
+        # Still commit the rebuilt company index if every price source failed.
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/valuation/data docs/valuation/companies/index.json
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "prices: $(date -u +'%F %H:%M')"
+          git pull --rebase
+          git push

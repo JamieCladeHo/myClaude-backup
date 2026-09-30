@@ -1,0 +1,12 @@
+{
+ "companies": [
+  {
+   "dir": "AMD",
+   "ticker": "AMD"
+  },
+  {
+   "dir": "AVGO",
+   "ticker": "AVGO"
+  }
+ ]
+}
