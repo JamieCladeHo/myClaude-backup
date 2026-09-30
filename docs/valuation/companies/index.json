@@ -23,6 +23,22 @@
   {
    "dir": "NFLX",
    "ticker": "NFLX"
+  },
+  {
+   "dir": "NVDA",
+   "ticker": "NVDA"
+  },
+  {
+   "dir": "QCOM",
+   "ticker": "QCOM"
+  },
+  {
+   "dir": "SNDK",
+   "ticker": "SNDK"
+  },
+  {
+   "dir": "WMT",
+   "ticker": "WMT"
   }
  ]
 }
