@@ -13,8 +13,20 @@
    "ticker": "AVGO"
   },
   {
+   "dir": "COST",
+   "ticker": "COST"
+  },
+  {
+   "dir": "GOOGL",
+   "ticker": "GOOGL"
+  },
+  {
    "dir": "INTC",
    "ticker": "INTC"
+  },
+  {
+   "dir": "META",
+   "ticker": "META"
   },
   {
    "dir": "MRVL",
@@ -23,6 +35,22 @@
   {
    "dir": "NFLX",
    "ticker": "NFLX"
+  },
+  {
+   "dir": "NVDA",
+   "ticker": "NVDA"
+  },
+  {
+   "dir": "QCOM",
+   "ticker": "QCOM"
+  },
+  {
+   "dir": "SNDK",
+   "ticker": "SNDK"
+  },
+  {
+   "dir": "WMT",
+   "ticker": "WMT"
   }
  ]
 }

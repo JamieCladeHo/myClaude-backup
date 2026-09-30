@@ -298,6 +298,9 @@ function splitSections(md) {
   return out;
 }
 function mdToHtml(md) {
+  // CommonMark won't close **bold** after CJK punctuation when a letter/digit follows
+  // (e.g. "**结论：**FY28"), so convert bold spans to <strong> up front.
+  md = md.replace(/\*\*([^*\n]+?)\*\*/g, "<strong>$1</strong>");
   const html = window.marked ? marked.parse(md) : `<pre>${esc(md)}</pre>`;
   return html.replace(/<table>/g, '<div class="tbl"><table>').replace(/<\/table>/g, "</table></div>");
 }
