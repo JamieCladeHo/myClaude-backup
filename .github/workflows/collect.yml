@@ -14,7 +14,7 @@ on:
         description: "Rebuild history from upstream git histories before collecting"
         type: choice
         default: none
-        options: [none, skypilot, litellm, all]
+        options: [none, skypilot, litellm, openrouter-usage, all]
 
 permissions:
   contents: write
@@ -28,9 +28,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -38,9 +38,13 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.backfill != 'none' }}
         env:
           WHAT: ${{ inputs.backfill }}
-        run: python scripts/backfill.py "$WHAT" --since 2024-01-01 --step 7
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python scripts/backfill.py "$WHAT"
 
       - name: Collect today's data
+        env:
+          # Optional: free key from openrouter.ai/settings/keys for same-day usage data.
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: python scripts/collect.py
 
       - name: Commit data

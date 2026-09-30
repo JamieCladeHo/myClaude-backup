@@ -63,22 +63,11 @@ select, input {
   font: inherit; font-size: 14px; color: var(--ink); background: var(--page);
   border: 1px solid var(--axis); border-radius: 6px; padding: 5px 8px; min-width: 0;
 }
-.filter { width: 100%; margin: 6px 0; }
-.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0; }
-.chip {
-  display: inline-flex; align-items: center; gap: 6px; font-size: 13px;
-  border: 1px solid var(--border); border-radius: 999px; padding: 2px 4px 2px 10px; background: var(--page);
-}
-.chip i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
-.chip button {
-  border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 16px; line-height: 1; padding: 0 4px;
-}
-.chip button:hover { color: var(--ink); }
 
 details { margin: 10px 0 4px; }
 summary { cursor: pointer; color: var(--ink-2); font-size: 14px; font-weight: 600; }
 @media (max-width: 760px) { .chart { height: 320px; } }
-.tablewrap { max-height: 360px; overflow: auto; margin-top: 6px; }
+.tablewrap { max-height: 520px; overflow: auto; margin-top: 6px; }
 table { border-collapse: collapse; width: 100%; font-size: 13px; }
 th, td { text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--grid); white-space: nowrap; }
 th { position: sticky; top: 0; background: var(--surface); color: var(--ink-2); font-weight: 600; }
@@ -87,3 +76,11 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 .down { color: var(--good); }
 .ok { color: var(--good); }
 .fail { color: var(--bad); }
+h3 { font-size: 15px; margin: 14px 0 4px; color: var(--ink-2); }
+.two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 20px; }
+@media (max-width: 760px) { .two { grid-template-columns: minmax(0, 1fr); } }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin: 10px 0 6px; }
+.tile { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; background: var(--page); }
+.tile .k { font-size: 12px; color: var(--ink-2); }
+.tile .v { font-size: 22px; font-weight: 650; margin-top: 2px; }
+.tile .d { font-size: 12px; color: var(--ink-2); margin-top: 2px; }

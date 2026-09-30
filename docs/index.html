@@ -10,41 +10,66 @@
 <body>
 <header class="wrap">
   <h1>AI 成本追踪</h1>
-  <p class="sub">Token 用量 · 大模型 API 价格 · GPU 租金 · 云服务器价格 —— 由 GitHub Actions 每日抓取，数据以 CSV 形式累积在仓库 <code>docs/data/</code> 下。</p>
+  <p class="sub">Token 用量 · 大模型 API 价格 · GPU 租金 · 云服务器价格 —— GitHub Actions 每日抓取，数据以 CSV 累积在仓库 <code>docs/data/</code>。</p>
   <nav>
     <a href="#usage">Token 用量</a><a href="#llm">模型价格</a><a href="#gpu">GPU 租金</a><a href="#cpu">云服务器</a><a href="#status">数据源状态</a>
   </nav>
 </header>
 
 <main class="wrap">
+  <!-- ------------------------------------------------------------ usage -->
   <section id="usage" class="card">
-    <h2>全球 Token 用量</h2>
-    <p class="hint">各机构公开披露的调用量，统一换算为<strong>日均 tokens</strong>（周 ÷ 7，月 ÷ 30.4），对数坐标。数据来自新闻稿/财报，手工维护于 <code>docs/data/token_usage/milestones.csv</code>。</p>
-    <div class="chart"><canvas id="usageChart"></canvas></div>
-    <details><summary>数据表与来源</summary><div class="tablewrap"><table id="usageTable"></table></div></details>
-  </section>
-
-  <section id="llm" class="card">
-    <h2>大模型 API 价格走势</h2>
+    <h2>Token 用量（周度）</h2>
+    <p class="hint">OpenRouter 全平台每周处理的 tokens（周一至周日；缺 1 天的周按 7 天折算）（官方 <code>rankings-daily</code> 数据集，前 50 模型 + 其余合计 = 全平台）。OpenRouter 是唯一公开逐日用量的大型模型聚合平台，适合看<strong>趋势和份额</strong>；它只代表 API 开发者市场的一部分，不等于全球总量。</p>
+    <div id="usageTiles" class="tiles"></div>
     <div class="controls">
-      <label>数据源 <select id="llmSource"></select></label>
-      <label>价格 <select id="llmKind"><option value="output">输出 (output)</option><option value="input">输入 (input)</option></select></label>
-      <label class="grow">添加模型 <input id="llmSearch" list="llmModels" placeholder="输入模型名，如 gpt-5 / claude / deepseek"></label>
-      <datalist id="llmModels"></datalist>
+      <label>坐标 <select id="usageScale"><option value="linear">线性</option><option value="log">对数</option></select></label>
     </div>
-    <div id="llmChips" class="chips"></div>
-    <p class="hint">单位：美元 / 百万 tokens，对数坐标，阶梯线表示价格在该日期变更。最多同时显示 8 个模型。</p>
-    <div class="chart"><canvas id="llmChart"></canvas></div>
-    <div>
-      <details open><summary>最近 90 天价格变动</summary><div class="tablewrap"><table id="llmChanges"></table></div></details>
-      <details><summary>当前价格表</summary>
-        <input id="llmFilter" class="filter" placeholder="筛选模型或厂商">
-        <div class="tablewrap"><table id="llmLatest"></table></div></details>
+    <div class="chart"><canvas id="usageTotalChart"></canvas></div>
+    <div class="controls">
+      <label>份额拆分 <select id="shareBy"><option value="vendor">按模型厂商（近 12 周前 8 名）</option><option value="region">按厂商所属地区</option></select></label>
     </div>
+    <div class="chart"><canvas id="usageShareChart"></canvas></div>
+    <details open><summary id="topModelsTitle">最近一周 Top 15 模型</summary><div class="tablewrap"><table id="topModels"></table></div></details>
+    <details><summary>官方披露的全平台用量（低频，手工维护）</summary>
+      <p class="hint">各机构发布会 / 财报披露，统一换算为日均 tokens，对数坐标。来源见 <code>docs/data/token_usage/milestones.csv</code>。</p>
+      <div class="chart short"><canvas id="usageChart"></canvas></div>
+      <div class="tablewrap"><table id="usageTable"></table></div>
+    </details>
   </section>
 
+  <!-- -------------------------------------------------------------- llm -->
+  <section id="llm" class="card">
+    <h2>大模型 API 价格：每一代怎么变</h2>
+    <p class="hint">按厂商的产品线（如 Opus / Sonnet / Haiku）串起每一代模型：阶梯线在新一代上线时跳到新价格，圆点 = 新一代发布（悬停看型号）。单位：美元 / 百万 tokens，对数坐标。日期为 LiteLLM 价格表收录日，通常与发布日相差几天。产品线定义在 <code>docs/data/llm/lineages.json</code>。</p>
+    <div class="controls">
+      <label>价格口径 <select id="llmKind">
+        <option value="output">输出价</option><option value="input">输入价</option><option value="blend">混合价（输入:输出 = 3:1）</option>
+      </select></label>
+    </div>
+    <div class="two">
+      <div><h3>美国厂商旗舰</h3><div class="chart short"><canvas id="flagUS"></canvas></div></div>
+      <div><h3>中国厂商旗舰</h3><div class="chart short"><canvas id="flagCN"></canvas></div></div>
+    </div>
+    <div class="controls">
+      <label>厂商 <select id="llmVendor"></select></label>
+    </div>
+    <div class="chart"><canvas id="lineChart"></canvas></div>
+    <details open><summary>代际价格表</summary><div class="tablewrap"><table id="genTable"></table></div></details>
+    <details><summary>最近 90 天价格变动（全部模型）</summary><div class="tablewrap"><table id="llmChanges"></table></div></details>
+    <details><summary>当前价格表（全部模型）</summary>
+      <div class="controls">
+        <label>数据源 <select id="llmSource"></select></label>
+        <label class="grow">筛选 <input id="llmFilter" placeholder="模型或厂商"></label>
+      </div>
+      <div class="tablewrap"><table id="llmLatest"></table></div></details>
+  </section>
+
+  <!-- -------------------------------------------------------------- gpu -->
   <section id="gpu" class="card">
     <h2>GPU 租金走势</h2>
+    <p class="hint">市场指数 = 各云厂商按需最低价的中位数（美元 / GPU·小时），同比对比约一年前。</p>
+    <div id="gpuTiles" class="tiles"></div>
     <div class="controls">
       <label>GPU <select id="gpuType"></select></label>
       <label>指标 <select id="gpuMetric">
@@ -53,29 +78,33 @@
         <option value="spot_min_usd_per_gpu_hr">Spot / 竞价最低价</option>
       </select></label>
     </div>
-    <p class="hint">单位：美元 / GPU·小时（实例价 ÷ GPU 数）。黑色「全市场」线：选「最低价」时为所有厂商中的最低价，选「中位价」时为<strong>各厂商最低价的中位数</strong>（即市场指数）。点击图例可显示/隐藏厂商。</p>
+    <p class="hint">黑线「全市场」：选「最低价」时为所有厂商中的最低价，选「中位价」时为市场指数。已停止更新的厂商目录会被剔除。点击图例可显示/隐藏厂商。</p>
     <div class="chart"><canvas id="gpuChart"></canvas></div>
-    <details><summary>最新快照：各云厂商按需最低价（*市场指数 = 各厂商最低价的中位数）</summary><div class="tablewrap"><table id="gpuTable"></table></div></details>
+    <details><summary>最新快照：各云厂商按需最低价</summary><div class="tablewrap"><table id="gpuTable"></table></div></details>
   </section>
 
+  <!-- -------------------------------------------------------------- cpu -->
   <section id="cpu" class="card">
-    <h2>云服务器 (CPU) 价格走势</h2>
-    <p class="hint">通用型 x86 实例（约 4 GiB 内存 / vCPU）按需价的中位数，单位：美元 / vCPU·小时。</p>
-    <div class="chart short"><canvas id="cpuChart"></canvas></div>
+    <h2>云服务器 (CPU) 价格</h2>
+    <p class="hint"><strong>同款机型价格指数</strong>：每次采样都拿同一批实例（同机型、同区域）和上一期比价，再连乘成指数（2024-01-01 = 100），剔除了新机型上架带来的结构变化。按需标价几乎不动，真正反映供需的是 Spot（竞价）价格。</p>
+    <div id="cpuTiles" class="tiles"></div>
+    <div class="chart"><canvas id="cpuIndexChart"></canvas></div>
+    <h3>每一代机型的价格阶梯（4 vCPU / 16 GiB，美国主力区域）</h3>
     <div class="controls">
-      <label>参考机型价格（4 vCPU / 16 GiB，美国东部/中部区域，美元 / 小时）<select id="refKind">
-        <option value="spot_usd_per_hr">Spot / 竞价价</option><option value="usd_per_hr">按需价</option></select></label>
+      <label>云厂商 <select id="genCloud"></select></label>
     </div>
-    <div class="chart short"><canvas id="refChart"></canvas></div>
+    <div class="chart short"><canvas id="genChart"></canvas></div>
+    <details open><summary>代际对比表</summary><div class="tablewrap"><table id="cpuGenTable"></table></div></details>
   </section>
 
   <section id="status" class="card">
     <h2>数据源状态</h2>
     <div class="tablewrap"><table id="statusTable"></table></div>
-    <p class="hint">数据来源：<a href="https://github.com/BerriAI/litellm">LiteLLM 价格表</a> ·
-      <a href="https://openrouter.ai/docs/api-reference/list-available-models">OpenRouter Models API</a> ·
+    <p class="hint">数据来源：<a href="https://openrouter.ai/rankings">OpenRouter</a>（用量数据 CC BY 4.0；历史回填来自 <a href="https://github.com/harni555/agent-token-index">agent-token-index</a> 存档）·
+      <a href="https://github.com/BerriAI/litellm">LiteLLM 价格表</a> ·
       <a href="https://github.com/skypilot-org/skypilot-catalog">SkyPilot 云价格目录</a> ·
-      <a href="https://vast.ai">Vast.ai 市场</a>。价格为公开标价，不含折扣/合约价。</p>
+      <a href="https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices">Azure Retail Prices API</a> ·
+      <a href="https://vast.ai">Vast.ai</a>。价格均为公开标价，不含折扣/合约价。</p>
   </section>
 </main>
 

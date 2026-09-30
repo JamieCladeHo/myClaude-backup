@@ -16,8 +16,13 @@ DATA = os.path.join(ROOT, "docs", "data")
 UA = "ai-cost-tracker/1.0 (+https://github.com)"
 
 
-def http_get(url, timeout=60, headers=None):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, **(headers or {})})
+def http_get(url, timeout=60, headers=None, method="GET", body=None):
+    data = None
+    hdrs = {"User-Agent": UA, **(headers or {})}
+    if body is not None:
+        data = json.dumps(body).encode("utf-8")
+        hdrs["Content-Type"] = "application/json"
+    req = urllib.request.Request(url, data=data, headers=hdrs, method=method)
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read().decode("utf-8")
 
@@ -121,53 +126,56 @@ def gpu_mem_gb(gpu_info):
 # -------------------------------------------------------- catalog aggregation
 
 def aggregate_catalog(cloud, csv_text):
-    """Turn a SkyPilot vms.csv into per-GPU and CPU price summaries.
+    """Turn a SkyPilot vms.csv into per-GPU price summaries plus a CPU instance table.
 
-    Returns (gpu_rows, cpu_row, instances) where instances maps
-    (instance_type, region) -> (vcpus, mem, price, spot) for reference lookups.
+    Returns (gpu_rows, instances) where instances maps CPU-only
+    (instance_type, region) -> (vcpus, mem, price, spot).
     """
-    per_gpu = {}   # family -> list of (on-demand $/GPU-hr, spot $/GPU-hr|None)
-    cpu = []       # $/vCPU-hr of x86 general-purpose (≈4 GiB/vCPU) instances
-    seen = set()
-    instances = {}
+    # One row per (instance, region): on-demand is the same in every availability zone,
+    # spot differs per zone, so keep the cheapest zone (what a buyer would pick).
+    rows = {}
     for r in csv.DictReader(io.StringIO(csv_text)):
-        itype, region = r.get("InstanceType", ""), r.get("Region", "")
-        if (itype, region) in seen:
-            continue  # same price repeated per availability zone
-        seen.add((itype, region))
-        price = fnum(r.get("Price"))
+        key = (r.get("InstanceType", ""), r.get("Region", ""))
         spot = fnum(r.get("SpotPrice"))
         spot = spot if spot and spot > 0 else None
-        vcpus, mem = fnum(r.get("vCPUs")), fnum(r.get("MemoryGiB"))
-        instances[(itype, region)] = (vcpus, mem, price, spot)
+        if key in rows:
+            old = rows[key][1]
+            rows[key] = (rows[key][0], min(x for x in (old, spot) if x) if (old or spot) else None)
+        else:
+            rows[key] = (r, spot)
+
+    per_gpu = {}   # family -> list of (on-demand $/GPU-hr, spot $/GPU-hr|None)
+    instances = {}
+    for (itype, region), (r, spot) in rows.items():
+        price = fnum(r.get("Price"))
+        price = price if price and price > 0 else None
         acc, cnt = r.get("AcceleratorName", ""), fnum(r.get("AcceleratorCount"))
         if acc:
             fam = norm_gpu(acc, gpu_mem_gb(r.get("GpuInfo")))
-            if not fam or not cnt or cnt < 1 or not price or price <= 0:
-                continue
-            per_gpu.setdefault(fam, []).append((price / cnt, spot / cnt if spot else None))
-        elif price and price > 0 and vcpus and mem and r.get("Arch", "x86_64") != "arm64":
-            if 3.5 <= mem / vcpus <= 4.5:
-                cpu.append(price / vcpus)
+            if fam and cnt and cnt >= 1 and price:
+                per_gpu.setdefault(fam, []).append((price / cnt, spot / cnt if spot else None))
+        elif price or spot:
+            instances[(itype, region)] = (fnum(r.get("vCPUs")), fnum(r.get("MemoryGiB")), price, spot)
 
-    gpu_rows = []
-    for fam, vals in sorted(per_gpu.items()):
-        od = [v[0] for v in vals]
-        sp = [v[1] for v in vals if v[1]]
-        gpu_rows.append({
-            "cloud": cloud, "gpu": fam, "offers": len(od),
+    gpu_rows = [gpu_summary(cloud, fam, vals) for fam, vals in sorted(per_gpu.items())]
+    return gpu_rows, instances
+
+
+def gpu_summary(cloud, fam, vals):
+    od = [v[0] for v in vals]
+    sp = [v[1] for v in vals if v[1]]
+    return {"cloud": cloud, "gpu": fam, "offers": len(od),
             "min_usd_per_gpu_hr": r4(min(od)),
             "median_usd_per_gpu_hr": r4(statistics.median(od)),
-            "spot_min_usd_per_gpu_hr": r4(min(sp) if sp else None),
-        })
-    cpu_row = None
-    if cpu:
-        cpu_row = {
-            "cloud": cloud, "instances": len(cpu),
-            "min_usd_per_vcpu_hr": round(min(cpu), 5),
-            "median_usd_per_vcpu_hr": round(statistics.median(cpu), 5),
-        }
-    return gpu_rows, cpu_row, instances
+            "spot_min_usd_per_gpu_hr": r4(min(sp) if sp else None)}
+
+
+def sane(prices):
+    """Drop catalog errors: a provider under 1/4 of the cross-provider median (e.g. a $0.12 H100)."""
+    if len(prices) < 3:
+        return prices
+    m = statistics.median(prices)
+    return [p for p in prices if p >= m / 4]
 
 
 def market_rows(gpu_rows):
@@ -178,8 +186,8 @@ def market_rows(gpu_rows):
             by.setdefault(r["gpu"], []).append(r)
     out = []
     for gpu, rs in sorted(by.items()):
-        mins = [float(r["min_usd_per_gpu_hr"]) for r in rs]
-        spots = [float(r["spot_min_usd_per_gpu_hr"]) for r in rs if r["spot_min_usd_per_gpu_hr"] != ""]
+        mins = sane([float(r["min_usd_per_gpu_hr"]) for r in rs])
+        spots = sane([float(r["spot_min_usd_per_gpu_hr"]) for r in rs if r["spot_min_usd_per_gpu_hr"] != ""])
         out.append({
             "cloud": "ALL", "gpu": gpu, "offers": len(rs),
             "min_usd_per_gpu_hr": r4(min(mins)),
@@ -215,5 +223,3 @@ def price_events(date, source, prev, cur):
 PRICE_FIELDS = ["date", "source", "model", "provider", "input_usd_per_mtok", "output_usd_per_mtok", "event"]
 GPU_FIELDS = ["date", "source", "cloud", "gpu", "offers", "min_usd_per_gpu_hr",
               "median_usd_per_gpu_hr", "spot_min_usd_per_gpu_hr"]
-CPU_FIELDS = ["date", "source", "cloud", "instances", "min_usd_per_vcpu_hr", "median_usd_per_vcpu_hr"]
-REF_FIELDS = ["date", "cloud", "instance", "region", "vcpus", "memory_gib", "usd_per_hr", "spot_usd_per_hr"]

@@ -1,5 +1,5 @@
 {
- "_updated": "2026-09-30T03:09:30+00:00",
+ "_updated": "2026-09-30T03:41:06+00:00",
  "litellm": {
   "events": 0,
   "last_success": "2026-09-30",
@@ -12,12 +12,17 @@
   "models": 458,
   "ok": true
  },
- "skypilot": {
-  "catalog_errors": {},
-  "cpu_rows": 8,
-  "gpu_rows": 133,
+ "openrouter_usage": {
   "last_success": "2026-09-30",
-  "ok": true
+  "ok": true,
+  "source": "archive (未设置 OPENROUTER_API_KEY)",
+  "through": "2026-09-27"
+ },
+ "skypilot": {
+  "dates": 1,
+  "last_success": "2026-09-30",
+  "ok": true,
+  "stale_skipped": 4
  },
  "vast": {
   "gpu_types": 7,

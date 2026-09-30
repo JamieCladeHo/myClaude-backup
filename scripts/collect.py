@@ -9,16 +9,20 @@ docs/data/meta/status.json and the others still run.
 """
 import datetime as dt
 import json
+import os
 import statistics
 import sys
+import tempfile
 import traceback
 import urllib.parse
 
-from common import (CPU_FIELDS, GPU_FIELDS, PRICE_FIELDS, REF_FIELDS, aggregate_catalog, http_get, http_json,
-                    market_rows, norm_gpu, path, price_events, r4, read_csv, read_json, upsert_rows, write_csv,
-                    write_json)
+import compute
+import usage
+from common import (GPU_FIELDS, PRICE_FIELDS, http_get, http_json, norm_gpu, path, price_events, r4, read_csv,
+                    read_json, upsert_rows, write_csv, write_json)
 
 TODAY = dt.datetime.now(dt.timezone.utc).date().isoformat()
+WORKDIR = os.path.join(tempfile.gettempdir(), "ai-tracker-work")
 
 # ------------------------------------------------------------------ LLM prices
 
@@ -81,54 +85,36 @@ def collect_openrouter():
 
 # ------------------------------------------------------------ GPU / CPU rents
 
-SKYPILOT = "https://raw.githubusercontent.com/skypilot-org/skypilot-catalog/master/catalogs/{ver}/{cloud}/vms.csv"
-SKYPILOT_VERSION = "v8"
-CLOUDS = ["aws", "gcp", "azure", "lambda", "runpod", "nebius", "vast", "cudo",
-          "paperspace", "fluidstack", "do", "hyperbolic"]
-# A fixed, comparable "4 vCPU / 16 GiB general purpose" box on each big cloud.
-REF_INSTANCES = [("aws", "m7i.xlarge", "us-east-1"), ("aws", "m5.xlarge", "us-east-1"),
-                 ("gcp", "n2-standard-4", "us-central1"), ("azure", "Standard_D4s_v5", "eastus")]
-
-
-def ref_instance_rows(cloud, instances, date):
-    rows = []
-    for rc, itype, region in REF_INSTANCES:
-        if rc == cloud and (itype, region) in instances:
-            vcpus, mem, price, spot = instances[(itype, region)]
-            rows.append({"date": date, "cloud": cloud, "instance": itype, "region": region, "vcpus": vcpus,
-                         "memory_gib": mem, "usd_per_hr": price, "spot_usd_per_hr": spot or ""})
-    return rows
-
-
 def collect_skypilot():
-    gpu_rows, cpu_rows, ref_rows, errors = [], [], [], {}
-    for cloud in CLOUDS:
+    return compute.run([dt.date.fromisoformat(TODAY)], WORKDIR, log=lambda *a: None)
+
+
+def collect_azure():
+    return compute.collect_azure(TODAY)
+
+
+def vast_offers():
+    """Vast's newer search endpoint (PUT) returns the full market; the legacy GET one is capped."""
+    q = {"rentable": {"eq": True}, "rented": {"eq": False}, "type": "on-demand", "limit": 10000}
+    best, errors = [], []
+    for method, url, body in [
+        ("PUT", "https://console.vast.ai/api/v0/search/asks/", {"q": q}),
+        ("GET", "https://console.vast.ai/api/v0/bundles/?q=" + urllib.parse.quote(json.dumps(q)), None),
+    ]:
         try:
-            text = http_get(SKYPILOT.format(ver=SKYPILOT_VERSION, cloud=cloud), timeout=120)
-        except Exception as e:  # one missing catalog shouldn't sink the rest
-            errors[cloud] = str(e)
-            continue
-        g, c, inst = aggregate_catalog(cloud, text)
-        gpu_rows += g
-        if c:
-            cpu_rows.append(c)
-        ref_rows += ref_instance_rows(cloud, inst, TODAY)
-    gpu_rows += market_rows(gpu_rows)
-    for r in gpu_rows + cpu_rows:
-        r.update(date=TODAY, source="skypilot")
-    upsert_rows(path("compute", "gpu_daily.csv"), GPU_FIELDS, gpu_rows, ["date", "source"])
-    upsert_rows(path("compute", "cpu_daily.csv"), CPU_FIELDS, cpu_rows, ["date", "source"])
-    upsert_rows(path("compute", "ref_instances.csv"), REF_FIELDS, ref_rows, ["date"])
-    if not gpu_rows:
-        raise RuntimeError(f"no catalogs fetched: {errors}")
-    return {"gpu_rows": len(gpu_rows), "cpu_rows": len(cpu_rows), "catalog_errors": errors}
+            offers = http_json(url, timeout=120, method=method, body=body).get("offers", [])
+            if len(offers) > len(best):
+                best = offers
+        except Exception as e:  # try the other endpoint
+            errors.append(f"{method}: {e}")
+    if not best:
+        raise RuntimeError("; ".join(errors) or "no offers")
+    return best
 
 
 def collect_vast():
     """Live Vast.ai marketplace (peer-to-peer GPUs): the most market-driven price signal."""
-    q = {"rentable": {"eq": True}, "rented": {"eq": False}, "type": "on-demand", "limit": 10000}
-    url = "https://console.vast.ai/api/v0/bundles/?q=" + urllib.parse.quote(json.dumps(q))
-    offers = http_json(url, timeout=120).get("offers", [])
+    offers = vast_offers()
     per = {}
     for o in offers:
         n, price = o.get("num_gpus") or 0, o.get("dph_total") or 0
@@ -144,11 +130,17 @@ def collect_vast():
     return {"offers": len(offers), "gpu_types": len(rows)}
 
 
+def collect_openrouter_usage():
+    return usage.collect_openrouter_usage(TODAY, WORKDIR)
+
+
 COLLECTORS = {"litellm": collect_litellm, "openrouter": collect_openrouter,
-              "skypilot": collect_skypilot, "vast": collect_vast}
+              "openrouter_usage": collect_openrouter_usage, "skypilot": collect_skypilot,
+              "azure": collect_azure, "vast": collect_vast}
 
 
 def main(names):
+    os.makedirs(WORKDIR, exist_ok=True)
     status_p = path("meta", "status.json")
     status = read_json(status_p, {})
     failed = 0
