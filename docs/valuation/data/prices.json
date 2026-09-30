@@ -1,4 +1,25 @@
 {
- "updated": null,
- "quotes": {}
+ "updated": "2026-09-30T09:21:30Z",
+ "quotes": {
+  "AMD": {
+   "price": 607.57,
+   "prev_close": 609.0387,
+   "currency": "USD",
+   "high_52w": 630.63,
+   "low_52w": 161.79,
+   "source": "yfinance",
+   "time": "2026-09-30T09:21:29Z",
+   "change_pct": -0.00241
+  },
+  "AVGO": {
+   "price": 355.1,
+   "prev_close": 357.1801,
+   "currency": "USD",
+   "high_52w": 481.57,
+   "low_52w": 293.41,
+   "source": "yfinance",
+   "time": "2026-09-30T09:21:30Z",
+   "change_pct": -0.00582
+  }
+ }
 }
