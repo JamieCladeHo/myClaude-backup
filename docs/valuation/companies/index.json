@@ -49,6 +49,10 @@
    "ticker": "SNDK"
   },
   {
+   "dir": "TSM",
+   "ticker": "TSM"
+  },
+  {
    "dir": "WMT",
    "ticker": "WMT"
   }
