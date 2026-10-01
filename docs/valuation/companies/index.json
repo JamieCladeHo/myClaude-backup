@@ -1,6 +1,10 @@
 {
  "companies": [
   {
+   "dir": "AAPL",
+   "ticker": "AAPL"
+  },
+  {
    "dir": "AMD",
    "ticker": "AMD"
   },
@@ -33,6 +37,10 @@
    "ticker": "MRVL"
   },
   {
+   "dir": "MSFT",
+   "ticker": "MSFT"
+  },
+  {
    "dir": "NFLX",
    "ticker": "NFLX"
   },
@@ -47,6 +55,10 @@
   {
    "dir": "SNDK",
    "ticker": "SNDK"
+  },
+  {
+   "dir": "TSM",
+   "ticker": "TSM"
   },
   {
    "dir": "WMT",
