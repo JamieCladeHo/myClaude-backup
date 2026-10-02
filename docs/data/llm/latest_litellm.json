@@ -684,7 +684,7 @@
   "provider": "gemini"
  },
  "gemini/lyria-3.5": {
-  "context": 1048576,
+  "context": 131072,
   "input": 0.0,
   "output": 0.0,
   "provider": "gemini"
@@ -1691,6 +1691,12 @@
   "output": 50.0,
   "provider": "perplexity"
  },
+ "perplexity/anthropic/claude-fable-5-1": {
+  "context": "",
+  "input": 10.0,
+  "output": 50.0,
+  "provider": "perplexity"
+ },
  "perplexity/anthropic/claude-haiku-4-5": {
   "context": "",
   "input": 1.0,
@@ -1725,6 +1731,12 @@
   "context": "",
   "input": 5.0,
   "output": 25.0,
+  "provider": "perplexity"
+ },
+ "perplexity/anthropic/claude-opus-5-5": {
+  "context": "",
+  "input": 4.0,
+  "output": 20.0,
   "provider": "perplexity"
  },
  "perplexity/anthropic/claude-sonnet-4-5": {
@@ -1800,6 +1812,12 @@
   "provider": "perplexity"
  },
  "perplexity/google/gemini-3.7-flash": {
+  "context": "",
+  "input": 0.75,
+  "output": 3.75,
+  "provider": "perplexity"
+ },
+ "perplexity/google/gemini-3.8-flash": {
   "context": "",
   "input": 0.75,
   "output": 3.75,
@@ -1891,14 +1909,32 @@
  },
  "perplexity/openai/gpt-5.6-sol": {
   "context": "",
-  "input": 5.0,
-  "output": 30.0,
+  "input": 4.0,
+  "output": 20.0,
   "provider": "perplexity"
  },
  "perplexity/openai/gpt-5.6-terra": {
   "context": "",
   "input": 2.0,
   "output": 12.0,
+  "provider": "perplexity"
+ },
+ "perplexity/openai/gpt-6-luna": {
+  "context": "",
+  "input": 0.1,
+  "output": 0.5,
+  "provider": "perplexity"
+ },
+ "perplexity/openai/gpt-6-sol": {
+  "context": "",
+  "input": 2.0,
+  "output": 10.0,
+  "provider": "perplexity"
+ },
+ "perplexity/openai/gpt-6.1-sol": {
+  "context": "",
+  "input": 2.0,
+  "output": 10.0,
   "provider": "perplexity"
  },
  "perplexity/perplexity/deepseek-v4-flash-0731": {
@@ -2064,6 +2100,12 @@
   "provider": "perplexity"
  },
  "perplexity/xai/grok-4.6": {
+  "context": "",
+  "input": 2.0,
+  "output": 6.0,
+  "provider": "perplexity"
+ },
+ "perplexity/xai/grok-4.7": {
   "context": "",
   "input": 2.0,
   "output": 6.0,
