@@ -443,7 +443,7 @@
  "deepseek/deepseek-v3.1-terminus": {
   "context": 163840,
   "created": "2025-09-22",
-  "input": 0.3,
+  "input": 0.27,
   "output": 1.0,
   "provider": "deepseek"
  },
@@ -464,14 +464,14 @@
  "deepseek/deepseek-v4-flash": {
   "context": 1048576,
   "created": "2026-04-24",
-  "input": 0.042,
-  "output": 0.084,
+  "input": 0.028,
+  "output": 0.056,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-flash-0731": {
   "context": 1048576,
   "created": "2026-07-31",
-  "input": 0.0051,
+  "input": 0.0171,
   "output": 1.28,
   "provider": "deepseek"
  },
@@ -492,15 +492,15 @@
  "deepseek/deepseek-v4-pro-0813": {
   "context": 1048576,
   "created": "2026-08-12",
-  "input": 1.32,
-  "output": 3.96,
+  "input": 0.66,
+  "output": 1.98,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash": {
   "context": 1048576,
   "created": "2026-09-10",
-  "input": 0.015,
-  "output": 0.75,
+  "input": 0.3,
+  "output": 1.2,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash:batch": {
@@ -772,8 +772,8 @@
  "google/gemma-4-26b-a4b-it": {
   "context": 262144,
   "created": "2026-04-03",
-  "input": 0.0765,
-  "output": 0.255,
+  "input": 0.0675,
+  "output": 0.225,
   "provider": "google"
  },
  "google/gemma-4-26b-a4b-it:free": {
@@ -856,8 +856,8 @@
  "inclusionai/ling-3.0-flash-fin": {
   "context": 262144,
   "created": "2026-08-27",
-  "input": 0.06,
-  "output": 0.18,
+  "input": 0.042,
+  "output": 0.1232,
   "provider": "inclusionai"
  },
  "inclusionai/ling-3.0-flash-sante:free": {
@@ -872,6 +872,13 @@
   "created": "2026-09-10",
   "input": 0.021,
   "output": 0.0616,
+  "provider": "inclusionai"
+ },
+ "inclusionai/ling-3.1-flash": {
+  "context": 262144,
+  "created": "2026-10-02",
+  "input": 0.0,
+  "output": 0.0,
   "provider": "inclusionai"
  },
  "inference-net/schematron-v2-small": {
@@ -1290,8 +1297,8 @@
  "moonshotai/kimi-k2.6": {
   "context": 262144,
   "created": "2026-04-20",
-  "input": 0.4341,
-  "output": 1.828,
+  "input": 0.95,
+  "output": 4.0,
   "provider": "moonshotai"
  },
  "moonshotai/kimi-k2.7-code": {
@@ -1423,8 +1430,8 @@
  "nvidia/nemotron-3.5-lightning": {
   "context": 262144,
   "created": "2026-08-11",
-  "input": 0.06,
-  "output": 0.16,
+  "input": 0.0595,
+  "output": 0.17,
   "provider": "nvidia"
  },
  "nvidia/nemotron-3.5-lightning:free": {
@@ -2319,8 +2326,8 @@
  "qwen/qwen3-30b-a3b-instruct-2507": {
   "context": 262144,
   "created": "2025-07-29",
-  "input": 0.1,
-  "output": 0.3,
+  "input": 0.0481,
+  "output": 0.193,
   "provider": "qwen"
  },
  "qwen/qwen3-30b-a3b-thinking-2507": {
@@ -3019,8 +3026,8 @@
  "z-ai/glm-5.1": {
   "context": 204800,
   "created": "2026-04-07",
-  "input": 0.9646,
-  "output": 3.0316,
+  "input": 1.4,
+  "output": 4.4,
   "provider": "z-ai"
  },
  "z-ai/glm-5.2": {
@@ -3110,21 +3117,21 @@
  "~deepseek/deepseek-flash-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.015,
-  "output": 0.75,
+  "input": 0.02,
+  "output": 0.6,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-pro-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.132,
-  "output": 0.396,
+  "input": 0.11,
+  "output": 2.7,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-v4-flash-latest": {
   "context": 1048576,
   "created": "2026-08-01",
-  "input": 0.0051,
+  "input": 0.0171,
   "output": 1.28,
   "provider": "~deepseek"
  },
@@ -3145,7 +3152,7 @@
  "~moonshotai/kimi-latest": {
   "context": 1048576,
   "created": "2026-04-27",
-  "input": 1.39,
+  "input": 0.69,
   "output": 13.0,
   "provider": "~moonshotai"
  },
@@ -3194,8 +3201,8 @@
  "~z-ai/glm-flash-latest": {
   "context": 1048576,
   "created": "2026-08-27",
-  "input": 0.0262,
-  "output": 0.9,
+  "input": 0.035,
+  "output": 0.5,
   "provider": "~z-ai"
  },
  "~z-ai/glm-latest": {

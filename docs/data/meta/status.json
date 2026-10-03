@@ -1,38 +1,39 @@
 {
- "_updated": "2026-10-02T07:00:03+00:00",
+ "_updated": "2026-10-03T06:31:54+00:00",
  "azure": {
   "generations": 9,
   "gpu_types": 7,
+  "last_error": "2026-10-03: HTTP Error 429: Too Many Requests",
   "last_success": "2026-10-02",
-  "ok": true
+  "ok": false
  },
  "litellm": {
-  "events": 8,
-  "last_success": "2026-10-02",
+  "events": 0,
+  "last_success": "2026-10-03",
   "models": 413,
   "ok": true
  },
  "openrouter": {
-  "events": 21,
-  "last_success": "2026-10-02",
-  "models": 458,
+  "events": 17,
+  "last_success": "2026-10-03",
+  "models": 459,
   "ok": true
  },
  "openrouter_usage": {
-  "last_success": "2026-10-02",
+  "last_success": "2026-10-03",
   "ok": true,
   "source": "archive (未设置 OPENROUTER_API_KEY)",
   "through": "2026-09-27"
  },
  "skypilot": {
   "dates": 1,
-  "last_success": "2026-10-02",
+  "last_success": "2026-10-03",
   "ok": true,
-  "stale_skipped": 4
+  "stale_skipped": 5
  },
  "vast": {
-  "gpu_types": 9,
-  "last_success": "2026-10-02",
+  "gpu_types": 8,
+  "last_success": "2026-10-03",
   "offers": 64,
   "ok": true
  }
