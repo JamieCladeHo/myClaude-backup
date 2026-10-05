@@ -1515,3 +1515,17 @@ date,source,model,provider,input_usd_per_mtok,output_usd_per_mtok,event
 2026-10-04,openrouter,deepseek/deepseek-v4-flash,deepseek,0.0224,1.28,change
 2026-10-04,openrouter,deepseek/deepseek-chat-v3-0324,deepseek,0.25,1.0,change
 2026-10-04,openrouter,meta-llama/llama-3.3-70b-instruct,meta-llama,0.22,0.5,change
+2026-10-05,openrouter,deepseek/deepseek-v4.1-flash,deepseek,0.3,1.2,change
+2026-10-05,openrouter,~z-ai/glm-latest,~z-ai,0.03,12.0,change
+2026-10-05,openrouter,qwen/qwen3.8-27b,qwen,0.425,2.55,change
+2026-10-05,openrouter,deepseek/deepseek-v4-pro-0813,deepseek,0.45,5.0,change
+2026-10-05,openrouter,nvidia/nemotron-3.5-lightning,nvidia,0.06,0.16,change
+2026-10-05,openrouter,moonshotai/kimi-k3,moonshotai,0.67,14.0,change
+2026-10-05,openrouter,openai/gpt-5.6-sol-pro,openai,2.0,10.0,change
+2026-10-05,openrouter,z-ai/glm-5.2,z-ai,0.024,16.0,change
+2026-10-05,openrouter,~moonshotai/kimi-latest,~moonshotai,0.625,13.0,change
+2026-10-05,openrouter,qwen/qwen3.6-27b,qwen,0.32,2.7,change
+2026-10-05,openrouter,deepseek/deepseek-v4-flash,deepseek,0.03,1.28,change
+2026-10-05,openrouter,google/gemma-4-26b-a4b-it,google,0.09,0.3,change
+2026-10-05,openrouter,deepseek/deepseek-chat-v3-0324,deepseek,0.29,1.14,change
+2026-10-05,openrouter,meta-llama/llama-3.3-70b-instruct,meta-llama,0.1,0.32,change

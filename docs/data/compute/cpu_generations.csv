@@ -2308,3 +2308,22 @@ date,cloud,region,line,generation,instance,vcpus,memory_gib,usd_per_hr,spot_usd_
 2026-10-04,gcp,us-central1,Intel 通用型 (N),N1,n1-standard-4,4.0,15.0,0.19,0.11396
 2026-10-04,gcp,us-central1,Intel 通用型 (N),N2,n2-standard-4,4.0,16.0,0.19424,0.11651
 2026-10-04,gcp,us-central1,Intel 通用型 (N),N4,n4-standard-4,4.0,16.0,0.1814,0.09754
+2026-10-05,aws,us-east-1,AMD 通用型 (m-a),m5a,m5a.xlarge,4.0,16.0,0.172,0.0746
+2026-10-05,aws,us-east-1,AMD 通用型 (m-a),m6a,m6a.xlarge,4.0,16.0,0.1728,0.0721
+2026-10-05,aws,us-east-1,AMD 通用型 (m-a),m7a,m7a.xlarge,4.0,16.0,0.23184,0.0927
+2026-10-05,aws,us-east-1,AMD 通用型 (m-a),m8a,m8a.xlarge,4.0,16.0,0.24344,0.0699
+2026-10-05,aws,us-east-1,Graviton ARM (m-g),m6g,m6g.xlarge,4.0,16.0,0.154,0.0568
+2026-10-05,aws,us-east-1,Graviton ARM (m-g),m7g,m7g.xlarge,4.0,16.0,0.1632,0.0882
+2026-10-05,aws,us-east-1,Graviton ARM (m-g),m8g,m8g.xlarge,4.0,16.0,0.17952,0.0746
+2026-10-05,aws,us-east-1,Intel 通用型 (m),m4,m4.xlarge,4.0,16.0,0.2,0.0583
+2026-10-05,aws,us-east-1,Intel 通用型 (m),m5,m5.xlarge,4.0,16.0,0.192,0.0568
+2026-10-05,aws,us-east-1,Intel 通用型 (m),m6i,m6i.xlarge,4.0,16.0,0.192,0.0535
+2026-10-05,aws,us-east-1,Intel 通用型 (m),m7i,m7i.xlarge,4.0,16.0,0.2016,0.0252
+2026-10-05,aws,us-east-1,Intel 通用型 (m),m8i,m8i.xlarge,4.0,16.0,0.21168,0.0862
+2026-10-05,gcp,us-central1,AMD 通用型 (N-D),N2D,n2d-standard-4,4.0,16.0,0.16898,0.0906
+2026-10-05,gcp,us-central1,AMD 通用型 (N-D),N4D,n4d-standard-4,4.0,16.0,0.1694,0.09942
+2026-10-05,gcp,us-central1,ARM 通用型,T2A,t2a-standard-4,4.0,16.0,0.154,0.0924
+2026-10-05,gcp,us-central1,ARM 通用型,N4A,n4a-standard-4,4.0,16.0,0.154,0.05834
+2026-10-05,gcp,us-central1,Intel 通用型 (N),N1,n1-standard-4,4.0,15.0,0.19,0.11396
+2026-10-05,gcp,us-central1,Intel 通用型 (N),N2,n2-standard-4,4.0,16.0,0.19424,0.11651
+2026-10-05,gcp,us-central1,Intel 通用型 (N),N4,n4-standard-4,4.0,16.0,0.1814,0.09754

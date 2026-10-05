@@ -415,8 +415,8 @@
  "deepseek/deepseek-chat-v3-0324": {
   "context": 163840,
   "created": "2025-03-24",
-  "input": 0.25,
-  "output": 1.0,
+  "input": 0.29,
+  "output": 1.14,
   "provider": "deepseek"
  },
  "deepseek/deepseek-chat-v3.1": {
@@ -464,7 +464,7 @@
  "deepseek/deepseek-v4-flash": {
   "context": 1048576,
   "created": "2026-04-24",
-  "input": 0.0224,
+  "input": 0.03,
   "output": 1.28,
   "provider": "deepseek"
  },
@@ -492,15 +492,15 @@
  "deepseek/deepseek-v4-pro-0813": {
   "context": 1048576,
   "created": "2026-08-12",
-  "input": 0.33,
-  "output": 4.2,
+  "input": 0.45,
+  "output": 5.0,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash": {
   "context": 1048576,
   "created": "2026-09-10",
-  "input": 0.003,
-  "output": 2.4,
+  "input": 0.3,
+  "output": 1.2,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash:batch": {
@@ -772,8 +772,8 @@
  "google/gemma-4-26b-a4b-it": {
   "context": 262144,
   "created": "2026-04-03",
-  "input": 0.0675,
-  "output": 0.225,
+  "input": 0.09,
+  "output": 0.3,
   "provider": "google"
  },
  "google/gemma-4-26b-a4b-it:free": {
@@ -954,8 +954,8 @@
  "meta-llama/llama-3.3-70b-instruct": {
   "context": 131072,
   "created": "2024-12-06",
-  "input": 0.22,
-  "output": 0.5,
+  "input": 0.1,
+  "output": 0.32,
   "provider": "meta-llama"
  },
  "meta-llama/llama-4-maverick": {
@@ -1311,8 +1311,8 @@
  "moonshotai/kimi-k3": {
   "context": 1048576,
   "created": "2026-07-16",
-  "input": 0.72,
-  "output": 13.0,
+  "input": 0.67,
+  "output": 14.0,
   "provider": "moonshotai"
  },
  "moonshotai/kimi-k3:batch": {
@@ -1430,8 +1430,8 @@
  "nvidia/nemotron-3.5-lightning": {
   "context": 262144,
   "created": "2026-08-11",
-  "input": 0.0595,
-  "output": 0.17,
+  "input": 0.06,
+  "output": 0.16,
   "provider": "nvidia"
  },
  "nvidia/nemotron-3.5-lightning:free": {
@@ -1871,8 +1871,8 @@
  "openai/gpt-5.6-sol-pro": {
   "context": 1050000,
   "created": "2026-07-09",
-  "input": 4.0,
-  "output": 20.0,
+  "input": 2.0,
+  "output": 10.0,
   "provider": "openai"
  },
  "openai/gpt-5.6-sol-pro:batch": {
@@ -2523,7 +2523,7 @@
   "context": 262144,
   "created": "2026-04-27",
   "input": 0.32,
-  "output": 3.2,
+  "output": 2.7,
   "provider": "qwen"
  },
  "qwen/qwen3.6-35b-a3b": {
@@ -2585,8 +2585,8 @@
  "qwen/qwen3.8-27b": {
   "context": 1000000,
   "created": "2026-08-14",
-  "input": 0.42,
-  "output": 3.0,
+  "input": 0.425,
+  "output": 2.55,
   "provider": "qwen"
  },
  "qwen/qwen3.8-27b:free": {
@@ -3033,8 +3033,8 @@
  "z-ai/glm-5.2": {
   "context": 1048576,
   "created": "2026-06-16",
-  "input": 0.38,
-  "output": 3.49,
+  "input": 0.024,
+  "output": 16.0,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3": {
@@ -3152,7 +3152,7 @@
  "~moonshotai/kimi-latest": {
   "context": 1048576,
   "created": "2026-04-27",
-  "input": 0.576,
+  "input": 0.625,
   "output": 13.0,
   "provider": "~moonshotai"
  },
@@ -3208,8 +3208,8 @@
  "~z-ai/glm-latest": {
   "context": 1048576,
   "created": "2026-08-19",
-  "input": 0.05,
-  "output": 4.4,
+  "input": 0.03,
+  "output": 12.0,
   "provider": "~z-ai"
  }
 }
