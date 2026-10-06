@@ -464,14 +464,14 @@
  "deepseek/deepseek-v4-flash": {
   "context": 1048576,
   "created": "2026-04-24",
-  "input": 0.03,
+  "input": 0.0036,
   "output": 1.28,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-flash-0731": {
   "context": 1048576,
   "created": "2026-07-31",
-  "input": 0.0152,
+  "input": 0.0069,
   "output": 1.28,
   "provider": "deepseek"
  },
@@ -492,14 +492,14 @@
  "deepseek/deepseek-v4-pro-0813": {
   "context": 1048576,
   "created": "2026-08-12",
-  "input": 0.45,
-  "output": 5.0,
+  "input": 1.32,
+  "output": 3.96,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash": {
   "context": 1048576,
   "created": "2026-09-10",
-  "input": 0.3,
+  "input": 0.003,
   "output": 1.2,
   "provider": "deepseek"
  },
@@ -954,8 +954,8 @@
  "meta-llama/llama-3.3-70b-instruct": {
   "context": 131072,
   "created": "2024-12-06",
-  "input": 0.1,
-  "output": 0.32,
+  "input": 0.22,
+  "output": 0.5,
   "provider": "meta-llama"
  },
  "meta-llama/llama-4-maverick": {
@@ -1311,7 +1311,7 @@
  "moonshotai/kimi-k3": {
   "context": 1048576,
   "created": "2026-07-16",
-  "input": 0.67,
+  "input": 0.83,
   "output": 14.0,
   "provider": "moonshotai"
  },
@@ -2305,8 +2305,8 @@
  "qwen/qwen3-235b-a22b-2507": {
   "context": 262144,
   "created": "2025-07-21",
-  "input": 0.0875,
-  "output": 0.35,
+  "input": 0.09,
+  "output": 0.55,
   "provider": "qwen"
  },
  "qwen/qwen3-235b-a22b-thinking-2507": {
@@ -2326,8 +2326,8 @@
  "qwen/qwen3-30b-a3b-instruct-2507": {
   "context": 262144,
   "created": "2025-07-29",
-  "input": 0.0481,
-  "output": 0.193,
+  "input": 0.1,
+  "output": 0.3,
   "provider": "qwen"
  },
  "qwen/qwen3-30b-a3b-thinking-2507": {
@@ -2487,8 +2487,8 @@
  "qwen/qwen3.5-397b-a17b": {
   "context": 262144,
   "created": "2026-02-16",
-  "input": 0.55,
-  "output": 3.5,
+  "input": 0.45,
+  "output": 3.0,
   "provider": "qwen"
  },
  "qwen/qwen3.5-9b": {
@@ -2523,7 +2523,7 @@
   "context": 262144,
   "created": "2026-04-27",
   "input": 0.32,
-  "output": 2.7,
+  "output": 3.25,
   "provider": "qwen"
  },
  "qwen/qwen3.6-35b-a3b": {
@@ -2587,13 +2587,6 @@
   "created": "2026-08-14",
   "input": 0.425,
   "output": 2.55,
-  "provider": "qwen"
- },
- "qwen/qwen3.8-27b:free": {
-  "context": 262144,
-  "created": "2026-08-14",
-  "input": 0.0,
-  "output": 0.0,
   "provider": "qwen"
  },
  "qwen/qwen3.8-flash": {
@@ -2700,13 +2693,6 @@
   "input": 0.65,
   "output": 0.75,
   "provider": "sao10k"
- },
- "stealth/space-bunny-alpha": {
-  "context": 1000000,
-  "created": "2026-09-23",
-  "input": 0.0,
-  "output": 0.0,
-  "provider": "stealth"
  },
  "stepfun/step-3.5-flash": {
   "context": 262144,
@@ -3033,15 +3019,15 @@
  "z-ai/glm-5.2": {
   "context": 1048576,
   "created": "2026-06-16",
-  "input": 0.024,
-  "output": 16.0,
+  "input": 0.152,
+  "output": 12.0,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3": {
   "context": 1048576,
   "created": "2026-08-18",
-  "input": 1.4,
-  "output": 4.4,
+  "input": 0.07,
+  "output": 7.0,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3-flash": {
@@ -3118,20 +3104,20 @@
   "context": 1048576,
   "created": "2026-09-14",
   "input": 0.003,
-  "output": 2.4,
+  "output": 1.2,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-pro-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.1901,
-  "output": 4.2,
+  "input": 0.2765,
+  "output": 6.0,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-v4-flash-latest": {
   "context": 1048576,
   "created": "2026-08-01",
-  "input": 0.0152,
+  "input": 0.0069,
   "output": 1.28,
   "provider": "~deepseek"
  },
@@ -3152,7 +3138,7 @@
  "~moonshotai/kimi-latest": {
   "context": 1048576,
   "created": "2026-04-27",
-  "input": 0.625,
+  "input": 0.664,
   "output": 13.0,
   "provider": "~moonshotai"
  },
@@ -3201,7 +3187,7 @@
  "~z-ai/glm-flash-latest": {
   "context": 1048576,
   "created": "2026-08-27",
-  "input": 0.0352,
+  "input": 0.0317,
   "output": 0.5,
   "provider": "~z-ai"
  },
