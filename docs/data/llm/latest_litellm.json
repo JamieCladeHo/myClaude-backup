@@ -474,13 +474,13 @@
   "provider": "gemini"
  },
  "gemini/deep-research-max-preview-04-2026": {
-  "context": 131072,
+  "context": 1048576,
   "input": 2.0,
   "output": 12.0,
   "provider": "gemini"
  },
  "gemini/deep-research-preview-04-2026": {
-  "context": 131072,
+  "context": 1048576,
   "input": 2.0,
   "output": 12.0,
   "provider": "gemini"
@@ -1401,6 +1401,18 @@
   "context": 262144,
   "input": 0.5,
   "output": 1.5,
+  "provider": "mistral"
+ },
+ "mistral/mistral-large-4": {
+  "context": 524288,
+  "input": 0.68,
+  "output": 2.09,
+  "provider": "mistral"
+ },
+ "mistral/mistral-large-4-0": {
+  "context": 524288,
+  "input": 0.68,
+  "output": 2.09,
   "provider": "mistral"
  },
  "mistral/mistral-large-latest": {
