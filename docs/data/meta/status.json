@@ -1,38 +1,38 @@
 {
- "_updated": "2026-10-08T07:22:59+00:00",
+ "_updated": "2026-10-09T07:22:55+00:00",
  "azure": {
   "generations": 9,
   "gpu_types": 7,
-  "last_success": "2026-10-08",
+  "last_success": "2026-10-09",
   "ok": true
  },
  "litellm": {
-  "events": 2,
-  "last_success": "2026-10-08",
+  "events": 0,
+  "last_success": "2026-10-09",
   "models": 417,
   "ok": true
  },
  "openrouter": {
-  "events": 23,
-  "last_success": "2026-10-08",
-  "models": 460,
+  "events": 27,
+  "last_success": "2026-10-09",
+  "models": 462,
   "ok": true
  },
  "openrouter_usage": {
-  "last_success": "2026-10-08",
+  "last_success": "2026-10-09",
   "ok": true,
   "source": "archive (未设置 OPENROUTER_API_KEY)",
   "through": "2026-09-27"
  },
  "skypilot": {
   "dates": 1,
-  "last_success": "2026-10-08",
+  "last_success": "2026-10-09",
   "ok": true,
   "stale_skipped": 5
  },
  "vast": {
   "gpu_types": 9,
-  "last_success": "2026-10-08",
+  "last_success": "2026-10-09",
   "offers": 64,
   "ok": true
  }

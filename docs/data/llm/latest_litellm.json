@@ -1410,13 +1410,13 @@
   "provider": "mistral"
  },
  "mistral/mistral-large-4": {
-  "context": 524288,
+  "context": 1048576,
   "input": 0.68,
   "output": 2.09,
   "provider": "mistral"
  },
  "mistral/mistral-large-4-0": {
-  "context": 524288,
+  "context": 1048576,
   "input": 0.68,
   "output": 2.09,
   "provider": "mistral"
