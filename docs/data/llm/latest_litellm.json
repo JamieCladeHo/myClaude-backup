@@ -114,13 +114,13 @@
   "provider": "anthropic"
  },
  "claude-sonnet-4-5": {
-  "context": 1000000,
+  "context": 200000,
   "input": 3.0,
   "output": 15.0,
   "provider": "anthropic"
  },
  "claude-sonnet-4-5-20250929": {
-  "context": 1000000,
+  "context": 200000,
   "input": 3.0,
   "output": 15.0,
   "provider": "anthropic"
@@ -1211,6 +1211,12 @@
   "output": 75.0,
   "provider": "openai"
  },
+ "gpt-rosalind-discovery": {
+  "context": "",
+  "input": 5.0,
+  "output": 25.0,
+  "provider": "openai"
+ },
  "gpt-rosalind-research": {
   "context": "",
   "input": 5.0,
@@ -1889,6 +1895,12 @@
   "output": 2.0,
   "provider": "perplexity"
  },
+ "perplexity/openai/gpt-5-nano": {
+  "context": "",
+  "input": 0.05,
+  "output": 0.4,
+  "provider": "perplexity"
+ },
  "perplexity/openai/gpt-5.1": {
   "context": "",
   "input": 1.25,
@@ -1899,6 +1911,12 @@
   "context": "",
   "input": 1.75,
   "output": 14.0,
+  "provider": "perplexity"
+ },
+ "perplexity/openai/gpt-5.3-codex": {
+  "context": "",
+  "input": 3.5,
+  "output": 28.0,
   "provider": "perplexity"
  },
  "perplexity/openai/gpt-5.4": {
@@ -1943,6 +1961,12 @@
   "output": 12.0,
   "provider": "perplexity"
  },
+ "perplexity/openai/gpt-6-astra": {
+  "context": "",
+  "input": 10.0,
+  "output": 50.0,
+  "provider": "perplexity"
+ },
  "perplexity/openai/gpt-6-luna": {
   "context": "",
   "input": 0.1,
@@ -1965,6 +1989,12 @@
   "context": "",
   "input": 0.13,
   "output": 0.26,
+  "provider": "perplexity"
+ },
+ "perplexity/perplexity/deepseek-v4-pro-0813": {
+  "context": "",
+  "input": 1.32,
+  "output": 3.96,
   "provider": "perplexity"
  },
  "perplexity/perplexity/glm-5.2": {

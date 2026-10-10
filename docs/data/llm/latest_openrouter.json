@@ -458,7 +458,7 @@
   "context": 163840,
   "created": "2025-12-01",
   "input": 0.259,
-  "output": 0.42,
+  "output": 0.8,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v3.2-exp": {
@@ -471,14 +471,14 @@
  "deepseek/deepseek-v4-flash": {
   "context": 1048576,
   "created": "2026-04-24",
-  "input": 0.0099,
+  "input": 0.0111,
   "output": 1.28,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-flash-0731": {
   "context": 1048576,
   "created": "2026-07-31",
-  "input": 0.0046,
+  "input": 0.0063,
   "output": 1.28,
   "provider": "deepseek"
  },
@@ -492,15 +492,15 @@
  "deepseek/deepseek-v4-pro": {
   "context": 1048576,
   "created": "2026-04-24",
-  "input": 0.9553,
-  "output": 1.9105,
+  "input": 0.9483,
+  "output": 1.8966,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-pro-0813": {
   "context": 1048576,
   "created": "2026-08-12",
-  "input": 1.32,
-  "output": 3.96,
+  "input": 0.66,
+  "output": 1.98,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash": {
@@ -786,8 +786,8 @@
  "google/gemma-4-26b-a4b-it": {
   "context": 262144,
   "created": "2026-04-03",
-  "input": 0.09,
-  "output": 0.3,
+  "input": 0.0675,
+  "output": 0.225,
   "provider": "google"
  },
  "google/gemma-4-26b-a4b-it:free": {
@@ -1304,8 +1304,8 @@
  "moonshotai/kimi-k2.5": {
   "context": 262144,
   "created": "2026-01-27",
-  "input": 0.45,
-  "output": 2.25,
+  "input": 0.5,
+  "output": 2.5,
   "provider": "moonshotai"
  },
  "moonshotai/kimi-k2.6": {
@@ -1325,8 +1325,8 @@
  "moonshotai/kimi-k3": {
   "context": 1048576,
   "created": "2026-07-16",
-  "input": 0.5,
-  "output": 12.0,
+  "input": 0.64,
+  "output": 13.5,
   "provider": "moonshotai"
  },
  "moonshotai/kimi-k3:batch": {
@@ -1444,8 +1444,8 @@
  "nvidia/nemotron-3.5-lightning": {
   "context": 262144,
   "created": "2026-08-11",
-  "input": 0.0469,
-  "output": 0.134,
+  "input": 0.07,
+  "output": 0.2,
   "provider": "nvidia"
  },
  "nvidia/nemotron-3.5-lightning:free": {
@@ -2302,13 +2302,6 @@
   "output": 0.78,
   "provider": "qwen"
  },
- "qwen/qwen-plus-2025-07-28": {
-  "context": 1000000,
-  "created": "2025-09-08",
-  "input": 0.26,
-  "output": 0.78,
-  "provider": "qwen"
- },
  "qwen/qwen2.5-vl-72b-instruct": {
   "context": 128000,
   "created": "2025-02-01",
@@ -2317,17 +2310,10 @@
   "provider": "qwen"
  },
  "qwen/qwen3-14b": {
-  "context": 131072,
+  "context": 40960,
   "created": "2025-04-28",
-  "input": 0.12,
-  "output": 0.24,
-  "provider": "qwen"
- },
- "qwen/qwen3-235b-a22b": {
-  "context": 131072,
-  "created": "2025-04-28",
-  "input": 0.455,
-  "output": 1.82,
+  "input": 0.1,
+  "output": 0.22,
   "provider": "qwen"
  },
  "qwen/qwen3-235b-a22b-2507": {
@@ -2338,14 +2324,14 @@
   "provider": "qwen"
  },
  "qwen/qwen3-235b-a22b-thinking-2507": {
-  "context": 131072,
+  "context": 128000,
   "created": "2025-07-25",
-  "input": 0.23,
-  "output": 2.3,
+  "input": 0.45,
+  "output": 3.5,
   "provider": "qwen"
  },
  "qwen/qwen3-30b-a3b": {
-  "context": 131072,
+  "context": 40960,
   "created": "2025-04-28",
   "input": 0.12,
   "output": 0.5,
@@ -2358,25 +2344,11 @@
   "output": 0.3,
   "provider": "qwen"
  },
- "qwen/qwen3-30b-a3b-thinking-2507": {
-  "context": 81920,
-  "created": "2025-08-28",
-  "input": 0.2,
-  "output": 2.4,
-  "provider": "qwen"
- },
  "qwen/qwen3-32b": {
   "context": 131072,
   "created": "2025-04-28",
   "input": 0.08,
   "output": 0.28,
-  "provider": "qwen"
- },
- "qwen/qwen3-8b": {
-  "context": 131072,
-  "created": "2025-04-28",
-  "input": 0.117,
-  "output": 0.455,
   "provider": "qwen"
  },
  "qwen/qwen3-coder": {
@@ -2407,27 +2379,6 @@
   "output": 0.8,
   "provider": "qwen"
  },
- "qwen/qwen3-coder-plus": {
-  "context": 1000000,
-  "created": "2025-09-23",
-  "input": 0.65,
-  "output": 3.25,
-  "provider": "qwen"
- },
- "qwen/qwen3-max": {
-  "context": 262144,
-  "created": "2025-09-23",
-  "input": 0.78,
-  "output": 3.9,
-  "provider": "qwen"
- },
- "qwen/qwen3-max-thinking": {
-  "context": 262144,
-  "created": "2026-02-09",
-  "input": 0.78,
-  "output": 3.9,
-  "provider": "qwen"
- },
  "qwen/qwen3-next-80b-a3b-instruct": {
   "context": 262144,
   "created": "2025-09-11",
@@ -2449,13 +2400,6 @@
   "output": 1.9,
   "provider": "qwen"
  },
- "qwen/qwen3-vl-235b-a22b-thinking": {
-  "context": 131072,
-  "created": "2025-09-23",
-  "input": 0.4,
-  "output": 4.0,
-  "provider": "qwen"
- },
  "qwen/qwen3-vl-30b-a3b-instruct": {
   "context": 262144,
   "created": "2025-10-06",
@@ -2466,29 +2410,15 @@
  "qwen/qwen3-vl-30b-a3b-thinking": {
   "context": 262144,
   "created": "2025-10-06",
-  "input": 0.2,
-  "output": 2.4,
-  "provider": "qwen"
- },
- "qwen/qwen3-vl-32b-instruct": {
-  "context": 131072,
-  "created": "2025-10-23",
-  "input": 0.104,
-  "output": 0.416,
+  "input": 0.29,
+  "output": 1.0,
   "provider": "qwen"
  },
  "qwen/qwen3-vl-8b-instruct": {
   "context": 262144,
   "created": "2025-10-14",
-  "input": 0.117,
-  "output": 0.455,
-  "provider": "qwen"
- },
- "qwen/qwen3-vl-8b-thinking": {
-  "context": 131072,
-  "created": "2025-10-14",
-  "input": 0.18,
-  "output": 2.1,
+  "input": 0.25,
+  "output": 0.75,
   "provider": "qwen"
  },
  "qwen/qwen3.5-122b-a10b": {
@@ -2550,8 +2480,8 @@
  "qwen/qwen3.6-27b": {
   "context": 262144,
   "created": "2026-04-27",
-  "input": 0.45,
-  "output": 2.7,
+  "input": 0.32,
+  "output": 3.2,
   "provider": "qwen"
  },
  "qwen/qwen3.6-35b-a3b": {
@@ -2566,13 +2496,6 @@
   "created": "2026-04-27",
   "input": 0.1875,
   "output": 1.125,
-  "provider": "qwen"
- },
- "qwen/qwen3.6-max-preview": {
-  "context": 262144,
-  "created": "2026-04-27",
-  "input": 1.027,
-  "output": 6.162,
   "provider": "qwen"
  },
  "qwen/qwen3.6-plus": {
@@ -3005,8 +2928,8 @@
  "z-ai/glm-4.6": {
   "context": 204800,
   "created": "2025-09-30",
-  "input": 0.43,
-  "output": 1.75,
+  "input": 0.5,
+  "output": 2.0,
   "provider": "z-ai"
  },
  "z-ai/glm-4.6v": {
@@ -3054,15 +2977,15 @@
  "z-ai/glm-5.2": {
   "context": 1048576,
   "created": "2026-06-16",
-  "input": 0.084,
-  "output": 8.0,
+  "input": 0.06,
+  "output": 7.0,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3": {
   "context": 1048576,
   "created": "2026-08-18",
   "input": 0.039,
-  "output": 7.0,
+  "output": 4.8,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3-flash": {
@@ -3138,21 +3061,21 @@
  "~deepseek/deepseek-flash-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.016,
-  "output": 1.2,
+  "input": 0.0021,
+  "output": 0.6,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-pro-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.198,
-  "output": 8.0,
+  "input": 0.3,
+  "output": 5.0,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-v4-flash-latest": {
   "context": 1048576,
   "created": "2026-08-01",
-  "input": 0.0046,
+  "input": 0.0063,
   "output": 1.28,
   "provider": "~deepseek"
  },
@@ -3173,8 +3096,8 @@
  "~moonshotai/kimi-latest": {
   "context": 1048576,
   "created": "2026-04-27",
-  "input": 0.49,
-  "output": 13.0,
+  "input": 0.408,
+  "output": 14.9,
   "provider": "~moonshotai"
  },
  "~openai/gpt-astra-latest": {
@@ -3222,15 +3145,15 @@
  "~z-ai/glm-flash-latest": {
   "context": 1048576,
   "created": "2026-08-27",
-  "input": 0.032,
-  "output": 1.4286,
+  "input": 0.04,
+  "output": 0.5,
   "provider": "~z-ai"
  },
  "~z-ai/glm-latest": {
   "context": 1048576,
   "created": "2026-08-19",
-  "input": 0.0312,
-  "output": 4.4,
+  "input": 0.039,
+  "output": 4.8,
   "provider": "~z-ai"
  }
 }
