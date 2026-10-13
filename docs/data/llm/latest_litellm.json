@@ -179,6 +179,12 @@
   "output": 12.0,
   "provider": "openai"
  },
+ "computer-use-preview-2025-03-11": {
+  "context": 8192,
+  "input": 3.0,
+  "output": 12.0,
+  "provider": "openai"
+ },
  "dashscope/deepseek-v4-flash": {
   "context": 1000000,
   "input": 0.2,
@@ -869,7 +875,19 @@
   "output": 0.6,
   "provider": "openai"
  },
+ "gpt-4o-mini-search-preview-2025-03-11": {
+  "context": 128000,
+  "input": 0.15,
+  "output": 0.6,
+  "provider": "openai"
+ },
  "gpt-4o-search-preview": {
+  "context": 128000,
+  "input": 2.5,
+  "output": 10.0,
+  "provider": "openai"
+ },
+ "gpt-4o-search-preview-2025-03-11": {
   "context": 128000,
   "input": 2.5,
   "output": 10.0,
@@ -1188,6 +1206,12 @@
   "provider": "openai"
  },
  "gpt-audio-mini": {
+  "context": 128000,
+  "input": 0.6,
+  "output": 2.4,
+  "provider": "openai"
+ },
+ "gpt-audio-mini-2025-10-06": {
   "context": 128000,
   "input": 0.6,
   "output": 2.4,
@@ -1667,6 +1691,12 @@
   "output": 40.0,
   "provider": "openai"
  },
+ "o3-deep-research-2025-06-26": {
+  "context": 200000,
+  "input": 10.0,
+  "output": 40.0,
+  "provider": "openai"
+ },
  "o3-mini": {
   "context": 200000,
   "input": 1.1,
@@ -1704,6 +1734,12 @@
   "provider": "openai"
  },
  "o4-mini-deep-research": {
+  "context": 200000,
+  "input": 2.0,
+  "output": 8.0,
+  "provider": "openai"
+ },
+ "o4-mini-deep-research-2025-06-26": {
   "context": 200000,
   "input": 2.0,
   "output": 8.0,
