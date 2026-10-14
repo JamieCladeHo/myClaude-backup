@@ -593,6 +593,12 @@
   "output": 3.75,
   "provider": "gemini"
  },
+ "gemini/gemini-4-argon": {
+  "context": 1048576,
+  "input": 2.0,
+  "output": 10.0,
+  "provider": "gemini"
+ },
  "gemini/gemini-exp-1114": {
   "context": 1048576,
   "input": 0.0,
