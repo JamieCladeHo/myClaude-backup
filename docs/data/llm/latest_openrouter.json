@@ -401,8 +401,8 @@
  "deepseek/deepseek-chat": {
   "context": 163840,
   "created": "2024-12-26",
-  "input": 0.2574,
-  "output": 1.0287,
+  "input": 0.32,
+  "output": 0.89,
   "provider": "deepseek"
  },
  "deepseek/deepseek-chat-v3-0324": {
@@ -443,8 +443,8 @@
  "deepseek/deepseek-v3.2": {
   "context": 163840,
   "created": "2025-12-01",
-  "input": 0.259,
-  "output": 0.8,
+  "input": 0.28,
+  "output": 0.42,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v3.2-exp": {
@@ -464,8 +464,8 @@
  "deepseek/deepseek-v4-flash-0731": {
   "context": 1048576,
   "created": "2026-07-31",
-  "input": 0.0154,
-  "output": 0.64,
+  "input": 0.0199,
+  "output": 0.9653,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-flash-vision-exp": {
@@ -478,8 +478,8 @@
  "deepseek/deepseek-v4-pro": {
   "context": 1048576,
   "created": "2026-04-24",
-  "input": 0.9553,
-  "output": 1.9105,
+  "input": 0.2088,
+  "output": 0.4176,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-pro-0813": {
@@ -492,15 +492,15 @@
  "deepseek/deepseek-v4.1-flash": {
   "context": 1048576,
   "created": "2026-09-10",
-  "input": 0.036,
-  "output": 0.7047,
+  "input": 0.038,
+  "output": 0.4026,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash:batch": {
   "context": 1048576,
   "created": "2026-09-10",
-  "input": 0.112,
-  "output": 0.336,
+  "input": 0.05,
+  "output": 0.15,
   "provider": "deepseek"
  },
  "dots-studio/dots-3-note-preview:free": {
@@ -509,6 +509,13 @@
   "input": 0.0,
   "output": 0.0,
   "provider": "dots-studio"
+ },
+ "elorian/glimpse": {
+  "context": 262144,
+  "created": "2026-10-17",
+  "input": 0.6,
+  "output": 3.0,
+  "provider": "elorian"
  },
  "fireworks/ember-1": {
   "context": 1048576,
@@ -786,8 +793,8 @@
  "google/gemma-4-26b-a4b-it": {
   "context": 262144,
   "created": "2026-04-03",
-  "input": 0.0765,
-  "output": 0.255,
+  "input": 0.0675,
+  "output": 0.225,
   "provider": "google"
  },
  "google/gemma-4-26b-a4b-it:free": {
@@ -954,8 +961,8 @@
  "meta-llama/llama-3.3-70b-instruct": {
   "context": 131072,
   "created": "2024-12-06",
-  "input": 0.59,
-  "output": 0.79,
+  "input": 0.1,
+  "output": 0.32,
   "provider": "meta-llama"
  },
  "meta-llama/llama-4-maverick": {
@@ -968,8 +975,8 @@
  "meta-llama/llama-4-scout": {
   "context": 1310720,
   "created": "2025-04-05",
-  "input": 0.18,
-  "output": 0.59,
+  "input": 0.1,
+  "output": 0.3,
   "provider": "meta-llama"
  },
  "meta-llama/llama-guard-4-12b": {
@@ -1347,7 +1354,7 @@
   "context": 1048576,
   "created": "2026-07-16",
   "input": 0.304,
-  "output": 11.588,
+  "output": 11.936,
   "provider": "moonshotai"
  },
  "moonshotai/kimi-k3:batch": {
@@ -1479,8 +1486,8 @@
  "nvidia/nemotron-3.5-super-vl": {
   "context": 1048576,
   "created": "2026-10-15",
-  "input": 0.15,
-  "output": 0.5,
+  "input": 0.1,
+  "output": 0.4,
   "provider": "nvidia"
  },
  "nvidia/nemotron-3.5-super-vl:free": {
@@ -2561,6 +2568,13 @@
   "output": 1.28,
   "provider": "qwen"
  },
+ "qwen/qwen3.7-plus:batch": {
+  "context": 262144,
+  "created": "2026-06-03",
+  "input": 0.23,
+  "output": 0.92,
+  "provider": "qwen"
+ },
  "qwen/qwen3.8-2.4t-a95b": {
   "context": 1048576,
   "created": "2026-08-12",
@@ -2602,6 +2616,13 @@
   "input": 0.15,
   "output": 0.47,
   "provider": "qwen"
+ },
+ "reflection/beam-1.0-501b-a23b": {
+  "context": 1048576,
+  "created": "2026-10-16",
+  "input": 1.0,
+  "output": 3.0,
+  "provider": "reflection"
  },
  "rekaai/reka-edge": {
   "context": 16384,
@@ -2946,6 +2967,13 @@
   "output": 8.7,
   "provider": "xiaomi"
  },
+ "xingchen-agi/xing4.0-29b-a4b:free": {
+  "context": 262144,
+  "created": "2026-10-16",
+  "input": 0.0,
+  "output": 0.0,
+  "provider": "xingchen-agi"
+ },
  "z-ai/glm-4.5": {
   "context": 131072,
   "created": "2025-07-25",
@@ -2984,8 +3012,8 @@
  "z-ai/glm-4.7": {
   "context": 204800,
   "created": "2025-12-22",
-  "input": 0.6,
-  "output": 2.2,
+  "input": 0.54,
+  "output": 1.98,
   "provider": "z-ai"
  },
  "z-ai/glm-4.7-flash": {
@@ -3103,22 +3131,22 @@
  "~deepseek/deepseek-flash-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.036,
-  "output": 0.7047,
+  "input": 0.038,
+  "output": 0.4026,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-pro-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.25,
-  "output": 5.0,
+  "input": 0.2395,
+  "output": 0.7497,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-v4-flash-latest": {
   "context": 1048576,
   "created": "2026-08-01",
-  "input": 0.0139,
-  "output": 0.576,
+  "input": 0.0199,
+  "output": 0.9653,
   "provider": "~deepseek"
  },
  "~google/gemini-flash-latest": {
@@ -3139,7 +3167,7 @@
   "context": 1048576,
   "created": "2026-04-27",
   "input": 0.294,
-  "output": 28.0,
+  "output": 24.0,
   "provider": "~moonshotai"
  },
  "~openai/gpt-astra-latest": {
@@ -3194,15 +3222,15 @@
  "~z-ai/glm-flash-latest": {
   "context": 1048576,
   "created": "2026-08-27",
-  "input": 0.024,
-  "output": 1.125,
+  "input": 0.057,
+  "output": 0.5578,
   "provider": "~z-ai"
  },
  "~z-ai/glm-latest": {
   "context": 1048576,
   "created": "2026-08-19",
-  "input": 0.0608,
-  "output": 4.4,
+  "input": 0.079,
+  "output": 4.8,
   "provider": "~z-ai"
  }
 }
