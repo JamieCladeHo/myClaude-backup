@@ -1808,3 +1808,17 @@ date,source,model,provider,input_usd_per_mtok,output_usd_per_mtok,event
 2026-10-17,openrouter,meta-llama/llama-4-scout,meta-llama,0.1,0.3,change
 2026-10-17,openrouter,deepseek/deepseek-chat,deepseek,0.32,0.89,change
 2026-10-17,openrouter,meta-llama/llama-3.3-70b-instruct,meta-llama,0.1,0.32,change
+2026-10-18,openrouter,deepseek/deepseek-v4.1-flash-1017,deepseek,0.15,0.6,new
+2026-10-18,openrouter,unbiased/pareto-26.10,unbiased,0.8,3.2,new
+2026-10-18,openrouter,~unbiased/pareto-latest,~unbiased,0.8,3.2,change
+2026-10-18,openrouter,~deepseek/deepseek-pro-latest,~deepseek,0.12,8.0,change
+2026-10-18,openrouter,~deepseek/deepseek-flash-latest,~deepseek,0.05,0.6,change
+2026-10-18,openrouter,deepseek/deepseek-v4.1-flash,deepseek,0.0648,0.144,change
+2026-10-18,openrouter,~z-ai/glm-flash-latest,~z-ai,0.048,0.2,change
+2026-10-18,openrouter,z-ai/glm-5.3-flash,z-ai,0.048,0.2,change
+2026-10-18,openrouter,~z-ai/glm-latest,~z-ai,0.0632,4.4,change
+2026-10-18,openrouter,~deepseek/deepseek-v4-flash-latest,~deepseek,0.0039,0.1436,change
+2026-10-18,openrouter,deepseek/deepseek-v4-flash-0731,deepseek,0.1,0.3,change
+2026-10-18,openrouter,~moonshotai/kimi-latest,~moonshotai,0.27,14.0,change
+2026-10-18,openrouter,qwen/qwen3-30b-a3b-instruct-2507,qwen,0.09,0.3,change
+2026-10-18,openrouter,google/gemma-3-27b-it,google,0.08,0.35,change
