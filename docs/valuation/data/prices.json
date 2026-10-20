@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-19T23:33:53Z",
+ "updated": "2026-10-20T18:26:11Z",
  "quotes": {
   "AAPL": {
-   "price": 342.94,
-   "prev_close": 342.62,
+   "price": 340.1,
+   "prev_close": 343.04,
    "currency": "USD",
    "high_52w": 343.46,
    "low_52w": 246.63,
@@ -12,12 +12,12 @@
    "high_3m_date": "2026-10-13",
    "low_3m": 300.0,
    "low_3m_date": "2026-07-31",
-   "time": "2026-10-19T23:33:47Z",
-   "change_pct": 0.00093
+   "time": "2026-10-20T18:26:02Z",
+   "change_pct": -0.00857
   },
   "AMD": {
-   "price": 538.05,
-   "prev_close": 527.0859,
+   "price": 539.18,
+   "prev_close": 538.8791,
    "currency": "USD",
    "high_52w": 649.42,
    "low_52w": 190.95,
@@ -26,12 +26,12 @@
    "high_3m_date": "2026-10-06",
    "low_3m": 424.03,
    "low_3m_date": "2026-07-29",
-   "time": "2026-10-19T23:33:48Z",
-   "change_pct": 0.0208
+   "time": "2026-10-20T18:26:05Z",
+   "change_pct": 0.00056
   },
   "AMZN": {
-   "price": 262.45,
-   "prev_close": 248.98,
+   "price": 262.52,
+   "prev_close": 263.2,
    "currency": "USD",
    "high_52w": 284.02,
    "low_52w": 198.79,
@@ -40,12 +40,12 @@
    "high_3m_date": "2026-08-03",
    "low_3m": 226.16,
    "low_3m_date": "2026-07-29",
-   "time": "2026-10-19T23:33:49Z",
-   "change_pct": 0.0541
+   "time": "2026-10-20T18:26:05Z",
+   "change_pct": -0.00258
   },
   "AVGO": {
-   "price": 334.59,
-   "prev_close": 330.3,
+   "price": 335.28,
+   "prev_close": 335.65,
    "currency": "USD",
    "high_52w": 481.57,
    "low_52w": 293.41,
@@ -54,12 +54,12 @@
    "high_3m_date": "2026-08-10",
    "low_3m": 328.58,
    "low_3m_date": "2026-10-16",
-   "time": "2026-10-19T23:33:49Z",
-   "change_pct": 0.01299
+   "time": "2026-10-20T18:26:06Z",
+   "change_pct": -0.0011
   },
   "COST": {
-   "price": 995.53,
-   "prev_close": 987.22,
+   "price": 995.5375,
+   "prev_close": 992.6237,
    "currency": "USD",
    "high_52w": 1094.3199,
    "low_52w": 850.0,
@@ -68,12 +68,12 @@
    "high_3m_date": "2026-10-15",
    "low_3m": 883.1,
    "low_3m_date": "2026-09-25",
-   "time": "2026-10-19T23:33:49Z",
-   "change_pct": 0.00842
+   "time": "2026-10-20T18:26:06Z",
+   "change_pct": 0.00294
   },
   "GOOGL": {
-   "price": 344.18,
-   "prev_close": 339.2211,
+   "price": 340.28,
+   "prev_close": 344.4201,
    "currency": "USD",
    "high_52w": 402.62,
    "low_52w": 250.46,
@@ -82,12 +82,12 @@
    "high_3m_date": "2026-08-05",
    "low_3m": 314.9,
    "low_3m_date": "2026-07-23",
-   "time": "2026-10-19T23:33:50Z",
-   "change_pct": 0.01462
+   "time": "2026-10-20T18:26:06Z",
+   "change_pct": -0.01202
   },
   "INTC": {
-   "price": 92.03,
-   "prev_close": 89.3294,
+   "price": 92.37,
+   "prev_close": 91.9706,
    "currency": "USD",
    "high_52w": 140.94,
    "low_52w": 33.62,
@@ -96,12 +96,12 @@
    "high_3m_date": "2026-09-24",
    "low_3m": 81.79,
    "low_3m_date": "2026-07-29",
-   "time": "2026-10-19T23:33:50Z",
-   "change_pct": 0.03023
+   "time": "2026-10-20T18:26:07Z",
+   "change_pct": 0.00434
   },
   "META": {
-   "price": 705.44,
-   "prev_close": 705.3229,
+   "price": 689.5,
+   "prev_close": 705.6,
    "currency": "USD",
    "high_52w": 777.59,
    "low_52w": 525.72,
@@ -110,12 +110,12 @@
    "high_3m_date": "2026-09-24",
    "low_3m": 524.49,
    "low_3m_date": "2026-07-30",
-   "time": "2026-10-19T23:33:50Z",
-   "change_pct": 0.00017
+   "time": "2026-10-20T18:26:07Z",
+   "change_pct": -0.02282
   },
   "MRVL": {
-   "price": 237.09,
-   "prev_close": 226.9,
+   "price": 242.2765,
+   "prev_close": 237.89,
    "currency": "USD",
    "high_52w": 316.43,
    "low_52w": 73.73,
@@ -124,12 +124,12 @@
    "high_3m_date": "2026-10-06",
    "low_3m": 162.9,
    "low_3m_date": "2026-07-29",
-   "time": "2026-10-19T23:33:50Z",
-   "change_pct": 0.04491
+   "time": "2026-10-20T18:26:08Z",
+   "change_pct": 0.01844
   },
   "MSFT": {
-   "price": 533.52,
-   "prev_close": 526.8316,
+   "price": 532.358,
+   "prev_close": 532.6,
    "currency": "USD",
    "high_52w": 543.45,
    "low_52w": 352.83,
@@ -138,12 +138,12 @@
    "high_3m_date": "2026-10-13",
    "low_3m": 377.39,
    "low_3m_date": "2026-07-23",
-   "time": "2026-10-19T23:33:51Z",
-   "change_pct": 0.0127
+   "time": "2026-10-20T18:26:08Z",
+   "change_pct": -0.00045
   },
   "NFLX": {
-   "price": 69.85,
-   "prev_close": 70.33,
+   "price": 69.255,
+   "prev_close": 69.69,
    "currency": "USD",
    "high_52w": 124.135,
    "low_52w": 67.06,
@@ -152,12 +152,12 @@
    "high_3m_date": "2026-09-03",
    "low_3m": 66.54,
    "low_3m_date": "2026-10-05",
-   "time": "2026-10-19T23:33:51Z",
-   "change_pct": -0.00682
+   "time": "2026-10-20T18:26:08Z",
+   "change_pct": -0.00624
   },
   "NVDA": {
-   "price": 217.09,
-   "prev_close": 213.7494,
+   "price": 216.76,
+   "prev_close": 217.18,
    "currency": "USD",
    "high_52w": 239.24,
    "low_52w": 165.17,
@@ -166,12 +166,12 @@
    "high_3m_date": "2026-10-06",
    "low_3m": 190.01,
    "low_3m_date": "2026-07-29",
-   "time": "2026-10-19T23:33:51Z",
-   "change_pct": 0.01563
+   "time": "2026-10-20T18:26:09Z",
+   "change_pct": -0.00193
   },
   "QCOM": {
-   "price": 173.53,
-   "prev_close": 171.61,
+   "price": 175.885,
+   "prev_close": 173.53,
    "currency": "USD",
    "high_52w": 251.02,
    "low_52w": 124.07,
@@ -180,12 +180,12 @@
    "high_3m_date": "2026-09-25",
    "low_3m": 142.89,
    "low_3m_date": "2026-08-03",
-   "time": "2026-10-19T23:33:52Z",
-   "change_pct": 0.01119
+   "time": "2026-10-20T18:26:09Z",
+   "change_pct": 0.01357
   },
   "SNDK": {
-   "price": 1371.12,
-   "prev_close": 1292.4259,
+   "price": 1375.1,
+   "prev_close": 1371.75,
    "currency": "USD",
    "high_52w": 2335.0,
    "low_52w": 146.95,
@@ -194,12 +194,12 @@
    "high_3m_date": "2026-09-22",
    "low_3m": 998.19,
    "low_3m_date": "2026-07-29",
-   "time": "2026-10-19T23:33:52Z",
-   "change_pct": 0.06089
+   "time": "2026-10-20T18:26:09Z",
+   "change_pct": 0.00244
   },
   "TSM": {
-   "price": 420.22,
-   "prev_close": 412.247,
+   "price": 427.6896,
+   "prev_close": 420.88,
    "currency": "USD",
    "high_52w": 485.8,
    "low_52w": 275.06,
@@ -208,12 +208,12 @@
    "high_3m_date": "2026-10-05",
    "low_3m": 372.72,
    "low_3m_date": "2026-07-29",
-   "time": "2026-10-19T23:33:52Z",
-   "change_pct": 0.01934
+   "time": "2026-10-20T18:26:10Z",
+   "change_pct": 0.01618
   },
   "WMT": {
-   "price": 118.7,
-   "prev_close": 118.62,
+   "price": 118.365,
+   "prev_close": 118.9451,
    "currency": "USD",
    "high_52w": 134.2,
    "low_52w": 100.61,
@@ -222,8 +222,8 @@
    "high_3m_date": "2026-10-15",
    "low_3m": 102.15,
    "low_3m_date": "2026-08-21",
-   "time": "2026-10-19T23:33:53Z",
-   "change_pct": 0.00067
+   "time": "2026-10-20T18:26:10Z",
+   "change_pct": -0.00488
   }
  }
 }
