@@ -2213,8 +2213,20 @@
   "output": 6.0,
   "provider": "perplexity"
  },
+ "volcengine/doubao-seed-2-1-lite-260915": {
+  "context": 1024000,
+  "input": 0.115,
+  "output": 0.3881,
+  "provider": "volcengine"
+ },
  "volcengine/doubao-seed-2-1-pro-260628": {
   "context": 256000,
+  "input": 0.8625,
+  "output": 4.3125,
+  "provider": "volcengine"
+ },
+ "volcengine/doubao-seed-2-1-pro-260915": {
+  "context": 1024000,
   "input": 0.8625,
   "output": 4.3125,
   "provider": "volcengine"
