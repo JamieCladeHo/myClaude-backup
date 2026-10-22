@@ -1879,3 +1879,13 @@ date,source,model,provider,input_usd_per_mtok,output_usd_per_mtok,event
 2026-10-21,openrouter,z-ai/glm-5,z-ai,1.0,3.2,change
 2026-10-21,openrouter,google/gemini-2.5-flash:batch,google,,,removed
 2026-10-21,openrouter,google/gemini-2.5-pro:batch,google,,,removed
+2026-10-22,openrouter,recursive/flint-v1.0:free,recursive,0.0,0.0,new
+2026-10-22,openrouter,~deepseek/deepseek-pro-latest,~deepseek,0.2235,8.0,change
+2026-10-22,openrouter,deepseek/deepseek-v4.1-flash,deepseek,0.3,1.2,change
+2026-10-22,openrouter,~z-ai/glm-flash-latest,~z-ai,0.0113,0.1589,change
+2026-10-22,openrouter,z-ai/glm-5.3-flash,z-ai,0.0113,0.1589,change
+2026-10-22,openrouter,~deepseek/deepseek-v4-flash-latest,~deepseek,0.0475,0.1568,change
+2026-10-22,openrouter,~moonshotai/kimi-latest,~moonshotai,0.238,16.0,change
+2026-10-22,openrouter,qwen/qwen3.5-122b-a10b,qwen,0.4,3.2,change
+2026-10-22,openrouter,qwen/qwen3.5-397b-a17b,qwen,0.5,3.6,change
+2026-10-22,openrouter,google/gemini-2.5-flash-lite:batch,google,,,removed
