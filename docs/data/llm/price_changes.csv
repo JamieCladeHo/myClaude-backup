@@ -1889,3 +1889,13 @@ date,source,model,provider,input_usd_per_mtok,output_usd_per_mtok,event
 2026-10-22,openrouter,qwen/qwen3.5-122b-a10b,qwen,0.4,3.2,change
 2026-10-22,openrouter,qwen/qwen3.5-397b-a17b,qwen,0.5,3.6,change
 2026-10-22,openrouter,google/gemini-2.5-flash-lite:batch,google,,,removed
+2026-10-23,openrouter,minimax/minimax-m3.1-flash,minimax,0.15,0.6,new
+2026-10-23,openrouter,reflection/beam-1.0-501b-a23b,reflection,0.25,1.0,change
+2026-10-23,openrouter,~deepseek/deepseek-pro-latest,~deepseek,0.2247,8.0,change
+2026-10-23,openrouter,deepseek/deepseek-v4.1-flash,deepseek,0.165,0.66,change
+2026-10-23,openrouter,~z-ai/glm-flash-latest,~z-ai,0.0052,0.1985,change
+2026-10-23,openrouter,z-ai/glm-5.3-flash,z-ai,0.0052,0.1985,change
+2026-10-23,openrouter,qwen/qwen3.8-27b,qwen,0.2,2.5,change
+2026-10-23,openrouter,qwen/qwen3.5-9b,qwen,0.17,0.25,change
+2026-10-23,openrouter,mistralai/mistral-small-3.2-24b-instruct,mistralai,0.075,0.2,change
+2026-10-23,openrouter,minimax/minimax-m3.1-flash:free,minimax,,,removed

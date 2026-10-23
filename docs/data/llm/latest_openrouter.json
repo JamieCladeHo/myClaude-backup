@@ -485,8 +485,8 @@
  "deepseek/deepseek-v4.1-flash": {
   "context": 1048576,
   "created": "2026-09-10",
-  "input": 0.3,
-  "output": 1.2,
+  "input": 0.165,
+  "output": 0.66,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash-1017": {
@@ -1091,11 +1091,11 @@
   "output": 1.2,
   "provider": "minimax"
  },
- "minimax/minimax-m3.1-flash:free": {
-  "context": 1000000,
+ "minimax/minimax-m3.1-flash": {
+  "context": 1048576,
   "created": "2026-10-19",
-  "input": 0.0,
-  "output": 0.0,
+  "input": 0.15,
+  "output": 0.6,
   "provider": "minimax"
  },
  "mistralai/codestral-2508": {
@@ -1262,8 +1262,8 @@
  "mistralai/mistral-small-3.2-24b-instruct": {
   "context": 256000,
   "created": "2025-06-20",
-  "input": 0.0938,
-  "output": 0.25,
+  "input": 0.075,
+  "output": 0.2,
   "provider": "mistralai"
  },
  "mistralai/mixtral-8x22b-instruct": {
@@ -2480,8 +2480,8 @@
  "qwen/qwen3.5-9b": {
   "context": 262144,
   "created": "2026-03-10",
-  "input": 0.08,
-  "output": 0.13,
+  "input": 0.17,
+  "output": 0.25,
   "provider": "qwen"
  },
  "qwen/qwen3.5-flash-02-23": {
@@ -2571,8 +2571,8 @@
  "qwen/qwen3.8-27b": {
   "context": 1000000,
   "created": "2026-08-14",
-  "input": 0.04,
-  "output": 1.35,
+  "input": 0.2,
+  "output": 2.5,
   "provider": "qwen"
  },
  "qwen/qwen3.8-flash": {
@@ -2613,7 +2613,7 @@
  "reflection/beam-1.0-501b-a23b": {
   "context": 1048576,
   "created": "2026-10-16",
-  "input": 0.3,
+  "input": 0.25,
   "output": 1.0,
   "provider": "reflection"
  },
@@ -3054,8 +3054,8 @@
  "z-ai/glm-5.3-flash": {
   "context": 1048576,
   "created": "2026-08-26",
-  "input": 0.0113,
-  "output": 0.1589,
+  "input": 0.0052,
+  "output": 0.1985,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3-flash:batch": {
@@ -3131,7 +3131,7 @@
  "~deepseek/deepseek-pro-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.2235,
+  "input": 0.2247,
   "output": 8.0,
   "provider": "~deepseek"
  },
@@ -3215,8 +3215,8 @@
  "~z-ai/glm-flash-latest": {
   "context": 1048576,
   "created": "2026-08-27",
-  "input": 0.0113,
-  "output": 0.1589,
+  "input": 0.0052,
+  "output": 0.1985,
   "provider": "~z-ai"
  },
  "~z-ai/glm-latest": {
