@@ -1911,3 +1911,15 @@ date,source,model,provider,input_usd_per_mtok,output_usd_per_mtok,event
 2026-10-24,openrouter,~moonshotai/kimi-latest,~moonshotai,0.238,24.0,change
 2026-10-24,openrouter,deepseek/deepseek-v4-pro,deepseek,0.5304,1.0607,change
 2026-10-24,openrouter,google/gemma-4-26b-a4b-it,google,0.0675,0.225,change
+2026-10-25,litellm,mistral/zai-glm-5-3-flash,mistral,0.15,0.5,new
+2026-10-25,openrouter,~z-ai/glm-flash-latest,~z-ai,0.0418,0.0703,change
+2026-10-25,openrouter,~z-ai/glm-latest,~z-ai,0.0703,4.3843,change
+2026-10-25,openrouter,liquid/lfm-2.5-2.6b,liquid,0.35,0.5,new
+2026-10-25,openrouter,deepseek/deepseek-v4-flash-0731,deepseek,0.0422,0.1694,change
+2026-10-25,openrouter,~moonshotai/kimi-latest,~moonshotai,0.19,8.94,change
+2026-10-25,openrouter,deepseek/deepseek-v4-pro,deepseek,0.2088,0.4176,change
+2026-10-25,openrouter,minimax/minimax-m2.5,minimax,0.3,1.2,change
+2026-10-25,openrouter,meta-llama/llama-3.2-3b-instruct,meta-llama,0.05,0.33,change
+2026-10-25,openrouter,openai/gpt-3.5-turbo,openai,,,removed
+2026-10-25,openrouter,openai/gpt-3.5-turbo-instruct,openai,,,removed
+2026-10-25,openrouter,openai/gpt-3.5-turbo:batch,openai,,,removed

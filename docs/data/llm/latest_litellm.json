@@ -1589,6 +1589,12 @@
   "output": 4.4,
   "provider": "mistral"
  },
+ "mistral/zai-glm-5-3-flash": {
+  "context": 1048576,
+  "input": 0.15,
+  "output": 0.5,
+  "provider": "mistral"
+ },
  "mistral/zai-glm-latest": {
   "context": 1048576,
   "input": 1.4,
