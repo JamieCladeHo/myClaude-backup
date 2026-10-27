@@ -293,13 +293,6 @@
   "output": 5.0,
   "provider": "anthropic"
  },
- "arcee-ai/trinity-large-thinking": {
-  "context": 262144,
-  "created": "2026-04-01",
-  "input": 0.25,
-  "output": 0.8,
-  "provider": "arcee-ai"
- },
  "bytedance-seed/seed-1.6": {
   "context": 262144,
   "created": "2025-12-23",
@@ -450,15 +443,15 @@
  "deepseek/deepseek-v4-flash": {
   "context": 1048576,
   "created": "2026-04-24",
-  "input": 0.091,
-  "output": 0.182,
+  "input": 0.14,
+  "output": 0.28,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-flash-0731": {
   "context": 1048576,
   "created": "2026-07-31",
-  "input": 0.44,
-  "output": 1.32,
+  "input": 0.119,
+  "output": 0.238,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-flash-vision-exp": {
@@ -485,8 +478,8 @@
  "deepseek/deepseek-v4.1-flash": {
   "context": 1048576,
   "created": "2026-09-10",
-  "input": 0.02,
-  "output": 1.0,
+  "input": 0.14,
+  "output": 0.42,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash-1017": {
@@ -765,8 +758,8 @@
  "google/gemma-3-4b-it": {
   "context": 131072,
   "created": "2025-03-13",
-  "input": 0.04,
-  "output": 0.05,
+  "input": 0.05,
+  "output": 0.1,
   "provider": "google"
  },
  "google/gemma-4-26b-a4b-it": {
@@ -786,8 +779,8 @@
  "google/gemma-4-31b-it": {
   "context": 262144,
   "created": "2026-04-02",
-  "input": 0.1,
-  "output": 0.34,
+  "input": 0.2,
+  "output": 0.4,
   "provider": "google"
  },
  "google/gemma-4-31b-it:free": {
@@ -817,13 +810,6 @@
   "input": 0.08,
   "output": 0.11,
   "provider": "gryphe"
- },
- "ibm-granite/granite-4.0-h-micro": {
-  "context": 131000,
-  "created": "2025-10-20",
-  "input": 0.017,
-  "output": 0.112,
-  "provider": "ibm-granite"
  },
  "ibm-granite/granite-4.2-8b": {
   "context": 131072,
@@ -1112,13 +1098,6 @@
   "output": 0.9,
   "provider": "mistralai"
  },
- "mistralai/codestral-2508:batch": {
-  "context": 256000,
-  "created": "2025-08-01",
-  "input": 0.15,
-  "output": 0.45,
-  "provider": "mistralai"
- },
  "mistralai/devstral-2512": {
   "context": 262144,
   "created": "2025-12-09",
@@ -1147,13 +1126,6 @@
   "output": 0.15,
   "provider": "mistralai"
  },
- "mistralai/ministral-8b-2512:batch": {
-  "context": 262144,
-  "created": "2025-12-02",
-  "input": 0.075,
-  "output": 0.075,
-  "provider": "mistralai"
- },
  "mistralai/mistral-large": {
   "context": 128000,
   "created": "2024-02-26",
@@ -1173,13 +1145,6 @@
   "created": "2025-12-01",
   "input": 0.5,
   "output": 1.5,
-  "provider": "mistralai"
- },
- "mistralai/mistral-large-2512:batch": {
-  "context": 262144,
-  "created": "2025-12-01",
-  "input": 0.25,
-  "output": 0.75,
   "provider": "mistralai"
  },
  "mistralai/mistral-large-4-0": {
@@ -1217,13 +1182,6 @@
   "output": 2.0,
   "provider": "mistralai"
  },
- "mistralai/mistral-medium-3.1:batch": {
-  "context": 131072,
-  "created": "2025-08-13",
-  "input": 0.2,
-  "output": 1.0,
-  "provider": "mistralai"
- },
  "mistralai/mistral-nemo": {
   "context": 131072,
   "created": "2024-07-19",
@@ -1250,13 +1208,6 @@
   "created": "2026-03-16",
   "input": 0.15,
   "output": 0.6,
-  "provider": "mistralai"
- },
- "mistralai/mistral-small-2603:batch": {
-  "context": 262144,
-  "created": "2026-03-16",
-  "input": 0.075,
-  "output": 0.3,
   "provider": "mistralai"
  },
  "mistralai/mistral-small-3.1-24b-instruct": {
@@ -1339,15 +1290,15 @@
  "moonshotai/kimi-k2.7-code": {
   "context": 262144,
   "created": "2026-06-12",
-  "input": 0.6712,
-  "output": 3.35,
+  "input": 0.56,
+  "output": 3.1,
   "provider": "moonshotai"
  },
  "moonshotai/kimi-k3": {
   "context": 1048576,
   "created": "2026-07-16",
-  "input": 0.214,
-  "output": 20.0,
+  "input": 0.189,
+  "output": 11.5,
   "provider": "moonshotai"
  },
  "moonshotai/kimi-k3.1-pro": {
@@ -2071,6 +2022,34 @@
   "output": 5.0,
   "provider": "openai"
  },
+ "openai/gpt-6.1-terra": {
+  "context": 1050000,
+  "created": "2026-10-26",
+  "input": 1.0,
+  "output": 5.0,
+  "provider": "openai"
+ },
+ "openai/gpt-6.1-terra-pro": {
+  "context": 1050000,
+  "created": "2026-10-26",
+  "input": 1.0,
+  "output": 5.0,
+  "provider": "openai"
+ },
+ "openai/gpt-6.1-terra-pro:batch": {
+  "context": 1050000,
+  "created": "2026-10-26",
+  "input": 0.5,
+  "output": 2.5,
+  "provider": "openai"
+ },
+ "openai/gpt-6.1-terra:batch": {
+  "context": 1050000,
+  "created": "2026-10-26",
+  "input": 0.5,
+  "output": 2.5,
+  "provider": "openai"
+ },
  "openai/gpt-audio": {
   "context": 128000,
   "created": "2026-01-19",
@@ -2361,7 +2340,7 @@
  "qwen/qwen3-30b-a3b-instruct-2507": {
   "context": 262144,
   "created": "2025-07-29",
-  "input": 0.09,
+  "input": 0.1,
   "output": 0.3,
   "provider": "qwen"
  },
@@ -2452,8 +2431,8 @@
  "qwen/qwen3.5-27b": {
   "context": 262144,
   "created": "2026-02-25",
-  "input": 0.27,
-  "output": 2.16,
+  "input": 0.26,
+  "output": 2.6,
   "provider": "qwen"
  },
  "qwen/qwen3.5-35b-a3b": {
@@ -2921,15 +2900,15 @@
  "xiaomi/mimo-v2.5": {
   "context": 1050000,
   "created": "2026-04-22",
-  "input": 0.119,
-  "output": 0.238,
+  "input": 0.4,
+  "output": 2.0,
   "provider": "xiaomi"
  },
  "xiaomi/mimo-v2.5-pro": {
   "context": 1050000,
   "created": "2026-04-22",
-  "input": 0.3045,
-  "output": 0.609,
+  "input": 0.48,
+  "output": 1.8,
   "provider": "xiaomi"
  },
  "xiaomi/mimo-v2.6-flash": {
@@ -3026,8 +3005,8 @@
  "z-ai/glm-5.1": {
   "context": 204800,
   "created": "2026-04-07",
-  "input": 1.4,
-  "output": 4.4,
+  "input": 0.966,
+  "output": 3.036,
   "provider": "z-ai"
  },
  "z-ai/glm-5.2": {
@@ -3040,7 +3019,7 @@
  "z-ai/glm-5.3": {
   "context": 1048576,
   "created": "2026-08-18",
-  "input": 0.0699,
+  "input": 0.0769,
   "output": 1.4,
   "provider": "z-ai"
  },
@@ -3124,7 +3103,7 @@
  "~deepseek/deepseek-pro-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.2565,
+  "input": 0.2211,
   "output": 8.0,
   "provider": "~deepseek"
  },
@@ -3152,8 +3131,8 @@
  "~moonshotai/kimi-latest": {
   "context": 1048576,
   "created": "2026-04-27",
-  "input": 0.2033,
-  "output": 8.1113,
+  "input": 0.1795,
+  "output": 9.7224,
   "provider": "~moonshotai"
  },
  "~openai/gpt-astra-latest": {
@@ -3187,8 +3166,8 @@
  "~openai/gpt-terra-latest": {
   "context": 1050000,
   "created": "2026-09-11",
-  "input": 2.0,
-  "output": 12.0,
+  "input": 1.0,
+  "output": 5.0,
   "provider": "~openai"
  },
  "~unbiased/pareto-latest": {
@@ -3208,15 +3187,15 @@
  "~z-ai/glm-flash-latest": {
   "context": 1048576,
   "created": "2026-08-27",
-  "input": 0.0413,
-  "output": 0.0758,
+  "input": 0.0513,
+  "output": 0.0701,
   "provider": "~z-ai"
  },
  "~z-ai/glm-latest": {
   "context": 1048576,
   "created": "2026-08-19",
-  "input": 0.0699,
-  "output": 1.4,
+  "input": 0.0703,
+  "output": 4.3843,
   "provider": "~z-ai"
  }
 }
