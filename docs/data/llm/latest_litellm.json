@@ -1325,6 +1325,12 @@
   "output": 0.25,
   "provider": "mistral"
  },
+ "mistral/deepseek-v4-1-flash-1017": {
+  "context": 1048576,
+  "input": 0.3,
+  "output": 1.2,
+  "provider": "mistral"
+ },
  "mistral/devstral-latest": {
   "context": 256000,
   "input": 0.4,
@@ -1459,14 +1465,14 @@
  },
  "mistral/mistral-large-4": {
   "context": 1048576,
-  "input": 0.68,
-  "output": 2.09,
+  "input": 1.36,
+  "output": 4.18,
   "provider": "mistral"
  },
  "mistral/mistral-large-4-0": {
   "context": 1048576,
-  "input": 0.68,
-  "output": 2.09,
+  "input": 1.36,
+  "output": 4.18,
   "provider": "mistral"
  },
  "mistral/mistral-large-latest": {
@@ -1629,6 +1635,12 @@
   "context": 1048576,
   "input": 3.0,
   "output": 15.0,
+  "provider": "moonshot"
+ },
+ "moonshot/kimi-k3.1-pro": {
+  "context": 1048576,
+  "input": 2.0,
+  "output": 10.0,
   "provider": "moonshot"
  },
  "moonshot/moonshot-v1-128k": {
