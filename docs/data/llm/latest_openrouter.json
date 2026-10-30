@@ -464,8 +464,8 @@
  "deepseek/deepseek-v4-pro": {
   "context": 1048576,
   "created": "2026-04-24",
-  "input": 0.9553,
-  "output": 1.9105,
+  "input": 0.8162,
+  "output": 1.6325,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-pro-0813": {
@@ -1150,8 +1150,8 @@
  "mistralai/mistral-large-4-0": {
   "context": 1048576,
   "created": "2026-10-06",
-  "input": 1.36,
-  "output": 4.18,
+  "input": 0.7,
+  "output": 2.1,
   "provider": "mistralai"
  },
  "mistralai/mistral-medium-3": {
@@ -2431,8 +2431,8 @@
  "qwen/qwen3.6-27b": {
   "context": 262144,
   "created": "2026-04-27",
-  "input": 0.45,
-  "output": 2.7,
+  "input": 0.32,
+  "output": 3.2,
   "provider": "qwen"
  },
  "qwen/qwen3.6-35b-a3b": {
@@ -2494,8 +2494,8 @@
  "qwen/qwen3.8-27b": {
   "context": 1000000,
   "created": "2026-08-14",
-  "input": 0.039,
-  "output": 1.25,
+  "input": 0.15,
+  "output": 1.875,
   "provider": "qwen"
  },
  "qwen/qwen3.8-flash": {
@@ -2771,13 +2771,6 @@
   "output": 0.2,
   "provider": "upstage"
  },
- "upstage/solar-pro-3": {
-  "context": 131072,
-  "created": "2026-01-27",
-  "input": 0.15,
-  "output": 0.6,
-  "provider": "upstage"
- },
  "upstage/solar-pro4": {
   "context": 524288,
   "created": "2026-08-10",
@@ -2970,15 +2963,15 @@
  "z-ai/glm-5.3": {
   "context": 1048576,
   "created": "2026-08-18",
-  "input": 0.0699,
-  "output": 1.4,
+  "input": 0.08,
+  "output": 3.6,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3-flash": {
   "context": 1048576,
   "created": "2026-08-26",
   "input": 0.0457,
-  "output": 0.0742,
+  "output": 0.0701,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3-flash:batch": {
@@ -3047,22 +3040,22 @@
  "~deepseek/deepseek-flash-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.0121,
-  "output": 1.73,
+  "input": 0.0339,
+  "output": 1.14,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-pro-latest": {
   "context": 1048576,
   "created": "2026-09-14",
   "input": 0.1035,
-  "output": 8.0,
+  "output": 4.0,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-v4-flash-latest": {
   "context": 1048576,
   "created": "2026-08-01",
-  "input": 0.0475,
-  "output": 0.1568,
+  "input": 0.0359,
+  "output": 0.3,
   "provider": "~deepseek"
  },
  "~google/gemini-flash-latest": {
@@ -3082,8 +3075,8 @@
  "~moonshotai/kimi-latest": {
   "context": 1048576,
   "created": "2026-04-27",
-  "input": 0.1824,
-  "output": 9.3388,
+  "input": 0.17,
+  "output": 8.94,
   "provider": "~moonshotai"
  },
  "~openai/gpt-astra-latest": {
@@ -3139,7 +3132,7 @@
   "context": 1048576,
   "created": "2026-08-27",
   "input": 0.0457,
-  "output": 0.0742,
+  "output": 0.0701,
   "provider": "~z-ai"
  },
  "~z-ai/glm-latest": {

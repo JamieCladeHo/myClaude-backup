@@ -2008,3 +2008,16 @@ date,source,model,provider,input_usd_per_mtok,output_usd_per_mtok,event
 2026-10-29,openrouter,openai/o4-mini,openai,,,removed
 2026-10-29,openrouter,openai/o4-mini-high,openai,,,removed
 2026-10-29,openrouter,qwen/qwen3-next-80b-a3b-thinking,qwen,,,removed
+2026-10-30,litellm,zai/glm-5v-turbo,zai,1.2,4.0,new
+2026-10-30,openrouter,mistralai/mistral-large-4-0,mistralai,0.7,2.1,change
+2026-10-30,openrouter,~deepseek/deepseek-pro-latest,~deepseek,0.1035,4.0,change
+2026-10-30,openrouter,~deepseek/deepseek-flash-latest,~deepseek,0.0339,1.14,change
+2026-10-30,openrouter,~z-ai/glm-flash-latest,~z-ai,0.0457,0.0701,change
+2026-10-30,openrouter,z-ai/glm-5.3-flash,z-ai,0.0457,0.0701,change
+2026-10-30,openrouter,z-ai/glm-5.3,z-ai,0.08,3.6,change
+2026-10-30,openrouter,qwen/qwen3.8-27b,qwen,0.15,1.875,change
+2026-10-30,openrouter,~deepseek/deepseek-v4-flash-latest,~deepseek,0.0359,0.3,change
+2026-10-30,openrouter,~moonshotai/kimi-latest,~moonshotai,0.17,8.94,change
+2026-10-30,openrouter,qwen/qwen3.6-27b,qwen,0.32,3.2,change
+2026-10-30,openrouter,deepseek/deepseek-v4-pro,deepseek,0.8162,1.6325,change
+2026-10-30,openrouter,upstage/solar-pro-3,upstage,,,removed

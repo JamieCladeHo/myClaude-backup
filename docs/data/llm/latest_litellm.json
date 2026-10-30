@@ -2614,5 +2614,11 @@
   "input": 0.15,
   "output": 0.5,
   "provider": "zai"
+ },
+ "zai/glm-5v-turbo": {
+  "context": 200000,
+  "input": 1.2,
+  "output": 4.0,
+  "provider": "zai"
  }
 }
