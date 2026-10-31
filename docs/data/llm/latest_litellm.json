@@ -1187,6 +1187,12 @@
   "output": 0.5,
   "provider": "openai"
  },
+ "gpt-6-rosalind": {
+  "context": 922000,
+  "input": 15.0,
+  "output": 75.0,
+  "provider": "openai"
+ },
  "gpt-6-sol": {
   "context": 922000,
   "input": 2.0,
