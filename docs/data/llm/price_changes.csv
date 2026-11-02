@@ -2055,3 +2055,9 @@ date,source,model,provider,input_usd_per_mtok,output_usd_per_mtok,event
 2026-11-01,openrouter,poolside/laguna-s-2.1:free,poolside,,,removed
 2026-11-01,openrouter,poolside/laguna-xs-2.1,poolside,,,removed
 2026-11-01,openrouter,poolside/laguna-xs-2.1:free,poolside,,,removed
+2026-11-02,openrouter,deepseek/deepseek-v4.1-flash-1017,deepseek,0.3,1.2,change
+2026-11-02,openrouter,z-ai/glm-5.3,z-ai,0.08,3.6,change
+2026-11-02,openrouter,~deepseek/deepseek-v4-flash-latest,~deepseek,0.059,0.3,change
+2026-11-02,openrouter,google/gemma-4-26b-a4b-it,google,0.059,0.178,change
+2026-11-02,openrouter,openai/gpt-oss-120b,openai,0.15,0.6,change
+2026-11-02,openrouter,meta-llama/llama-3.2-3b-instruct,meta-llama,0.0509,0.335,change

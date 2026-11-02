@@ -485,8 +485,8 @@
  "deepseek/deepseek-v4.1-flash-1017": {
   "context": 1048576,
   "created": "2026-10-17",
-  "input": 0.15,
-  "output": 0.6,
+  "input": 0.3,
+  "output": 1.2,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash:batch": {
@@ -765,8 +765,8 @@
  "google/gemma-4-26b-a4b-it": {
   "context": 262144,
   "created": "2026-04-03",
-  "input": 0.0675,
-  "output": 0.225,
+  "input": 0.059,
+  "output": 0.178,
   "provider": "google"
  },
  "google/gemma-4-26b-a4b-it:free": {
@@ -933,8 +933,8 @@
  "meta-llama/llama-3.2-3b-instruct": {
   "context": 131072,
   "created": "2024-09-25",
-  "input": 0.05,
-  "output": 0.33,
+  "input": 0.0509,
+  "output": 0.335,
   "provider": "meta-llama"
  },
  "meta-llama/llama-3.3-70b-instruct": {
@@ -2060,8 +2060,8 @@
  "openai/gpt-oss-120b": {
   "context": 131072,
   "created": "2025-08-05",
-  "input": 0.021,
-  "output": 0.079,
+  "input": 0.15,
+  "output": 0.6,
   "provider": "openai"
  },
  "openai/gpt-oss-120b:batch": {
@@ -2464,7 +2464,7 @@
   "provider": "qwen"
  },
  "qwen/qwen3.8-27b": {
-  "context": 1000000,
+  "context": 1024000,
   "created": "2026-08-14",
   "input": 0.15,
   "output": 1.875,
@@ -2935,8 +2935,8 @@
  "z-ai/glm-5.3": {
   "context": 1048576,
   "created": "2026-08-18",
-  "input": 0.0699,
-  "output": 1.4,
+  "input": 0.08,
+  "output": 3.6,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3-flash": {
@@ -3026,7 +3026,7 @@
  "~deepseek/deepseek-v4-flash-latest": {
   "context": 1048576,
   "created": "2026-08-01",
-  "input": 0.0434,
+  "input": 0.059,
   "output": 0.3,
   "provider": "~deepseek"
  },
