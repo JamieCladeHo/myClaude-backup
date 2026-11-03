@@ -1477,14 +1477,14 @@
  },
  "mistral/mistral-large-4": {
   "context": 1048576,
-  "input": 1.36,
-  "output": 4.18,
+  "input": 0.7,
+  "output": 2.1,
   "provider": "mistral"
  },
  "mistral/mistral-large-4-0": {
   "context": 1048576,
-  "input": 1.36,
-  "output": 4.18,
+  "input": 0.7,
+  "output": 2.1,
   "provider": "mistral"
  },
  "mistral/mistral-large-latest": {

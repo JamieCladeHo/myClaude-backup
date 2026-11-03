@@ -450,8 +450,8 @@
  "deepseek/deepseek-v4-flash-0731": {
   "context": 1048576,
   "created": "2026-07-31",
-  "input": 0.119,
-  "output": 0.238,
+  "input": 0.059,
+  "output": 0.3,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-flash-vision-exp": {
@@ -765,8 +765,8 @@
  "google/gemma-4-26b-a4b-it": {
   "context": 262144,
   "created": "2026-04-03",
-  "input": 0.059,
-  "output": 0.178,
+  "input": 0.069,
+  "output": 0.207,
   "provider": "google"
  },
  "google/gemma-4-26b-a4b-it:free": {
@@ -940,8 +940,8 @@
  "meta-llama/llama-3.3-70b-instruct": {
   "context": 131072,
   "created": "2024-12-06",
-  "input": 0.1,
-  "output": 0.32,
+  "input": 0.2,
+  "output": 0.52,
   "provider": "meta-llama"
  },
  "meta-llama/llama-4-maverick": {
@@ -1342,20 +1342,6 @@
   "input": 0.075,
   "output": 0.25,
   "provider": "nex-agi"
- },
- "nousresearch/hermes-3-llama-3.1-405b": {
-  "context": 131072,
-  "created": "2024-08-16",
-  "input": 1.0,
-  "output": 1.0,
-  "provider": "nousresearch"
- },
- "nousresearch/hermes-3-llama-3.1-70b": {
-  "context": 131072,
-  "created": "2024-08-18",
-  "input": 0.7,
-  "output": 0.7,
-  "provider": "nousresearch"
  },
  "nousresearch/hermes-4-405b": {
   "context": 131072,
@@ -2249,8 +2235,8 @@
  "qwen/qwen3-235b-a22b-2507": {
   "context": 262144,
   "created": "2025-07-21",
-  "input": 0.09,
-  "output": 0.55,
+  "input": 0.14,
+  "output": 0.8,
   "provider": "qwen"
  },
  "qwen/qwen3-235b-a22b-thinking-2507": {
@@ -2291,8 +2277,8 @@
  "qwen/qwen3-coder-30b-a3b-instruct": {
   "context": 262144,
   "created": "2025-07-31",
-  "input": 0.07,
-  "output": 0.28,
+  "input": 0.15,
+  "output": 0.6,
   "provider": "qwen"
  },
  "qwen/qwen3-coder-flash": {
@@ -2312,7 +2298,7 @@
  "qwen/qwen3-next-80b-a3b-instruct": {
   "context": 262144,
   "created": "2025-09-11",
-  "input": 0.09,
+  "input": 0.1,
   "output": 1.1,
   "provider": "qwen"
  },
@@ -2960,6 +2946,13 @@
   "output": 1.25,
   "provider": "z-ai"
  },
+ "z-ai/glm-5.3-flashx-legal": {
+  "context": 1048576,
+  "created": "2026-11-02",
+  "input": 0.37,
+  "output": 1.25,
+  "provider": "z-ai"
+ },
  "z-ai/glm-5.3-prime": {
   "context": 1000000,
   "created": "2026-09-23",
@@ -3013,7 +3006,7 @@
   "context": 1048576,
   "created": "2026-09-14",
   "input": 0.035,
-  "output": 0.5,
+  "output": 0.315,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-pro-latest": {
@@ -3047,8 +3040,8 @@
  "~moonshotai/kimi-latest": {
   "context": 1048576,
   "created": "2026-04-27",
-  "input": 0.1495,
-  "output": 7.15,
+  "input": 0.1824,
+  "output": 9.7471,
   "provider": "~moonshotai"
  },
  "~openai/gpt-astra-latest": {

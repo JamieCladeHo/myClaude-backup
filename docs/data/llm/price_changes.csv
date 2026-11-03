@@ -2061,3 +2061,16 @@ date,source,model,provider,input_usd_per_mtok,output_usd_per_mtok,event
 2026-11-02,openrouter,google/gemma-4-26b-a4b-it,google,0.059,0.178,change
 2026-11-02,openrouter,openai/gpt-oss-120b,openai,0.15,0.6,change
 2026-11-02,openrouter,meta-llama/llama-3.2-3b-instruct,meta-llama,0.0509,0.335,change
+2026-11-03,litellm,mistral/mistral-large-4,mistral,0.7,2.1,change
+2026-11-03,litellm,mistral/mistral-large-4-0,mistral,0.7,2.1,change
+2026-11-03,openrouter,z-ai/glm-5.3-flashx-legal,z-ai,0.37,1.25,new
+2026-11-03,openrouter,~deepseek/deepseek-flash-latest,~deepseek,0.035,0.315,change
+2026-11-03,openrouter,deepseek/deepseek-v4-flash-0731,deepseek,0.059,0.3,change
+2026-11-03,openrouter,~moonshotai/kimi-latest,~moonshotai,0.1824,9.7471,change
+2026-11-03,openrouter,google/gemma-4-26b-a4b-it,google,0.069,0.207,change
+2026-11-03,openrouter,qwen/qwen3-next-80b-a3b-instruct,qwen,0.1,1.1,change
+2026-11-03,openrouter,qwen/qwen3-coder-30b-a3b-instruct,qwen,0.15,0.6,change
+2026-11-03,openrouter,qwen/qwen3-235b-a22b-2507,qwen,0.14,0.8,change
+2026-11-03,openrouter,meta-llama/llama-3.3-70b-instruct,meta-llama,0.2,0.52,change
+2026-11-03,openrouter,nousresearch/hermes-3-llama-3.1-405b,nousresearch,,,removed
+2026-11-03,openrouter,nousresearch/hermes-3-llama-3.1-70b,nousresearch,,,removed
