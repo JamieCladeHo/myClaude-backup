@@ -1937,6 +1937,12 @@
   "output": 3.75,
   "provider": "perplexity"
  },
+ "perplexity/google/gemini-4-argon": {
+  "context": "",
+  "input": 2.0,
+  "output": 10.0,
+  "provider": "perplexity"
+ },
  "perplexity/llama-2-70b-chat": {
   "context": 4096,
   "input": 0.7,
@@ -2121,6 +2127,12 @@
   "context": "",
   "input": 0.0115,
   "output": 0.17,
+  "provider": "perplexity"
+ },
+ "perplexity/perplexity/nemotron-3.5-super-120b-a12b": {
+  "context": "",
+  "input": 0.2,
+  "output": 0.5,
   "provider": "perplexity"
  },
  "perplexity/perplexity/sonar": {
