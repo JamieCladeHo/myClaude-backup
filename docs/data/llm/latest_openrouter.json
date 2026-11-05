@@ -471,8 +471,8 @@
  "deepseek/deepseek-v4-pro-0813": {
   "context": 1048576,
   "created": "2026-08-12",
-  "input": 0.115,
-  "output": 4.6,
+  "input": 0.107,
+  "output": 4.278,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash": {
@@ -492,8 +492,8 @@
  "deepseek/deepseek-v4.1-flash:batch": {
   "context": 1048576,
   "created": "2026-09-10",
-  "input": 0.05,
-  "output": 0.15,
+  "input": 0.112,
+  "output": 0.336,
   "provider": "deepseek"
  },
  "dots-studio/dots-3-note-preview:free": {
@@ -765,8 +765,8 @@
  "google/gemma-4-26b-a4b-it": {
   "context": 262144,
   "created": "2026-04-03",
-  "input": 0.088,
-  "output": 0.265,
+  "input": 0.031,
+  "output": 0.093,
   "provider": "google"
  },
  "google/gemma-4-26b-a4b-it:free": {
@@ -851,6 +851,13 @@
   "created": "2026-09-10",
   "input": 0.06,
   "output": 0.18,
+  "provider": "inclusionai"
+ },
+ "inclusionai/ling-3.0-tiny": {
+  "context": 262144,
+  "created": "2026-08-06",
+  "input": 0.015,
+  "output": 0.045,
   "provider": "inclusionai"
  },
  "inclusionai/ling-3.1-flash": {
@@ -940,15 +947,15 @@
  "meta-llama/llama-3.3-70b-instruct": {
   "context": 131072,
   "created": "2024-12-06",
-  "input": 0.1,
-  "output": 0.32,
+  "input": 0.2,
+  "output": 0.52,
   "provider": "meta-llama"
  },
  "meta-llama/llama-4-maverick": {
   "context": 524288,
   "created": "2025-04-05",
-  "input": 0.1875,
-  "output": 0.6525,
+  "input": 0.35,
+  "output": 1.0,
   "provider": "meta-llama"
  },
  "meta-llama/llama-4-scout": {
@@ -1297,7 +1304,7 @@
  "moonshotai/kimi-k3": {
   "context": 1048576,
   "created": "2026-07-16",
-  "input": 0.2,
+  "input": 0.192,
   "output": 16.0,
   "provider": "moonshotai"
  },
@@ -2046,8 +2053,8 @@
  "openai/gpt-oss-120b": {
   "context": 131072,
   "created": "2025-08-05",
-  "input": 0.15,
-  "output": 0.6,
+  "input": 0.01,
+  "output": 0.037,
   "provider": "openai"
  },
  "openai/gpt-oss-120b:batch": {
@@ -2526,6 +2533,13 @@
   "output": 3.0,
   "provider": "relace"
  },
+ "ricursiveai/ripple-65b-preview": {
+  "context": 1048576,
+  "created": "2026-11-04",
+  "input": 0.2,
+  "output": 0.6,
+  "provider": "ricursiveai"
+ },
  "sakana/fugu-max": {
   "context": 1000000,
   "created": "2026-09-11",
@@ -2699,20 +2713,6 @@
   "created": "2026-07-30",
   "input": 0.45,
   "output": 1.2,
-  "provider": "thinkingmachines"
- },
- "thinkingmachines/inkling-small:free": {
-  "context": 1048576,
-  "created": "2026-07-30",
-  "input": 0.0,
-  "output": 0.0,
-  "provider": "thinkingmachines"
- },
- "thinkingmachines/inkling:free": {
-  "context": 1048576,
-  "created": "2026-07-17",
-  "input": 0.0,
-  "output": 0.0,
   "provider": "thinkingmachines"
  },
  "unbiased/pareto-26.10": {
@@ -2949,15 +2949,15 @@
  "z-ai/glm-5.3": {
   "context": 1048576,
   "created": "2026-08-18",
-  "input": 0.08,
-  "output": 3.6,
+  "input": 0.0699,
+  "output": 1.4,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3-flash": {
   "context": 1048576,
   "created": "2026-08-26",
-  "input": 0.0269,
-  "output": 0.0996,
+  "input": 0.15,
+  "output": 0.5,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3-flash:batch": {
@@ -3033,14 +3033,14 @@
  "~deepseek/deepseek-flash-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.0333,
-  "output": 0.475,
+  "input": 0.006,
+  "output": 0.5,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-pro-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.1035,
+  "input": 0.0963,
   "output": 8.0,
   "provider": "~deepseek"
  },
@@ -3068,8 +3068,8 @@
  "~moonshotai/kimi-latest": {
   "context": 1048576,
   "created": "2026-04-27",
-  "input": 0.19,
-  "output": 8.94,
+  "input": 0.1824,
+  "output": 9.3388,
   "provider": "~moonshotai"
  },
  "~openai/gpt-astra-latest": {
@@ -3124,8 +3124,8 @@
  "~z-ai/glm-flash-latest": {
   "context": 1048576,
   "created": "2026-08-27",
-  "input": 0.0269,
-  "output": 0.0996,
+  "input": 0.0285,
+  "output": 0.0923,
   "provider": "~z-ai"
  },
  "~z-ai/glm-latest": {

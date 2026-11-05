@@ -354,7 +354,7 @@
   "provider": "openai"
  },
  "daybreak-red-latest": {
-  "context": 400000,
+  "context": 272000,
   "input": 12.5,
   "output": 75.0,
   "provider": "openai"
@@ -1152,7 +1152,7 @@
   "provider": "openai"
  },
  "gpt-5.6-cyber": {
-  "context": 400000,
+  "context": 272000,
   "input": 12.5,
   "output": 75.0,
   "provider": "openai"
@@ -1260,7 +1260,7 @@
   "provider": "openai"
  },
  "gpt-daybreak-red-latest": {
-  "context": 400000,
+  "context": 272000,
   "input": 12.5,
   "output": 75.0,
   "provider": "openai"
