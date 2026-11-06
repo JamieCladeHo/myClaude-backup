@@ -394,8 +394,8 @@
  "deepseek/deepseek-chat": {
   "context": 163840,
   "created": "2024-12-26",
-  "input": 0.2574,
-  "output": 1.0287,
+  "input": 0.32,
+  "output": 0.89,
   "provider": "deepseek"
  },
  "deepseek/deepseek-chat-v3-0324": {
@@ -457,8 +457,8 @@
  "deepseek/deepseek-v4-flash-vision-exp": {
   "context": 1048576,
   "created": "2026-08-21",
-  "input": 0.2156,
-  "output": 0.6468,
+  "input": 0.44,
+  "output": 1.32,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-pro": {
@@ -471,15 +471,15 @@
  "deepseek/deepseek-v4-pro-0813": {
   "context": 1048576,
   "created": "2026-08-12",
-  "input": 0.107,
-  "output": 4.278,
+  "input": 0.1165,
+  "output": 4.66,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash": {
   "context": 1048576,
   "created": "2026-09-10",
-  "input": 0.045,
-  "output": 0.5,
+  "input": 0.051,
+  "output": 0.567,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash-1017": {
@@ -734,6 +734,20 @@
   "output": 7.5,
   "provider": "google"
  },
+ "google/gemini-omni-1.1-flash": {
+  "context": 131072,
+  "created": "2026-11-04",
+  "input": 1.5,
+  "output": 9.0,
+  "provider": "google"
+ },
+ "google/gemini-omni-1.2-flash": {
+  "context": 131072,
+  "created": "2026-11-05",
+  "input": 1.5,
+  "output": 9.0,
+  "provider": "google"
+ },
  "google/gemma-2-27b-it": {
   "context": 8192,
   "created": "2024-07-13",
@@ -765,8 +779,8 @@
  "google/gemma-4-26b-a4b-it": {
   "context": 262144,
   "created": "2026-04-03",
-  "input": 0.031,
-  "output": 0.093,
+  "input": 0.09,
+  "output": 0.3,
   "provider": "google"
  },
  "google/gemma-4-26b-a4b-it:free": {
@@ -947,8 +961,8 @@
  "meta-llama/llama-3.3-70b-instruct": {
   "context": 131072,
   "created": "2024-12-06",
-  "input": 0.2,
-  "output": 0.52,
+  "input": 0.59,
+  "output": 0.79,
   "provider": "meta-llama"
  },
  "meta-llama/llama-4-maverick": {
@@ -1035,39 +1049,11 @@
   "output": 0.14,
   "provider": "microsoft"
  },
- "minimax/minimax-01": {
-  "context": 1000192,
-  "created": "2025-01-15",
-  "input": 0.2,
-  "output": 1.1,
-  "provider": "minimax"
- },
  "minimax/minimax-m1": {
   "context": 1000000,
   "created": "2025-06-17",
   "input": 0.55,
   "output": 2.2,
-  "provider": "minimax"
- },
- "minimax/minimax-m2": {
-  "context": 204800,
-  "created": "2025-10-23",
-  "input": 0.255,
-  "output": 1.02,
-  "provider": "minimax"
- },
- "minimax/minimax-m2-her": {
-  "context": 65536,
-  "created": "2026-01-23",
-  "input": 0.3,
-  "output": 1.2,
-  "provider": "minimax"
- },
- "minimax/minimax-m2.1": {
-  "context": 204800,
-  "created": "2025-12-23",
-  "input": 0.3,
-  "output": 1.2,
   "provider": "minimax"
  },
  "minimax/minimax-m2.5": {
@@ -1080,8 +1066,8 @@
  "minimax/minimax-m2.7": {
   "context": 204800,
   "created": "2026-03-18",
-  "input": 0.3,
-  "output": 1.2,
+  "input": 0.21,
+  "output": 0.84,
   "provider": "minimax"
  },
  "minimax/minimax-m3": {
@@ -2053,8 +2039,8 @@
  "openai/gpt-oss-120b": {
   "context": 131072,
   "created": "2025-08-05",
-  "input": 0.01,
-  "output": 0.037,
+  "input": 0.013,
+  "output": 0.048,
   "provider": "openai"
  },
  "openai/gpt-oss-120b:batch": {
@@ -2305,7 +2291,7 @@
  "qwen/qwen3-next-80b-a3b-instruct": {
   "context": 262144,
   "created": "2025-09-11",
-  "input": 0.1,
+  "input": 0.09,
   "output": 1.1,
   "provider": "qwen"
  },
@@ -2501,7 +2487,7 @@
  "reflection/beam-1.0-501b-a23b": {
   "context": 1048576,
   "created": "2026-10-16",
-  "input": 0.25,
+  "input": 0.3,
   "output": 1.0,
   "provider": "reflection"
  },
@@ -3040,7 +3026,7 @@
  "~deepseek/deepseek-pro-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.0963,
+  "input": 0.0999,
   "output": 8.0,
   "provider": "~deepseek"
  },
@@ -3069,7 +3055,7 @@
   "context": 1048576,
   "created": "2026-04-27",
   "input": 0.1824,
-  "output": 9.3388,
+  "output": 10.5572,
   "provider": "~moonshotai"
  },
  "~openai/gpt-astra-latest": {
@@ -3124,7 +3110,7 @@
  "~z-ai/glm-flash-latest": {
   "context": 1048576,
   "created": "2026-08-27",
-  "input": 0.0285,
+  "input": 0.0284,
   "output": 0.0923,
   "provider": "~z-ai"
  },

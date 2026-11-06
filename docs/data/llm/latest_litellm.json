@@ -636,7 +636,13 @@
   "provider": "gemini"
  },
  "gemini/gemini-omni-1.1-flash": {
-  "context": 1048576,
+  "context": 131072,
+  "input": 1.5,
+  "output": 9.0,
+  "provider": "gemini"
+ },
+ "gemini/gemini-omni-1.2-flash": {
+  "context": 131072,
   "input": 1.5,
   "output": 9.0,
   "provider": "gemini"
@@ -1185,6 +1191,12 @@
   "context": 922000,
   "input": 10.0,
   "output": 50.0,
+  "provider": "openai"
+ },
+ "gpt-6-cyber": {
+  "context": 922000,
+  "input": 20.0,
+  "output": 100.0,
   "provider": "openai"
  },
  "gpt-6-luna": {
