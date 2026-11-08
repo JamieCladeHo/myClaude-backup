@@ -1667,6 +1667,12 @@
   "output": 10.0,
   "provider": "moonshot"
  },
+ "moonshot/kimi-k3.1-pro-highspeed": {
+  "context": 1048576,
+  "input": 4.0,
+  "output": 20.0,
+  "provider": "moonshot"
+ },
  "moonshot/moonshot-v1-128k": {
   "context": 131072,
   "input": 2.0,
