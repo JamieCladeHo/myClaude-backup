@@ -2170,3 +2170,13 @@ date,source,model,provider,input_usd_per_mtok,output_usd_per_mtok,event
 2026-11-08,openrouter,inception/mercury-2,inception,,,removed
 2026-11-08,openrouter,inception/mercury-2.5,inception,,,removed
 2026-11-08,openrouter,inception/mercury-3,inception,,,removed
+2026-11-09,openrouter,z-ai/glm-5.3:batch,z-ai,0.45,2.0,change
+2026-11-09,openrouter,moonshotai/kimi-k3:batch,moonshotai,0.917,6.0,change
+2026-11-09,openrouter,z-ai/glm-5.2:batch,z-ai,0.623,1.271,change
+2026-11-09,openrouter,~moonshotai/kimi-latest,~moonshotai,0.1634,9.3388,change
+2026-11-09,openrouter,deepseek/deepseek-v4-pro,deepseek,0.9553,1.9105,change
+2026-11-09,openrouter,google/gemma-4-26b-a4b-it,google,0.09,0.3,change
+2026-11-09,openrouter,qwen/qwen3.5-397b-a17b,qwen,0.6,3.6,change
+2026-11-09,openrouter,openai/gpt-oss-120b,openai,0.15,0.6,change
+2026-11-09,openrouter,google/gemma-3-27b-it,google,0.08,0.45,change
+2026-11-09,openrouter,meta-llama/llama-3.1-8b-instruct,meta-llama,0.02,0.04,change
