@@ -23,6 +23,12 @@
   "output": 50.0,
   "provider": "anthropic"
  },
+ "claude-fable-5-2": {
+  "context": 1000000,
+  "input": 8.0,
+  "output": 40.0,
+  "provider": "anthropic"
+ },
  "claude-haiku-4-5": {
   "context": 200000,
   "input": 1.0,
@@ -1329,6 +1335,12 @@
   "context": 1000000,
   "input": 0.3,
   "output": 1.2,
+  "provider": "minimax"
+ },
+ "minimax/MiniMax-M3.1-Flash": {
+  "context": 1000000,
+  "input": 0.15,
+  "output": 0.6,
   "provider": "minimax"
  },
  "mistral/codestral-2508": {

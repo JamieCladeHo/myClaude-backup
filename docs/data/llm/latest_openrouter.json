@@ -104,6 +104,20 @@
   "output": 25.0,
   "provider": "anthropic"
  },
+ "anthropic/claude-fable-5.2": {
+  "context": 1000000,
+  "created": "2026-11-09",
+  "input": 8.0,
+  "output": 40.0,
+  "provider": "anthropic"
+ },
+ "anthropic/claude-fable-5.2:batch": {
+  "context": 1000000,
+  "created": "2026-11-09",
+  "input": 4.0,
+  "output": 20.0,
+  "provider": "anthropic"
+ },
  "anthropic/claude-fable-5:batch": {
   "context": 1000000,
   "created": "2026-06-09",
@@ -485,8 +499,8 @@
  "deepseek/deepseek-v4.1-flash": {
   "context": 1048576,
   "created": "2026-09-10",
-  "input": 0.051,
-  "output": 0.567,
+  "input": 0.006,
+  "output": 0.5,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash-1017": {
@@ -506,8 +520,8 @@
  "deepseek/deepseek-v4.1-flash:batch": {
   "context": 1048576,
   "created": "2026-09-10",
-  "input": 0.011,
-  "output": 0.2,
+  "input": 0.112,
+  "output": 0.336,
   "provider": "deepseek"
  },
  "dots-studio/dots-3-note-preview:free": {
@@ -793,8 +807,8 @@
  "google/gemma-4-26b-a4b-it": {
   "context": 262144,
   "created": "2026-04-03",
-  "input": 0.09,
-  "output": 0.3,
+  "input": 0.08,
+  "output": 0.1,
   "provider": "google"
  },
  "google/gemma-4-26b-a4b-it:free": {
@@ -968,8 +982,8 @@
  "meta-llama/llama-3.3-70b-instruct": {
   "context": 131072,
   "created": "2024-12-06",
-  "input": 0.59,
-  "output": 0.79,
+  "input": 0.71,
+  "output": 0.71,
   "provider": "meta-llama"
  },
  "meta-llama/llama-4-maverick": {
@@ -992,6 +1006,13 @@
   "input": 0.18,
   "output": 0.18,
   "provider": "meta-llama"
+ },
+ "meta/muse-ember": {
+  "context": 1048576,
+  "created": "2026-11-09",
+  "input": 0.1,
+  "output": 0.5,
+  "provider": "meta"
  },
  "meta/muse-glimmer-30b": {
   "context": 131072,
@@ -1063,22 +1084,15 @@
   "output": 0.14,
   "provider": "microsoft"
  },
- "minimax/minimax-m1": {
-  "context": 1000000,
-  "created": "2025-06-17",
-  "input": 0.55,
-  "output": 2.2,
-  "provider": "minimax"
- },
  "minimax/minimax-m2.5": {
-  "context": 204800,
+  "context": 200000,
   "created": "2026-02-12",
   "input": 0.3,
   "output": 1.2,
   "provider": "minimax"
  },
  "minimax/minimax-m2.7": {
-  "context": 204800,
+  "context": 196608,
   "created": "2026-03-18",
   "input": 0.21,
   "output": 0.84,
@@ -1234,8 +1248,8 @@
  "mistralai/mistral-small-3.2-24b-instruct": {
   "context": 256000,
   "created": "2025-06-20",
-  "input": 0.075,
-  "output": 0.2,
+  "input": 0.1,
+  "output": 0.3,
   "provider": "mistralai"
  },
  "mistralai/mixtral-8x22b-instruct": {
@@ -1325,8 +1339,8 @@
  "moonshotai/kimi-k3:batch": {
   "context": 1048576,
   "created": "2026-07-16",
-  "input": 0.917,
-  "output": 6.0,
+  "input": 2.28,
+  "output": 11.4,
   "provider": "moonshotai"
  },
  "morph/morph-v3-fast": {
@@ -1369,6 +1383,13 @@
   "created": "2026-09-08",
   "input": 0.075,
   "output": 0.25,
+  "provider": "nex-agi"
+ },
+ "nex-agi/nex-n2.6": {
+  "context": 262144,
+  "created": "2026-11-10",
+  "input": 0.12,
+  "output": 0.4,
   "provider": "nex-agi"
  },
  "nousresearch/hermes-4-405b": {
@@ -1438,7 +1459,7 @@
   "context": 1048576,
   "created": "2026-10-15",
   "input": 0.15,
-  "output": 0.5,
+  "output": 0.47,
   "provider": "nvidia"
  },
  "nvidia/nemotron-3.5-super-vl:free": {
@@ -2249,8 +2270,8 @@
  "qwen/qwen3-14b": {
   "context": 40960,
   "created": "2025-04-28",
-  "input": 0.12,
-  "output": 0.24,
+  "input": 0.1,
+  "output": 0.22,
   "provider": "qwen"
  },
  "qwen/qwen3-235b-a22b-2507": {
@@ -2471,7 +2492,7 @@
   "provider": "qwen"
  },
  "qwen/qwen3.8-27b": {
-  "context": 1024000,
+  "context": 1048575,
   "created": "2026-08-14",
   "input": 0.15,
   "output": 1.875,
@@ -2496,6 +2517,13 @@
   "created": "2026-09-03",
   "input": 2.0,
   "output": 6.0,
+  "provider": "qwen"
+ },
+ "qwen/qwen3.8-max-0902:batch": {
+  "context": 262144,
+  "created": "2026-09-03",
+  "input": 1.15,
+  "output": 3.45,
   "provider": "qwen"
  },
  "qwen/qwen3.8-max-prime": {
@@ -2617,13 +2645,6 @@
   "output": 0.0,
   "provider": "scaledown"
  },
- "stealth/crouton-alpha": {
-  "context": 1048576,
-  "created": "2026-11-03",
-  "input": 0.0,
-  "output": 0.0,
-  "provider": "stealth"
- },
  "stepfun/step-3.5-flash": {
   "context": 262144,
   "created": "2026-01-29",
@@ -2639,7 +2660,7 @@
   "provider": "stepfun"
  },
  "stepfun/step-5-preview": {
-  "context": 1048576,
+  "context": 1000000,
   "created": "2026-10-08",
   "input": 1.0,
   "output": 2.7,
@@ -2727,6 +2748,13 @@
   "created": "2026-07-17",
   "input": 1.0,
   "output": 4.05,
+  "provider": "thinkingmachines"
+ },
+ "thinkingmachines/inkling-2-small:free": {
+  "context": 1048576,
+  "created": "2026-11-09",
+  "input": 0.0,
+  "output": 0.0,
   "provider": "thinkingmachines"
  },
  "thinkingmachines/inkling-small": {
@@ -2863,7 +2891,7 @@
   "provider": "xiaomi"
  },
  "xiaomi/mimo-v2.5-pro": {
-  "context": 1050000,
+  "context": 1024000,
   "created": "2026-04-22",
   "input": 0.48,
   "output": 1.8,
@@ -2907,8 +2935,8 @@
  "z-ai/glm-4.5-air": {
   "context": 131072,
   "created": "2025-07-25",
-  "input": 0.13,
-  "output": 0.85,
+  "input": 0.2,
+  "output": 1.1,
   "provider": "z-ai"
  },
  "z-ai/glm-4.5v": {
@@ -2977,8 +3005,8 @@
  "z-ai/glm-5.2:batch": {
   "context": 1048576,
   "created": "2026-06-16",
-  "input": 0.623,
-  "output": 1.271,
+  "input": 0.527,
+  "output": 1.075,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3": {
@@ -2991,15 +3019,15 @@
  "z-ai/glm-5.3-flash": {
   "context": 1048576,
   "created": "2026-08-26",
-  "input": 0.0335,
-  "output": 0.083,
+  "input": 0.15,
+  "output": 0.5,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3-flash:batch": {
   "context": 1048576,
   "created": "2026-08-26",
-  "input": 0.05,
-  "output": 0.18,
+  "input": 0.03,
+  "output": 0.061,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3-flashx": {
@@ -3040,8 +3068,8 @@
  "~anthropic/claude-fable-latest": {
   "context": 1000000,
   "created": "2026-06-09",
-  "input": 10.0,
-  "output": 50.0,
+  "input": 8.0,
+  "output": 40.0,
   "provider": "~anthropic"
  },
  "~anthropic/claude-haiku-latest": {
@@ -3103,8 +3131,8 @@
  "~moonshotai/kimi-latest": {
   "context": 1048576,
   "created": "2026-04-27",
-  "input": 0.1634,
-  "output": 9.3388,
+  "input": 0.1824,
+  "output": 10.5601,
   "provider": "~moonshotai"
  },
  "~openai/gpt-astra-latest": {
