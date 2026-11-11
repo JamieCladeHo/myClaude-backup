@@ -59,6 +59,12 @@
   "output": 50.0,
   "provider": "anthropic"
  },
+ "claude-mythos-5-2": {
+  "context": 1000000,
+  "input": 8.0,
+  "output": 40.0,
+  "provider": "anthropic"
+ },
  "claude-mythos-preview": {
   "context": 1000000,
   "input": 10.0,
@@ -600,6 +606,12 @@
   "provider": "gemini"
  },
  "gemini/gemini-4-argon": {
+  "context": 1048576,
+  "input": 2.0,
+  "output": 10.0,
+  "provider": "gemini"
+ },
+ "gemini/gemini-4-carbon": {
   "context": 1048576,
   "input": 2.0,
   "output": 10.0,
