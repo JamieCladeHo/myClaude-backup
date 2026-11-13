@@ -307,6 +307,13 @@
   "output": 5.0,
   "provider": "anthropic"
  },
+ "apodex/apodex-1.1-mini:free": {
+  "context": 262144,
+  "created": "2026-10-01",
+  "input": 0.0,
+  "output": 0.0,
+  "provider": "apodex"
+ },
  "baidu/ernie-5.5-flash-preview:free": {
   "context": 1024000,
   "created": "2026-11-10",
@@ -478,8 +485,8 @@
  "deepseek/deepseek-v4-pro": {
   "context": 1048576,
   "created": "2026-04-24",
-  "input": 0.9553,
-  "output": 1.9105,
+  "input": 0.9,
+  "output": 1.5,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-pro-0813": {
@@ -492,8 +499,8 @@
  "deepseek/deepseek-v4.1-flash": {
   "context": 1048576,
   "created": "2026-09-10",
-  "input": 0.022,
-  "output": 0.4,
+  "input": 0.3,
+  "output": 1.2,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash-1017": {
@@ -506,8 +513,8 @@
  "deepseek/deepseek-v4.1-flash-1017:batch": {
   "context": 1048576,
   "created": "2026-10-17",
-  "input": 0.011,
-  "output": 0.2,
+  "input": 0.05,
+  "output": 0.15,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash:batch": {
@@ -762,6 +769,20 @@
   "output": 5.0,
   "provider": "google"
  },
+ "google/gemini-4-hydrogen": {
+  "context": 1048576,
+  "created": "2026-11-12",
+  "input": 1.5,
+  "output": 7.5,
+  "provider": "google"
+ },
+ "google/gemini-4-hydrogen:batch": {
+  "context": 1048576,
+  "created": "2026-11-12",
+  "input": 0.75,
+  "output": 3.75,
+  "provider": "google"
+ },
  "google/gemini-nano-banana-2.1": {
   "context": 65536,
   "created": "2026-10-06",
@@ -814,8 +835,8 @@
  "google/gemma-4-26b-a4b-it": {
   "context": 262144,
   "created": "2026-04-03",
-  "input": 0.08,
-  "output": 0.1,
+  "input": 0.09,
+  "output": 0.3,
   "provider": "google"
  },
  "google/gemma-4-26b-a4b-it:free": {
@@ -872,6 +893,20 @@
   "created": "2026-07-23",
   "input": 0.021,
   "output": 0.063,
+  "provider": "inclusionai"
+ },
+ "inclusionai/ling-3.0-flash-fin": {
+  "context": 262144,
+  "created": "2026-08-27",
+  "input": 0.042,
+  "output": 0.1232,
+  "provider": "inclusionai"
+ },
+ "inclusionai/ling-3.0-flash-sante": {
+  "context": 262144,
+  "created": "2026-09-04",
+  "input": 0.042,
+  "output": 0.1232,
   "provider": "inclusionai"
  },
  "inclusionai/ling-3.0-flash-vl": {
@@ -1318,8 +1353,8 @@
  "moonshotai/kimi-k2.5": {
   "context": 262144,
   "created": "2026-01-27",
-  "input": 0.532,
-  "output": 3.325,
+  "input": 0.5,
+  "output": 2.5,
   "provider": "moonshotai"
  },
  "moonshotai/kimi-k2.6": {
@@ -1346,8 +1381,8 @@
  "moonshotai/kimi-k3.1-pro": {
   "context": 1048576,
   "created": "2026-10-23",
-  "input": 0.2375,
-  "output": 8.4085,
+  "input": 2.0,
+  "output": 10.0,
   "provider": "moonshotai"
  },
  "moonshotai/kimi-k3.1-pro:batch": {
@@ -2197,6 +2232,13 @@
   "output": 0.5,
   "provider": "particle-ai"
  },
+ "particle-ai/particle-1:free": {
+  "context": 1048576,
+  "created": "2026-10-28",
+  "input": 0.0,
+  "output": 0.0,
+  "provider": "particle-ai"
+ },
  "perceptron/perceptron-mk1": {
   "context": 32768,
   "created": "2026-05-12",
@@ -2291,8 +2333,8 @@
  "qwen/qwen3-14b": {
   "context": 40960,
   "created": "2025-04-28",
-  "input": 0.1,
-  "output": 0.22,
+  "input": 0.12,
+  "output": 0.24,
   "provider": "qwen"
  },
  "qwen/qwen3-235b-a22b-2507": {
@@ -2424,8 +2466,8 @@
  "qwen/qwen3.5-9b": {
   "context": 262144,
   "created": "2026-03-10",
-  "input": 0.026,
-  "output": 0.038,
+  "input": 0.083,
+  "output": 0.123,
   "provider": "qwen"
  },
  "qwen/qwen3.5-flash-02-23": {
@@ -2606,8 +2648,8 @@
  "ricursiveai/ripple-65b-preview": {
   "context": 1048576,
   "created": "2026-11-04",
-  "input": 0.2,
-  "output": 0.6,
+  "input": 0.1,
+  "output": 0.3,
   "provider": "ricursiveai"
  },
  "sakana/fugu-max": {
@@ -2771,6 +2813,13 @@
   "output": 4.05,
   "provider": "thinkingmachines"
  },
+ "thinkingmachines/inkling-2-small": {
+  "context": 1048576,
+  "created": "2026-11-09",
+  "input": 0.3,
+  "output": 1.0,
+  "provider": "thinkingmachines"
+ },
  "thinkingmachines/inkling-2-small:free": {
   "context": 1048576,
   "created": "2026-11-09",
@@ -2921,8 +2970,8 @@
  "xiaomi/mimo-v2.5-pro": {
   "context": 1024000,
   "created": "2026-04-22",
-  "input": 0.48,
-  "output": 1.8,
+  "input": 0.435,
+  "output": 0.87,
   "provider": "xiaomi"
  },
  "xiaomi/mimo-v2.6-flash": {
@@ -3026,15 +3075,15 @@
  "z-ai/glm-5.2:batch": {
   "context": 1048576,
   "created": "2026-06-16",
-  "input": 0.35,
-  "output": 1.075,
+  "input": 0.322,
+  "output": 0.989,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3": {
   "context": 1048576,
   "created": "2026-08-18",
-  "input": 0.0699,
-  "output": 1.4,
+  "input": 0.084,
+  "output": 3.6,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3-flash": {
@@ -3075,8 +3124,8 @@
  "z-ai/glm-5.3:batch": {
   "context": 1048576,
   "created": "2026-08-18",
-  "input": 0.35,
-  "output": 1.075,
+  "input": 0.45,
+  "output": 2.0,
   "provider": "z-ai"
  },
  "z-ai/glm-5v-turbo": {
@@ -3117,8 +3166,8 @@
  "~deepseek/deepseek-flash-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.022,
-  "output": 0.4,
+  "input": 0.038,
+  "output": 0.5,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-pro-latest": {
@@ -3138,8 +3187,8 @@
  "~google/gemini-flash-latest": {
   "context": 1048576,
   "created": "2026-04-27",
-  "input": 0.75,
-  "output": 3.75,
+  "input": 1.5,
+  "output": 7.5,
   "provider": "~google"
  },
  "~google/gemini-pro-latest": {
