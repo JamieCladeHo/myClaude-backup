@@ -2003,6 +2003,12 @@
   "output": 10.0,
   "provider": "perplexity"
  },
+ "perplexity/google/gemini-4-hydrogen": {
+  "context": "",
+  "input": 1.5,
+  "output": 7.5,
+  "provider": "perplexity"
+ },
  "perplexity/llama-2-70b-chat": {
   "context": 4096,
   "input": 0.7,
