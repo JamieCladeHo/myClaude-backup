@@ -2286,3 +2286,15 @@ date,source,model,provider,input_usd_per_mtok,output_usd_per_mtok,event
 2026-11-14,openrouter,inclusionai/ling-3.0-flash-sante,inclusionai,,,removed
 2026-11-14,openrouter,liquid/lfm-2.5-2.6b,liquid,,,removed
 2026-11-14,openrouter,liquid/lfm-2.5-2.6b:free,liquid,,,removed
+2026-11-15,openrouter,particle-ai/particle-1,particle-ai,0.06,0.5,change
+2026-11-15,openrouter,moonshotai/kimi-k3.1-pro,moonshotai,0.2375,8.4114,change
+2026-11-15,openrouter,moonshotai/kimi-k3.1-pro:batch,moonshotai,0.275,4.125,change
+2026-11-15,openrouter,deepseek/deepseek-v4.1-flash-1017,deepseek,0.15,0.6,change
+2026-11-15,openrouter,deepseek/deepseek-v4.1-flash-1017:batch,deepseek,0.023,0.2,change
+2026-11-15,openrouter,z-ai/glm-5.3:batch,z-ai,0.322,0.989,change
+2026-11-15,openrouter,deepseek/deepseek-v4-flash-0731,deepseek,0.06,0.18,change
+2026-11-15,openrouter,openai/gpt-5.6-sol,openai,4.4,22.0,change
+2026-11-15,openrouter,qwen/qwen3.5-9b,qwen,0.118,0.174,change
+2026-11-15,openrouter,z-ai/glm-4.7,z-ai,0.4,1.75,change
+2026-11-15,openrouter,deepseek/deepseek-r1-0528,deepseek,0.571,2.286,change
+2026-11-15,openrouter,z-ai/glm-5.2:batch,z-ai,,,removed
