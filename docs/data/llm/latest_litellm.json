@@ -353,6 +353,12 @@
   "output": 0.47,
   "provider": "dashscope"
  },
+ "dashscope/qwen4-max": {
+  "context": 991808,
+  "input": 1.5,
+  "output": 4.5,
+  "provider": "dashscope"
+ },
  "dashscope/qwq-plus": {
   "context": 98304,
   "input": 0.8,

@@ -2320,3 +2320,17 @@ date,source,model,provider,input_usd_per_mtok,output_usd_per_mtok,event
 2026-11-16,openrouter,qwen/qwen3-vl-30b-a3b-thinking,qwen,,,removed
 2026-11-16,openrouter,stepfun/step-3.5-flash,stepfun,,,removed
 2026-11-16,openrouter,tencent/hunyuan-a13b-instruct,tencent,,,removed
+2026-11-17,litellm,dashscope/qwen4-max,dashscope,1.5,4.5,new
+2026-11-17,openrouter,tencent/hy4-flash,tencent,0.035,0.1405,new
+2026-11-17,openrouter,qwen/qwen4-max,qwen,1.425,4.275,change
+2026-11-17,openrouter,moonshotai/kimi-k3.1-pro:batch,moonshotai,0.372,5.583,change
+2026-11-17,openrouter,deepseek/deepseek-v4.1-flash-1017,deepseek,0.036,0.5,change
+2026-11-17,openrouter,deepseek/deepseek-v4.1-flash-1017:batch,deepseek,0.036,0.15,change
+2026-11-17,openrouter,z-ai/glm-5.3-prime,z-ai,1.68,5.28,change
+2026-11-17,openrouter,z-ai/glm-5.3-flash,z-ai,0.15,0.5,change
+2026-11-17,openrouter,z-ai/glm-5.3-flash:batch,z-ai,0.024,0.069,change
+2026-11-17,openrouter,z-ai/glm-5.3:batch,z-ai,0.281,1.25,change
+2026-11-17,openrouter,meta/muse-glimmer-30b,meta,0.35,1.5,change
+2026-11-17,openrouter,z-ai/glm-5.2:batch,z-ai,0.322,0.989,new
+2026-11-17,openrouter,nvidia/nemotron-3-ultra-550b-a55b,nvidia,0.5,2.2,change
+2026-11-17,openrouter,qwen/qwen3.5-9b,qwen,0.17,0.25,change
