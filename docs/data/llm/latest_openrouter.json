@@ -492,8 +492,8 @@
  "deepseek/deepseek-v4.1-flash": {
   "context": 1048576,
   "created": "2026-09-10",
-  "input": 0.14,
-  "output": 0.42,
+  "input": 0.051,
+  "output": 0.567,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash-1017": {
@@ -815,7 +815,7 @@
   "context": 131072,
   "created": "2025-03-12",
   "input": 0.08,
-  "output": 0.35,
+  "output": 0.45,
   "provider": "google"
  },
  "google/gemma-3-4b-it": {
@@ -1206,8 +1206,8 @@
  "mistralai/mistral-medium-3": {
   "context": 131072,
   "created": "2025-05-07",
-  "input": 0.4,
-  "output": 2.0,
+  "input": 0.44,
+  "output": 2.2,
   "provider": "mistralai"
  },
  "mistralai/mistral-medium-3-5": {
@@ -1227,8 +1227,8 @@
  "mistralai/mistral-medium-3.1": {
   "context": 131072,
   "created": "2025-08-13",
-  "input": 0.4,
-  "output": 2.0,
+  "input": 0.44,
+  "output": 2.2,
   "provider": "mistralai"
  },
  "mistralai/mistral-nemo": {
@@ -1269,8 +1269,8 @@
  "mistralai/mistral-small-3.2-24b-instruct": {
   "context": 256000,
   "created": "2025-06-20",
-  "input": 0.1,
-  "output": 0.3,
+  "input": 0.075,
+  "output": 0.2,
   "provider": "mistralai"
  },
  "mistralai/mixtral-8x22b-instruct": {
@@ -1339,8 +1339,8 @@
  "moonshotai/kimi-k2.7-code": {
   "context": 262144,
   "created": "2026-06-12",
-  "input": 0.6,
-  "output": 3.5,
+  "input": 0.7,
+  "output": 3.75,
   "provider": "moonshotai"
  },
  "moonshotai/kimi-k3": {
@@ -2099,6 +2099,62 @@
   "output": 2.5,
   "provider": "openai"
  },
+ "openai/gpt-6.2-astra": {
+  "context": 1050000,
+  "created": "2026-11-17",
+  "input": 8.0,
+  "output": 40.0,
+  "provider": "openai"
+ },
+ "openai/gpt-6.2-astra-pro": {
+  "context": 1050000,
+  "created": "2026-11-17",
+  "input": 8.0,
+  "output": 40.0,
+  "provider": "openai"
+ },
+ "openai/gpt-6.2-astra-pro:batch": {
+  "context": 1050000,
+  "created": "2026-11-17",
+  "input": 4.0,
+  "output": 20.0,
+  "provider": "openai"
+ },
+ "openai/gpt-6.2-astra:batch": {
+  "context": 1050000,
+  "created": "2026-11-17",
+  "input": 4.0,
+  "output": 20.0,
+  "provider": "openai"
+ },
+ "openai/gpt-6.2-sol": {
+  "context": 1050000,
+  "created": "2026-11-17",
+  "input": 2.0,
+  "output": 10.0,
+  "provider": "openai"
+ },
+ "openai/gpt-6.2-sol-pro": {
+  "context": 1050000,
+  "created": "2026-11-17",
+  "input": 2.0,
+  "output": 10.0,
+  "provider": "openai"
+ },
+ "openai/gpt-6.2-sol-pro:batch": {
+  "context": 1050000,
+  "created": "2026-11-17",
+  "input": 1.0,
+  "output": 5.0,
+  "provider": "openai"
+ },
+ "openai/gpt-6.2-sol:batch": {
+  "context": 1050000,
+  "created": "2026-11-17",
+  "input": 1.0,
+  "output": 5.0,
+  "provider": "openai"
+ },
  "openai/gpt-audio": {
   "context": 128000,
   "created": "2026-01-19",
@@ -2137,8 +2193,8 @@
  "openai/gpt-oss-20b": {
   "context": 131072,
   "created": "2025-08-05",
-  "input": 0.075,
-  "output": 0.3,
+  "input": 0.018,
+  "output": 0.09,
   "provider": "openai"
  },
  "openai/gpt-oss-20b:batch": {
@@ -2375,7 +2431,7 @@
  "qwen/qwen3-next-80b-a3b-instruct": {
   "context": 262144,
   "created": "2025-09-11",
-  "input": 0.09,
+  "input": 0.1,
   "output": 1.1,
   "provider": "qwen"
  },
@@ -2410,8 +2466,8 @@
  "qwen/qwen3.5-27b": {
   "context": 262144,
   "created": "2026-02-25",
-  "input": 0.26,
-  "output": 2.6,
+  "input": 0.3,
+  "output": 2.4,
   "provider": "qwen"
  },
  "qwen/qwen3.5-35b-a3b": {
@@ -2522,8 +2578,8 @@
  "qwen/qwen3.8-27b": {
   "context": 1024000,
   "created": "2026-08-14",
-  "input": 0.15,
-  "output": 1.875,
+  "input": 0.06,
+  "output": 2.2,
   "provider": "qwen"
  },
  "qwen/qwen3.8-27b:batch": {
@@ -2933,10 +2989,10 @@
   "provider": "xiaomi"
  },
  "xiaomi/mimo-v2.5-pro": {
-  "context": 1024000,
+  "context": 262144,
   "created": "2026-04-22",
-  "input": 0.435,
-  "output": 0.87,
+  "input": 0.48,
+  "output": 1.8,
   "provider": "xiaomi"
  },
  "xiaomi/mimo-v2.6-flash": {
@@ -3173,8 +3229,8 @@
  "~openai/gpt-astra-latest": {
   "context": 1050000,
   "created": "2026-09-11",
-  "input": 10.0,
-  "output": 50.0,
+  "input": 8.0,
+  "output": 40.0,
   "provider": "~openai"
  },
  "~openai/gpt-luna-latest": {

@@ -1259,6 +1259,24 @@
   "output": 5.0,
   "provider": "openai"
  },
+ "gpt-6.2-astra": {
+  "context": 922000,
+  "input": 8.0,
+  "output": 40.0,
+  "provider": "openai"
+ },
+ "gpt-6.2-astra-law": {
+  "context": 922000,
+  "input": 8.0,
+  "output": 40.0,
+  "provider": "openai"
+ },
+ "gpt-6.2-sol": {
+  "context": 922000,
+  "input": 2.0,
+  "output": 10.0,
+  "provider": "openai"
+ },
  "gpt-audio": {
   "context": 128000,
   "input": 2.5,
@@ -1750,6 +1768,18 @@
   "input": 2.0,
   "output": 5.0,
   "provider": "moonshot"
+ },
+ "north-mini-code-1.0": {
+  "context": 436000,
+  "input": 0.0,
+  "output": 0.0,
+  "provider": "cohere_chat"
+ },
+ "north-small-translate-1.0": {
+  "context": 32768,
+  "input": 0.0,
+  "output": 0.0,
+  "provider": "cohere_chat"
  },
  "o1": {
   "context": 200000,
