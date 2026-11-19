@@ -167,6 +167,24 @@
   "output": 0.0,
   "provider": "cohere_chat"
  },
+ "command-a-reasoning-08-2025": {
+  "context": 256000,
+  "input": 0.0,
+  "output": 0.0,
+  "provider": "cohere_chat"
+ },
+ "command-a-translate-08-2025": {
+  "context": 8000,
+  "input": 0.0,
+  "output": 0.0,
+  "provider": "cohere_chat"
+ },
+ "command-a-vision-07-2025": {
+  "context": 128000,
+  "input": 0.0,
+  "output": 0.0,
+  "provider": "cohere_chat"
+ },
  "command-r-08-2024": {
   "context": 128000,
   "input": 0.15,
@@ -627,6 +645,12 @@
   "context": 1048576,
   "input": 1.5,
   "output": 7.5,
+  "provider": "gemini"
+ },
+ "gemini/gemini-4-neon": {
+  "context": 1048576,
+  "input": 3.0,
+  "output": 15.0,
   "provider": "gemini"
  },
  "gemini/gemini-exp-1114": {
@@ -1237,8 +1261,8 @@
  },
  "gpt-6-rosalind": {
   "context": 922000,
-  "input": 15.0,
-  "output": 75.0,
+  "input": 10.0,
+  "output": 50.0,
   "provider": "openai"
  },
  "gpt-6-sol": {
@@ -1488,13 +1512,13 @@
   "provider": "mistral"
  },
  "mistral/ministral-3b-2512": {
-  "context": 131072,
+  "context": 262144,
   "input": 0.1,
   "output": 0.1,
   "provider": "mistral"
  },
  "mistral/ministral-3b-latest": {
-  "context": 131072,
+  "context": 262144,
   "input": 0.1,
   "output": 0.1,
   "provider": "mistral"
@@ -1554,9 +1578,9 @@
   "provider": "mistral"
  },
  "mistral/mistral-large-latest": {
-  "context": 262144,
-  "input": 0.5,
-  "output": 1.5,
+  "context": 1048576,
+  "input": 0.7,
+  "output": 2.1,
   "provider": "mistral"
  },
  "mistral/mistral-medium": {
@@ -1770,13 +1794,13 @@
   "provider": "moonshot"
  },
  "north-mini-code-1.0": {
-  "context": 436000,
+  "context": 256000,
   "input": 0.0,
   "output": 0.0,
   "provider": "cohere_chat"
  },
  "north-small-translate-1.0": {
-  "context": 32768,
+  "context": 16000,
   "input": 0.0,
   "output": 0.0,
   "provider": "cohere_chat"
