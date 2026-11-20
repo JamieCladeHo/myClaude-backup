@@ -743,6 +743,12 @@
   "output": 0.0,
   "provider": "gemini"
  },
+ "gemini/genie-4": {
+  "context": 1048576,
+  "input": 1.5,
+  "output": 9.0,
+  "provider": "gemini"
+ },
  "gemini/learnlm-1.5-pro-experimental": {
   "context": 32767,
   "input": 0.0,
