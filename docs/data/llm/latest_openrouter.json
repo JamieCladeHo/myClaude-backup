@@ -401,8 +401,8 @@
  "deepseek/deepseek-chat-v3-0324": {
   "context": 163840,
   "created": "2025-03-24",
-  "input": 0.29,
-  "output": 1.14,
+  "input": 0.25,
+  "output": 1.0,
   "provider": "deepseek"
  },
  "deepseek/deepseek-chat-v3.1": {
@@ -450,7 +450,7 @@
  "deepseek/deepseek-v4-flash-0731": {
   "context": 1048576,
   "created": "2026-07-31",
-  "input": 0.047,
+  "input": 0.0443,
   "output": 0.3,
   "provider": "deepseek"
  },
@@ -464,8 +464,8 @@
  "deepseek/deepseek-v4-flash-vision-exp": {
   "context": 1048576,
   "created": "2026-08-21",
-  "input": 0.44,
-  "output": 1.32,
+  "input": 0.2156,
+  "output": 0.6468,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-pro": {
@@ -485,15 +485,15 @@
  "deepseek/deepseek-v4.1-flash": {
   "context": 1048576,
   "created": "2026-09-10",
-  "input": 0.3,
-  "output": 1.2,
+  "input": 0.0498,
+  "output": 0.1992,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash-1017": {
   "context": 1048576,
   "created": "2026-10-17",
-  "input": 0.3,
-  "output": 1.2,
+  "input": 0.15,
+  "output": 0.6,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -509,13 +509,6 @@
   "input": 0.05,
   "output": 0.15,
   "provider": "deepseek"
- },
- "dots-studio/dots-3-note-preview:free": {
-  "context": 512000,
-  "created": "2026-08-14",
-  "input": 0.0,
-  "output": 0.0,
-  "provider": "dots-studio"
  },
  "elorian/glimpse": {
   "context": 262144,
@@ -822,7 +815,7 @@
   "context": 131072,
   "created": "2025-03-12",
   "input": 0.08,
-  "output": 0.16,
+  "output": 0.45,
   "provider": "google"
  },
  "google/gemma-3-4b-it": {
@@ -835,8 +828,8 @@
  "google/gemma-4-26b-a4b-it": {
   "context": 262144,
   "created": "2026-04-03",
-  "input": 0.09,
-  "output": 0.3,
+  "input": 0.0675,
+  "output": 0.225,
   "provider": "google"
  },
  "google/gemma-4-26b-a4b-it:free": {
@@ -912,8 +905,8 @@
  "inclusionai/ling-3.1-flash": {
   "context": 1000000,
   "created": "2026-10-02",
-  "input": 0.045,
-  "output": 0.135,
+  "input": 0.06,
+  "output": 0.18,
   "provider": "inclusionai"
  },
  "inclusionai/ling-3.2-flash:free": {
@@ -971,13 +964,6 @@
   "input": 0.3,
   "output": 0.5,
   "provider": "mancer"
- },
- "meituan/longcat-2.0": {
-  "context": 1048756,
-  "created": "2026-07-20",
-  "input": 0.3,
-  "output": 1.2,
-  "provider": "meituan"
  },
  "meta-llama/llama-3.1-70b-instruct": {
   "context": 131072,
@@ -1108,15 +1094,15 @@
  "minimax/minimax-m2.5": {
   "context": 198000,
   "created": "2026-02-12",
-  "input": 0.295,
-  "output": 1.2,
+  "input": 0.27,
+  "output": 0.95,
   "provider": "minimax"
  },
  "minimax/minimax-m2.7": {
   "context": 196608,
   "created": "2026-03-18",
-  "input": 0.21,
-  "output": 0.84,
+  "input": 0.6,
+  "output": 1.8,
   "provider": "minimax"
  },
  "minimax/minimax-m3": {
@@ -1501,7 +1487,7 @@
   "context": 1048576,
   "created": "2026-10-15",
   "input": 0.15,
-  "output": 0.5,
+  "output": 0.47,
   "provider": "nvidia"
  },
  "nvidia/nemotron-3.5-super-vl:free": {
@@ -2200,8 +2186,8 @@
  "openai/gpt-oss-20b": {
   "context": 131072,
   "created": "2025-08-05",
-  "input": 0.018,
-  "output": 0.09,
+  "input": 0.017,
+  "output": 0.085,
   "provider": "openai"
  },
  "openai/gpt-oss-20b:batch": {
@@ -2417,8 +2403,8 @@
  "qwen/qwen3-coder-30b-a3b-instruct": {
   "context": 262144,
   "created": "2025-07-31",
-  "input": 0.15,
-  "output": 0.6,
+  "input": 0.07,
+  "output": 0.28,
   "provider": "qwen"
  },
  "qwen/qwen3-coder-flash": {
@@ -2473,8 +2459,8 @@
  "qwen/qwen3.5-27b": {
   "context": 262144,
   "created": "2026-02-25",
-  "input": 0.26,
-  "output": 2.6,
+  "input": 0.195,
+  "output": 1.56,
   "provider": "qwen"
  },
  "qwen/qwen3.5-35b-a3b": {
@@ -2586,7 +2572,7 @@
   "context": 1024000,
   "created": "2026-08-14",
   "input": 0.06,
-  "output": 2.2,
+  "output": 1.96,
   "provider": "qwen"
  },
  "qwen/qwen3.8-27b:batch": {
@@ -2637,6 +2623,13 @@
   "input": 1.425,
   "output": 4.275,
   "provider": "qwen"
+ },
+ "radixark/daisyrose-27b": {
+  "context": 262144,
+  "created": "2026-11-21",
+  "input": 0.15,
+  "output": 1.875,
+  "provider": "radixark"
  },
  "recursive/flint-v1.0:free": {
   "context": 262144,
@@ -2785,13 +2778,6 @@
   "output": 0.528,
   "provider": "tencent"
  },
- "tencent/hy3-preview": {
-  "context": 262144,
-  "created": "2026-04-22",
-  "input": 0.18,
-  "output": 0.6,
-  "provider": "tencent"
- },
  "tencent/hy4": {
   "context": 1048576,
   "created": "2026-11-04",
@@ -2839,6 +2825,13 @@
   "created": "2026-07-17",
   "input": 1.0,
   "output": 4.05,
+  "provider": "thinkingmachines"
+ },
+ "thinkingmachines/inkling-2-mini": {
+  "context": 1048576,
+  "created": "2026-11-21",
+  "input": 0.1,
+  "output": 0.4,
   "provider": "thinkingmachines"
  },
  "thinkingmachines/inkling-2-small": {
@@ -2989,14 +2982,14 @@
   "provider": "xiaomi"
  },
  "xiaomi/mimo-v2.6-flash": {
-  "context": 1050000,
+  "context": 1048576,
   "created": "2026-09-21",
   "input": 0.14,
   "output": 0.28,
   "provider": "xiaomi"
  },
  "xiaomi/mimo-v2.6-pro": {
-  "context": 1050000,
+  "context": 1048576,
   "created": "2026-09-21",
   "input": 0.435,
   "output": 0.87,
@@ -3187,15 +3180,15 @@
  "~deepseek/deepseek-pro-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.2565,
+  "input": 0.0999,
   "output": 8.0,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-v4-flash-latest": {
   "context": 1048576,
   "created": "2026-08-01",
-  "input": 0.047,
-  "output": 0.3,
+  "input": 0.044,
+  "output": 0.132,
   "provider": "~deepseek"
  },
  "~google/gemini-flash-latest": {

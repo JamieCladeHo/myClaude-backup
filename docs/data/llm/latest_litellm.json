@@ -2207,6 +2207,24 @@
   "output": 10.0,
   "provider": "perplexity"
  },
+ "perplexity/openai/gpt-6.1-terra": {
+  "context": "",
+  "input": 1.0,
+  "output": 5.0,
+  "provider": "perplexity"
+ },
+ "perplexity/openai/gpt-6.2-astra": {
+  "context": "",
+  "input": 8.0,
+  "output": 40.0,
+  "provider": "perplexity"
+ },
+ "perplexity/openai/gpt-6.2-sol": {
+  "context": "",
+  "input": 2.0,
+  "output": 10.0,
+  "provider": "perplexity"
+ },
  "perplexity/perplexity/deepseek-v4-flash-0731": {
   "context": "",
   "input": 0.13,
