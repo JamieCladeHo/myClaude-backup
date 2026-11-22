@@ -2427,3 +2427,12 @@ date,source,model,provider,input_usd_per_mtok,output_usd_per_mtok,event
 2026-11-21,openrouter,dots-studio/dots-3-note-preview:free,dots-studio,,,removed
 2026-11-21,openrouter,meituan/longcat-2.0,meituan,,,removed
 2026-11-21,openrouter,tencent/hy3-preview,tencent,,,removed
+2026-11-22,openrouter,thinkingmachines/inkling-2-mini,thinkingmachines,0.075,0.3,change
+2026-11-22,openrouter,~z-ai/glm-flash-latest,~z-ai,0.0399,0.0729,change
+2026-11-22,openrouter,z-ai/glm-5.3-flash,z-ai,0.15,0.5,change
+2026-11-22,openrouter,qwen/qwen3.8-27b,qwen,0.035,1.5,change
+2026-11-22,openrouter,tencent/hy3,tencent,0.14,0.58,change
+2026-11-22,openrouter,~moonshotai/kimi-latest,~moonshotai,0.1824,11.0055,change
+2026-11-22,openrouter,qwen/qwen3.5-27b,qwen,0.26,2.6,change
+2026-11-22,openrouter,google/gemma-3-4b-it,google,0.04,0.05,change
+2026-11-22,openrouter,gryphe/mythomax-l2-13b,gryphe,0.3,0.5,change
