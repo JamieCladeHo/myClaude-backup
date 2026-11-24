@@ -450,7 +450,7 @@
  "deepseek/deepseek-v4-flash-0731": {
   "context": 1048576,
   "created": "2026-07-31",
-  "input": 0.0434,
+  "input": 0.047,
   "output": 0.3,
   "provider": "deepseek"
  },
@@ -471,29 +471,29 @@
  "deepseek/deepseek-v4-pro": {
   "context": 1048576,
   "created": "2026-04-24",
-  "input": 0.9,
-  "output": 1.5,
+  "input": 1.28,
+  "output": 2.56,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-pro-0813": {
   "context": 1048576,
   "created": "2026-08-12",
-  "input": 1.32,
-  "output": 3.96,
+  "input": 0.111,
+  "output": 4.44,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash": {
   "context": 1048576,
   "created": "2026-09-10",
-  "input": 0.0498,
-  "output": 0.1992,
+  "input": 0.14,
+  "output": 0.42,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash-1017": {
   "context": 1048576,
   "created": "2026-10-17",
-  "input": 0.3,
-  "output": 1.2,
+  "input": 0.03,
+  "output": 0.2,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -912,8 +912,8 @@
  "inclusionai/ling-3.1-flash": {
   "context": 1048576,
   "created": "2026-10-02",
-  "input": 0.06,
-  "output": 0.18,
+  "input": 0.075,
+  "output": 0.225,
   "provider": "inclusionai"
  },
  "inclusionai/ling-3.2-flash:free": {
@@ -982,8 +982,8 @@
  "meta-llama/llama-3.1-8b-instruct": {
   "context": 131072,
   "created": "2024-07-23",
-  "input": 0.02,
-  "output": 0.04,
+  "input": 0.05,
+  "output": 0.08,
   "provider": "meta-llama"
  },
  "meta-llama/llama-3.2-3b-instruct": {
@@ -1301,27 +1301,6 @@
   "output": 2.5,
   "provider": "moondream"
  },
- "moonshotai/kimi-k2": {
-  "context": 131072,
-  "created": "2025-07-11",
-  "input": 0.57,
-  "output": 2.3,
-  "provider": "moonshotai"
- },
- "moonshotai/kimi-k2-0905": {
-  "context": 262144,
-  "created": "2025-09-04",
-  "input": 0.6,
-  "output": 2.5,
-  "provider": "moonshotai"
- },
- "moonshotai/kimi-k2-thinking": {
-  "context": 262144,
-  "created": "2025-11-06",
-  "input": 0.6,
-  "output": 2.5,
-  "provider": "moonshotai"
- },
  "moonshotai/kimi-k2.5": {
   "context": 262144,
   "created": "2026-01-27",
@@ -1479,7 +1458,7 @@
  "nvidia/nemotron-3.5-lightning": {
   "context": 1048576,
   "created": "2026-08-11",
-  "input": 0.07,
+  "input": 0.05,
   "output": 0.2,
   "provider": "nvidia"
  },
@@ -2744,7 +2723,7 @@
   "provider": "scaledown"
  },
  "stepfun/step-3.7-flash": {
-  "context": 262144,
+  "context": 256000,
   "created": "2026-05-28",
   "input": 0.2,
   "output": 1.15,
@@ -2781,8 +2760,8 @@
  "tencent/hy3": {
   "context": 262144,
   "created": "2026-07-06",
-  "input": 0.14,
-  "output": 0.58,
+  "input": 0.132,
+  "output": 0.528,
   "provider": "tencent"
  },
  "tencent/hy4": {
@@ -2828,7 +2807,7 @@
   "provider": "thedrummer"
  },
  "thinkingmachines/inkling": {
-  "context": 524288,
+  "context": 1048576,
   "created": "2026-07-17",
   "input": 1.0,
   "output": 4.05,
@@ -2981,13 +2960,6 @@
   "output": 2.0,
   "provider": "xiaomi"
  },
- "xiaomi/mimo-v2.5-pro": {
-  "context": 262144,
-  "created": "2026-04-22",
-  "input": 0.48,
-  "output": 1.8,
-  "provider": "xiaomi"
- },
  "xiaomi/mimo-v2.6-flash": {
   "context": 1048576,
   "created": "2026-09-21",
@@ -3103,8 +3075,8 @@
  "z-ai/glm-5.3-flash": {
   "context": 1048576,
   "created": "2026-08-26",
-  "input": 0.0399,
-  "output": 0.0784,
+  "input": 0.12,
+  "output": 0.38,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3-flash:batch": {
@@ -3180,21 +3152,21 @@
  "~deepseek/deepseek-flash-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.036,
-  "output": 0.5,
+  "input": 0.03,
+  "output": 0.2,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-pro-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.1188,
+  "input": 0.0999,
   "output": 5.0,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-v4-flash-latest": {
   "context": 1048576,
   "created": "2026-08-01",
-  "input": 0.0434,
+  "input": 0.047,
   "output": 0.3,
   "provider": "~deepseek"
  },
@@ -3271,8 +3243,8 @@
  "~z-ai/glm-flash-latest": {
   "context": 1048576,
   "created": "2026-08-27",
-  "input": 0.0399,
-  "output": 0.0784,
+  "input": 0.0356,
+  "output": 0.0815,
   "provider": "~z-ai"
  },
  "~z-ai/glm-latest": {
