@@ -464,8 +464,8 @@
  "deepseek/deepseek-v4-flash-vision-exp": {
   "context": 1048576,
   "created": "2026-08-21",
-  "input": 0.2156,
-  "output": 0.6468,
+  "input": 0.44,
+  "output": 1.32,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-pro": {
@@ -492,8 +492,8 @@
  "deepseek/deepseek-v4.1-flash-1017": {
   "context": 1048576,
   "created": "2026-10-17",
-  "input": 0.03,
-  "output": 0.2,
+  "input": 0.3,
+  "output": 1.2,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -509,13 +509,6 @@
   "input": 0.05,
   "output": 0.15,
   "provider": "deepseek"
- },
- "dots-studio/dots-3-note-preview:free": {
-  "context": 512000,
-  "created": "2026-08-14",
-  "input": 0.0,
-  "output": 0.0,
-  "provider": "dots-studio"
  },
  "elorian/glimpse": {
   "context": 262144,
@@ -1099,10 +1092,10 @@
   "provider": "microsoft"
  },
  "minimax/minimax-m2.5": {
-  "context": 198000,
+  "context": 65536,
   "created": "2026-02-12",
-  "input": 0.27,
-  "output": 0.95,
+  "input": 0.3,
+  "output": 1.2,
   "provider": "minimax"
  },
  "minimax/minimax-m2.7": {
@@ -1196,13 +1189,6 @@
   "output": 2.1,
   "provider": "mistralai"
  },
- "mistralai/mistral-medium-3": {
-  "context": 131072,
-  "created": "2025-05-07",
-  "input": 0.44,
-  "output": 2.2,
-  "provider": "mistralai"
- },
  "mistralai/mistral-medium-3-5": {
   "context": 262144,
   "created": "2026-04-30",
@@ -1215,13 +1201,6 @@
   "created": "2026-04-30",
   "input": 0.75,
   "output": 3.75,
-  "provider": "mistralai"
- },
- "mistralai/mistral-medium-3.1": {
-  "context": 131072,
-  "created": "2025-08-13",
-  "input": 0.44,
-  "output": 2.2,
   "provider": "mistralai"
  },
  "mistralai/mistral-nemo": {
@@ -2501,8 +2480,8 @@
  "qwen/qwen3.6-35b-a3b": {
   "context": 262144,
   "created": "2026-04-27",
-  "input": 0.05,
-  "output": 0.7,
+  "input": 0.1,
+  "output": 0.89,
   "provider": "qwen"
  },
  "qwen/qwen3.6-flash": {
@@ -2869,11 +2848,25 @@
   "output": 0.5,
   "provider": "undi95"
  },
+ "upstage/solar-mini-4-5": {
+  "context": 524288,
+  "created": "2026-11-24",
+  "input": 0.01,
+  "output": 0.04,
+  "provider": "upstage"
+ },
  "upstage/solar-mini4": {
   "context": 524288,
   "created": "2026-09-23",
   "input": 0.05,
   "output": 0.2,
+  "provider": "upstage"
+ },
+ "upstage/solar-pro-4-contributor": {
+  "context": 524288,
+  "created": "2026-11-24",
+  "input": 0.09,
+  "output": 0.36,
   "provider": "upstage"
  },
  "upstage/solar-pro4": {
@@ -2953,18 +2946,18 @@
   "output": 4.8,
   "provider": "x-ai"
  },
- "xiaomi/mimo-v2.5": {
-  "context": 1000000,
-  "created": "2026-04-22",
-  "input": 0.4,
-  "output": 2.0,
-  "provider": "xiaomi"
- },
  "xiaomi/mimo-v2.6-flash": {
   "context": 1048576,
   "created": "2026-09-21",
   "input": 0.14,
   "output": 0.28,
+  "provider": "xiaomi"
+ },
+ "xiaomi/mimo-v2.6-flash-mopd": {
+  "context": 1048576,
+  "created": "2026-11-23",
+  "input": 0.5,
+  "output": 1.0,
   "provider": "xiaomi"
  },
  "xiaomi/mimo-v2.6-pro": {
@@ -2991,8 +2984,8 @@
  "z-ai/glm-4.5-air": {
   "context": 131072,
   "created": "2025-07-25",
-  "input": 0.13,
-  "output": 0.85,
+  "input": 0.14,
+  "output": 0.86,
   "provider": "z-ai"
  },
  "z-ai/glm-4.5v": {
@@ -3024,7 +3017,7 @@
   "provider": "z-ai"
  },
  "z-ai/glm-4.7-flash": {
-  "context": 200000,
+  "context": 131072,
   "created": "2026-01-19",
   "input": 0.0605,
   "output": 0.4,
@@ -3152,8 +3145,8 @@
  "~deepseek/deepseek-flash-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.03,
-  "output": 0.2,
+  "input": 0.036,
+  "output": 0.5,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-pro-latest": {
