@@ -450,8 +450,8 @@
  "deepseek/deepseek-v4-flash-0731": {
   "context": 1048576,
   "created": "2026-07-31",
-  "input": 0.06,
-  "output": 0.18,
+  "input": 0.047,
+  "output": 0.3,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-flash-0731:batch": {
@@ -464,8 +464,8 @@
  "deepseek/deepseek-v4-flash-vision-exp": {
   "context": 1048576,
   "created": "2026-08-21",
-  "input": 0.44,
-  "output": 1.32,
+  "input": 0.2156,
+  "output": 0.6468,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-pro": {
@@ -478,8 +478,8 @@
  "deepseek/deepseek-v4-pro-0813": {
   "context": 1048576,
   "created": "2026-08-12",
-  "input": 0.111,
-  "output": 4.44,
+  "input": 0.0999,
+  "output": 5.0,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash": {
@@ -815,14 +815,14 @@
   "context": 131072,
   "created": "2025-03-12",
   "input": 0.08,
-  "output": 0.45,
+  "output": 0.16,
   "provider": "google"
  },
  "google/gemma-3-4b-it": {
   "context": 131072,
   "created": "2025-03-13",
-  "input": 0.04,
-  "output": 0.05,
+  "input": 0.05,
+  "output": 0.1,
   "provider": "google"
  },
  "google/gemma-4-26b-a4b-it": {
@@ -916,6 +916,13 @@
   "output": 0.0,
   "provider": "inclusionai"
  },
+ "inclusionai/lingsante-3.1-air-vl": {
+  "context": 131072,
+  "created": "2026-11-26",
+  "input": 0.06,
+  "output": 0.18,
+  "provider": "inclusionai"
+ },
  "inference-net/schematron-v2-small": {
   "context": 128000,
   "created": "2026-09-12",
@@ -989,8 +996,8 @@
  "meta-llama/llama-3.3-70b-instruct": {
   "context": 131072,
   "created": "2024-12-06",
-  "input": 0.71,
-  "output": 0.71,
+  "input": 0.59,
+  "output": 0.79,
   "provider": "meta-llama"
  },
  "meta-llama/llama-4-maverick": {
@@ -1024,8 +1031,8 @@
  "meta/muse-glimmer-30b": {
   "context": 131072,
   "created": "2026-08-09",
-  "input": 0.35,
-  "output": 1.5,
+  "input": 0.3,
+  "output": 1.2,
   "provider": "meta"
  },
  "meta/muse-glimmer-30b:batch": {
@@ -1308,11 +1315,25 @@
   "output": 2.5,
   "provider": "moondream"
  },
+ "moonshotai/kimi-k2": {
+  "context": 131072,
+  "created": "2025-07-11",
+  "input": 0.57,
+  "output": 2.3,
+  "provider": "moonshotai"
+ },
+ "moonshotai/kimi-k2-0905": {
+  "context": 262144,
+  "created": "2025-09-04",
+  "input": 0.6,
+  "output": 2.5,
+  "provider": "moonshotai"
+ },
  "moonshotai/kimi-k2.5": {
   "context": 262144,
   "created": "2026-01-27",
-  "input": 0.5,
-  "output": 2.5,
+  "input": 0.6,
+  "output": 3.0,
   "provider": "moonshotai"
  },
  "moonshotai/kimi-k2.6": {
@@ -2555,7 +2576,7 @@
   "provider": "qwen"
  },
  "qwen/qwen3.8-2.4t-a95b": {
-  "context": 1048576,
+  "context": 1000000,
   "created": "2026-08-12",
   "input": 2.0,
   "output": 6.0,
@@ -2823,8 +2844,8 @@
  "thinkingmachines/inkling-2-mini": {
   "context": 1048576,
   "created": "2026-11-21",
-  "input": 0.075,
-  "output": 0.3,
+  "input": 0.06,
+  "output": 0.24,
   "provider": "thinkingmachines"
  },
  "thinkingmachines/inkling-2-small": {
@@ -2970,8 +2991,8 @@
  "xiaomi/mimo-v2.6-flash-mopd": {
   "context": 1048576,
   "created": "2026-11-23",
-  "input": 0.5,
-  "output": 1.0,
+  "input": 0.35,
+  "output": 0.7,
   "provider": "xiaomi"
  },
  "xiaomi/mimo-v2.6-pro": {
@@ -3010,7 +3031,7 @@
   "provider": "z-ai"
  },
  "z-ai/glm-4.6": {
-  "context": 204800,
+  "context": 202752,
   "created": "2025-09-30",
   "input": 0.5,
   "output": 2.0,
@@ -3166,8 +3187,8 @@
  "~deepseek/deepseek-pro-latest": {
   "context": 1048576,
   "created": "2026-09-14",
-  "input": 0.111,
-  "output": 4.44,
+  "input": 0.0999,
+  "output": 5.0,
   "provider": "~deepseek"
  },
  "~deepseek/deepseek-v4-flash-latest": {
