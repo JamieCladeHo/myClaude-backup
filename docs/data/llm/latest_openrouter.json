@@ -450,8 +450,8 @@
  "deepseek/deepseek-v4-flash-0731": {
   "context": 1048576,
   "created": "2026-07-31",
-  "input": 0.047,
-  "output": 0.3,
+  "input": 0.0456,
+  "output": 0.27,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-flash-0731:batch": {
@@ -471,8 +471,8 @@
  "deepseek/deepseek-v4-pro": {
   "context": 1048576,
   "created": "2026-04-24",
-  "input": 0.8882,
-  "output": 1.5082,
+  "input": 0.89,
+  "output": 1.5791,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4-pro-0813": {
@@ -485,15 +485,15 @@
  "deepseek/deepseek-v4.1-flash": {
   "context": 1048576,
   "created": "2026-09-10",
-  "input": 0.14,
-  "output": 0.42,
+  "input": 0.051,
+  "output": 0.567,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash-1017": {
   "context": 1048576,
   "created": "2026-10-17",
-  "input": 0.3,
-  "output": 1.2,
+  "input": 0.15,
+  "output": 0.6,
   "provider": "deepseek"
  },
  "deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -821,15 +821,15 @@
  "google/gemma-3-4b-it": {
   "context": 131072,
   "created": "2025-03-13",
-  "input": 0.05,
-  "output": 0.1,
+  "input": 0.04,
+  "output": 0.05,
   "provider": "google"
  },
  "google/gemma-4-26b-a4b-it": {
   "context": 262144,
   "created": "2026-04-03",
-  "input": 0.09,
-  "output": 0.3,
+  "input": 0.0675,
+  "output": 0.225,
   "provider": "google"
  },
  "google/gemma-4-26b-a4b-it:free": {
@@ -909,11 +909,11 @@
   "output": 0.225,
   "provider": "inclusionai"
  },
- "inclusionai/ling-3.2-flash:free": {
+ "inclusionai/ling-3.2-flash": {
   "context": 1048576,
   "created": "2026-11-13",
-  "input": 0.0,
-  "output": 0.0,
+  "input": 0.3,
+  "output": 0.9,
   "provider": "inclusionai"
  },
  "inclusionai/lingsante-3.1-air-vl": {
@@ -1486,7 +1486,7 @@
  "nvidia/nemotron-3.5-lightning": {
   "context": 1048576,
   "created": "2026-08-11",
-  "input": 0.07,
+  "input": 0.05,
   "output": 0.2,
   "provider": "nvidia"
  },
@@ -1501,7 +1501,7 @@
   "context": 1048576,
   "created": "2026-10-15",
   "input": 0.15,
-  "output": 0.47,
+  "output": 0.45,
   "provider": "nvidia"
  },
  "nvidia/nemotron-3.5-super-vl:free": {
@@ -2379,13 +2379,6 @@
   "output": 0.8,
   "provider": "qwen"
  },
- "qwen/qwen3-235b-a22b-thinking-2507": {
-  "context": 128000,
-  "created": "2025-07-25",
-  "input": 0.45,
-  "output": 3.5,
-  "provider": "qwen"
- },
  "qwen/qwen3-30b-a3b": {
   "context": 40960,
   "created": "2025-04-28",
@@ -2494,8 +2487,8 @@
  "qwen/qwen3.5-9b": {
   "context": 262144,
   "created": "2026-03-10",
-  "input": 0.1,
-  "output": 0.25,
+  "input": 0.066,
+  "output": 0.097,
   "provider": "qwen"
  },
  "qwen/qwen3.5-flash-02-23": {
@@ -2851,8 +2844,8 @@
  "thinkingmachines/inkling-2-small": {
   "context": 1048576,
   "created": "2026-11-09",
-  "input": 0.3,
-  "output": 1.0,
+  "input": 0.15,
+  "output": 0.5,
   "provider": "thinkingmachines"
  },
  "thinkingmachines/inkling-small": {
@@ -2991,8 +2984,8 @@
  "xiaomi/mimo-v2.6-flash-mopd": {
   "context": 1048576,
   "created": "2026-11-23",
-  "input": 0.35,
-  "output": 0.7,
+  "input": 0.5,
+  "output": 1.0,
   "provider": "xiaomi"
  },
  "xiaomi/mimo-v2.6-pro": {
@@ -3084,13 +3077,6 @@
   "created": "2026-06-16",
   "input": 0.62,
   "output": 2.42,
-  "provider": "z-ai"
- },
- "z-ai/glm-5.2:batch": {
-  "context": 1048576,
-  "created": "2026-06-16",
-  "input": 0.322,
-  "output": 0.989,
   "provider": "z-ai"
  },
  "z-ai/glm-5.3": {
@@ -3194,8 +3180,8 @@
  "~deepseek/deepseek-v4-flash-latest": {
   "context": 1048576,
   "created": "2026-08-01",
-  "input": 0.047,
-  "output": 0.3,
+  "input": 0.0453,
+  "output": 0.136,
   "provider": "~deepseek"
  },
  "~google/gemini-flash-latest": {
@@ -3215,8 +3201,8 @@
  "~moonshotai/kimi-latest": {
   "context": 1048576,
   "created": "2026-04-27",
-  "input": 0.1824,
-  "output": 11.0055,
+  "input": 0.1453,
+  "output": 12.2894,
   "provider": "~moonshotai"
  },
  "~openai/gpt-astra-latest": {
